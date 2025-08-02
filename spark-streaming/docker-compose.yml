@@ -2,10 +2,15 @@ version: '3.8'
 
 services:
   zookeeper:
-    image: docker.io/bitnami/zookeeper:3.7
+    image: bitnami/zookeeper:latest
     container_name: zookeeper
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+    healthcheck:
+      test: ["CMD", "echo", "ruok", "|", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
       - "2181:2181"
     networks:
@@ -15,10 +20,24 @@ services:
     build: ./kafka
     container_name: kafka
     environment:
+      - KAFKA_CFG_BROKER_ID=1
       - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
-      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,EXTERNAL://:29092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:29092
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
+      - KAFKA_CFG_NUM_PARTITIONS=1
+      - KAFKA_CFG_DEFAULT_REPLICATION_FACTOR=1
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    healthcheck:
+      test: ["CMD", "echo", "ruok", "|", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
       - "9092:9092"
+      - "29092:29092"
     networks:
       - spark-network
     depends_on:
@@ -66,6 +85,15 @@ services:
       - .:/app
     networks:
       - spark-network
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=test
+    ports:
+      - "5432:5432"
 
   # grafana:
   #   image: grafana/grafana:latest

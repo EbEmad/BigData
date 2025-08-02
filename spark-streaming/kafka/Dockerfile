@@ -1,16 +1,16 @@
-# Use the Bitnami Kafka image as the base
-FROM bitnami/kafka:latest
+# Use the Bitnami Kafka image that supports ZooKeeper
+FROM bitnami/kafka:3.6.1
 
 # Switch to root user for installations
 USER root
 
+# Install Python and required packages
+RUN apt update && apt install -y python3 python3-pip python3-venv && \
+    python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install kafka-python pandas
 
-RUN apt update && apt install -y python3 python3-pip && \
-    ln -s /usr/bin/python3 /usr/bin/python && \
-    pip3 install kafka-python --break-system-packages && \
-    pip3 install pandas --break-system-packages
+ENV PATH="/opt/venv/bin:$PATH"
 
 
-
-# Switch back to the kafka user for security
+# Switch back to non-root Kafka user
 USER 1001
