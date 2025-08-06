@@ -54,3 +54,4 @@ try:
     # Load data 
     df=broadcast(load_d_items(spark))
     print("data loaded and broadcasted")
+    
