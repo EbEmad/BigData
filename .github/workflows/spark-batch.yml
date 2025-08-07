@@ -1,0 +1,36 @@
+name: Test Docker Compose
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [main]
+
+jobs:
+  docker-compose-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Validate Docker Compose file
+        run: |
+          cd spark_batch_processing
+          docker compose -f docker-compose.yml config
+
+      - name: Start containers
+        run: |
+          cd spark_batch_processing
+          docker compose -f docker-compose.yml up -d --build
+          echo "Waiting for services to start..."
+          sleep 15
+
+      - name: Check running containers
+        run: docker ps
+
+      - name: Stop containers
+        if: always()
+        run: |
+          cd spark_batch_processing
+          docker compose -f docker-compose.yml down
