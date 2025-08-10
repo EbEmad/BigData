@@ -3,6 +3,8 @@ name: Test Docker Compose
 on:
   push:
     branches: [master,main]
+    paths:
+      - spark_batch_processing/**
   pull_request:
     branches: [main]
 
