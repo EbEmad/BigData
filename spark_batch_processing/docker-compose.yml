@@ -58,7 +58,7 @@ services:
     image: jupyter/pyspark-notebook:latest
     container_name: jupyter
     ports:
-      - "8888:8888"  # jupyter ui
+      - "8888:8888"   # jupyter ui
     environment:
       - SPARK_OPTS="--master spark://spark-master:7077"
     volumes:
