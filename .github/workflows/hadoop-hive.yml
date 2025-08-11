@@ -1,0 +1,35 @@
+name: Test Docker Compose
+
+on:
+    push:
+        branches: [master,main]
+        paths:
+            - hadoop_hive_processing/**
+    pull_request:
+        branches: [main]
+jobs:
+    docker-compose-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v3
+
+            - name: Validate Docker Compose file
+              run: |
+                cd hadoop-hive-processing
+                docker compose -f docker-compose.yml config
+
+            - name: Start Containers
+              run: |
+                cd hadoop-hive-processing
+                docker compose -f docker-compose.yml up -d --build
+                echo " Waiting for services to start..."
+                slepp 15
+            - name: Check Running Containers
+              run: docker ps
+
+            - name: Stop containers
+              if: always()
+              run: |
+                cd hadoop-hive-processing
+                docker compose -f docker-compose.yml down
