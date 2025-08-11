@@ -24,7 +24,8 @@ jobs:
                 cd hadoop-hive-processing
                 docker compose -f docker-compose.yml up -d --build
                 echo " Waiting for services to start..."
-                slepp 15
+                sleep 30
+
             - name: Check Running Containers
               run: docker ps
 
