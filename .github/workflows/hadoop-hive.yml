@@ -4,7 +4,7 @@ on:
     push:
         branches: [master,main]
         paths:
-            - hadoop_hive_processing/**
+            - hadoop-hive-processing/**
     pull_request:
         branches: [main]
 jobs:
