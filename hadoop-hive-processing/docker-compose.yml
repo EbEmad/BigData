@@ -112,5 +112,4 @@ volumes:
 
 networks:
   hbase:
-    external:
-      name: hbase
+    driver: bridge
