@@ -85,6 +85,12 @@ spark-submit streaming_job.py
    ```bash
    git clone https://github.com/EbEmad/BigData.git
    cd BigData
-```
+    ```
 
+# Learning Objectives
+
+- Use **Hadoop & Hive** for analytics  
+- Build **Spark batch ETL pipelines**  
+- Implement **real-time streaming** with Spark Streaming  
+- Integrate **Big Data tools** for end-to-end solutions  
 
