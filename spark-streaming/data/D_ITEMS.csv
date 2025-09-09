@@ -1,0 +1,501 @@
+ROW_ID,ITEMID,LABEL,ABBREVIATION,DBSOURCE,LINKSTO,CATEGORY,UNITNAME,PARAM_TYPE,CONCEPTID
+1,220045,Heart Rate 0,HR0,metavision,chartevents,Vital Signs,bpm,Numeric,220045
+2,220179,Non Invasive Blood Pressure systolic 1,NBPs1,metavision,chartevents,Vital Signs,mmHg,Numeric,220179
+3,220277,SpO2 2,SpO22,metavision,chartevents,Vital Signs,%,Numeric,220277
+4,223762,Temperature 3,TEMP3,metavision,chartevents,Vital Signs,C,Numeric,223762
+5,220046,Heart Rate 4,HR4,metavision,chartevents,Vital Signs,bpm,Numeric,220046
+6,220180,Non Invasive Blood Pressure systolic 5,NBPs5,metavision,chartevents,Vital Signs,mmHg,Numeric,220180
+7,220278,SpO2 6,SpO26,metavision,chartevents,Vital Signs,%,Numeric,220278
+8,223763,Temperature 7,TEMP7,metavision,chartevents,Vital Signs,C,Numeric,223763
+9,220047,Heart Rate 8,HR8,metavision,chartevents,Vital Signs,bpm,Numeric,220047
+10,220181,Non Invasive Blood Pressure systolic 9,NBPs9,metavision,chartevents,Vital Signs,mmHg,Numeric,220181
+11,220279,SpO2 10,SpO210,metavision,chartevents,Vital Signs,%,Numeric,220279
+12,223764,Temperature 11,TEMP11,metavision,chartevents,Vital Signs,C,Numeric,223764
+13,220048,Heart Rate 12,HR12,metavision,chartevents,Vital Signs,bpm,Numeric,220048
+14,220182,Non Invasive Blood Pressure systolic 13,NBPs13,metavision,chartevents,Vital Signs,mmHg,Numeric,220182
+15,220280,SpO2 14,SpO214,metavision,chartevents,Vital Signs,%,Numeric,220280
+16,223765,Temperature 15,TEMP15,metavision,chartevents,Vital Signs,C,Numeric,223765
+17,220049,Heart Rate 16,HR16,metavision,chartevents,Vital Signs,bpm,Numeric,220049
+18,220183,Non Invasive Blood Pressure systolic 17,NBPs17,metavision,chartevents,Vital Signs,mmHg,Numeric,220183
+19,220281,SpO2 18,SpO218,metavision,chartevents,Vital Signs,%,Numeric,220281
+20,223766,Temperature 19,TEMP19,metavision,chartevents,Vital Signs,C,Numeric,223766
+21,220050,Heart Rate 20,HR20,metavision,chartevents,Vital Signs,bpm,Numeric,220050
+22,220184,Non Invasive Blood Pressure systolic 21,NBPs21,metavision,chartevents,Vital Signs,mmHg,Numeric,220184
+23,220282,SpO2 22,SpO222,metavision,chartevents,Vital Signs,%,Numeric,220282
+24,223767,Temperature 23,TEMP23,metavision,chartevents,Vital Signs,C,Numeric,223767
+25,220051,Heart Rate 24,HR24,metavision,chartevents,Vital Signs,bpm,Numeric,220051
+26,220185,Non Invasive Blood Pressure systolic 25,NBPs25,metavision,chartevents,Vital Signs,mmHg,Numeric,220185
+27,220283,SpO2 26,SpO226,metavision,chartevents,Vital Signs,%,Numeric,220283
+28,223768,Temperature 27,TEMP27,metavision,chartevents,Vital Signs,C,Numeric,223768
+29,220052,Heart Rate 28,HR28,metavision,chartevents,Vital Signs,bpm,Numeric,220052
+30,220186,Non Invasive Blood Pressure systolic 29,NBPs29,metavision,chartevents,Vital Signs,mmHg,Numeric,220186
+31,220284,SpO2 30,SpO230,metavision,chartevents,Vital Signs,%,Numeric,220284
+32,223769,Temperature 31,TEMP31,metavision,chartevents,Vital Signs,C,Numeric,223769
+33,220053,Heart Rate 32,HR32,metavision,chartevents,Vital Signs,bpm,Numeric,220053
+34,220187,Non Invasive Blood Pressure systolic 33,NBPs33,metavision,chartevents,Vital Signs,mmHg,Numeric,220187
+35,220285,SpO2 34,SpO234,metavision,chartevents,Vital Signs,%,Numeric,220285
+36,223770,Temperature 35,TEMP35,metavision,chartevents,Vital Signs,C,Numeric,223770
+37,220054,Heart Rate 36,HR36,metavision,chartevents,Vital Signs,bpm,Numeric,220054
+38,220188,Non Invasive Blood Pressure systolic 37,NBPs37,metavision,chartevents,Vital Signs,mmHg,Numeric,220188
+39,220286,SpO2 38,SpO238,metavision,chartevents,Vital Signs,%,Numeric,220286
+40,223771,Temperature 39,TEMP39,metavision,chartevents,Vital Signs,C,Numeric,223771
+41,220055,Heart Rate 40,HR40,metavision,chartevents,Vital Signs,bpm,Numeric,220055
+42,220189,Non Invasive Blood Pressure systolic 41,NBPs41,metavision,chartevents,Vital Signs,mmHg,Numeric,220189
+43,220287,SpO2 42,SpO242,metavision,chartevents,Vital Signs,%,Numeric,220287
+44,223772,Temperature 43,TEMP43,metavision,chartevents,Vital Signs,C,Numeric,223772
+45,220056,Heart Rate 44,HR44,metavision,chartevents,Vital Signs,bpm,Numeric,220056
+46,220190,Non Invasive Blood Pressure systolic 45,NBPs45,metavision,chartevents,Vital Signs,mmHg,Numeric,220190
+47,220288,SpO2 46,SpO246,metavision,chartevents,Vital Signs,%,Numeric,220288
+48,223773,Temperature 47,TEMP47,metavision,chartevents,Vital Signs,C,Numeric,223773
+49,220057,Heart Rate 48,HR48,metavision,chartevents,Vital Signs,bpm,Numeric,220057
+50,220191,Non Invasive Blood Pressure systolic 49,NBPs49,metavision,chartevents,Vital Signs,mmHg,Numeric,220191
+51,220289,SpO2 50,SpO250,metavision,chartevents,Vital Signs,%,Numeric,220289
+52,223774,Temperature 51,TEMP51,metavision,chartevents,Vital Signs,C,Numeric,223774
+53,220058,Heart Rate 52,HR52,metavision,chartevents,Vital Signs,bpm,Numeric,220058
+54,220192,Non Invasive Blood Pressure systolic 53,NBPs53,metavision,chartevents,Vital Signs,mmHg,Numeric,220192
+55,220290,SpO2 54,SpO254,metavision,chartevents,Vital Signs,%,Numeric,220290
+56,223775,Temperature 55,TEMP55,metavision,chartevents,Vital Signs,C,Numeric,223775
+57,220059,Heart Rate 56,HR56,metavision,chartevents,Vital Signs,bpm,Numeric,220059
+58,220193,Non Invasive Blood Pressure systolic 57,NBPs57,metavision,chartevents,Vital Signs,mmHg,Numeric,220193
+59,220291,SpO2 58,SpO258,metavision,chartevents,Vital Signs,%,Numeric,220291
+60,223776,Temperature 59,TEMP59,metavision,chartevents,Vital Signs,C,Numeric,223776
+61,220060,Heart Rate 60,HR60,metavision,chartevents,Vital Signs,bpm,Numeric,220060
+62,220194,Non Invasive Blood Pressure systolic 61,NBPs61,metavision,chartevents,Vital Signs,mmHg,Numeric,220194
+63,220292,SpO2 62,SpO262,metavision,chartevents,Vital Signs,%,Numeric,220292
+64,223777,Temperature 63,TEMP63,metavision,chartevents,Vital Signs,C,Numeric,223777
+65,220061,Heart Rate 64,HR64,metavision,chartevents,Vital Signs,bpm,Numeric,220061
+66,220195,Non Invasive Blood Pressure systolic 65,NBPs65,metavision,chartevents,Vital Signs,mmHg,Numeric,220195
+67,220293,SpO2 66,SpO266,metavision,chartevents,Vital Signs,%,Numeric,220293
+68,223778,Temperature 67,TEMP67,metavision,chartevents,Vital Signs,C,Numeric,223778
+69,220062,Heart Rate 68,HR68,metavision,chartevents,Vital Signs,bpm,Numeric,220062
+70,220196,Non Invasive Blood Pressure systolic 69,NBPs69,metavision,chartevents,Vital Signs,mmHg,Numeric,220196
+71,220294,SpO2 70,SpO270,metavision,chartevents,Vital Signs,%,Numeric,220294
+72,223779,Temperature 71,TEMP71,metavision,chartevents,Vital Signs,C,Numeric,223779
+73,220063,Heart Rate 72,HR72,metavision,chartevents,Vital Signs,bpm,Numeric,220063
+74,220197,Non Invasive Blood Pressure systolic 73,NBPs73,metavision,chartevents,Vital Signs,mmHg,Numeric,220197
+75,220295,SpO2 74,SpO274,metavision,chartevents,Vital Signs,%,Numeric,220295
+76,223780,Temperature 75,TEMP75,metavision,chartevents,Vital Signs,C,Numeric,223780
+77,220064,Heart Rate 76,HR76,metavision,chartevents,Vital Signs,bpm,Numeric,220064
+78,220198,Non Invasive Blood Pressure systolic 77,NBPs77,metavision,chartevents,Vital Signs,mmHg,Numeric,220198
+79,220296,SpO2 78,SpO278,metavision,chartevents,Vital Signs,%,Numeric,220296
+80,223781,Temperature 79,TEMP79,metavision,chartevents,Vital Signs,C,Numeric,223781
+81,220065,Heart Rate 80,HR80,metavision,chartevents,Vital Signs,bpm,Numeric,220065
+82,220199,Non Invasive Blood Pressure systolic 81,NBPs81,metavision,chartevents,Vital Signs,mmHg,Numeric,220199
+83,220297,SpO2 82,SpO282,metavision,chartevents,Vital Signs,%,Numeric,220297
+84,223782,Temperature 83,TEMP83,metavision,chartevents,Vital Signs,C,Numeric,223782
+85,220066,Heart Rate 84,HR84,metavision,chartevents,Vital Signs,bpm,Numeric,220066
+86,220200,Non Invasive Blood Pressure systolic 85,NBPs85,metavision,chartevents,Vital Signs,mmHg,Numeric,220200
+87,220298,SpO2 86,SpO286,metavision,chartevents,Vital Signs,%,Numeric,220298
+88,223783,Temperature 87,TEMP87,metavision,chartevents,Vital Signs,C,Numeric,223783
+89,220067,Heart Rate 88,HR88,metavision,chartevents,Vital Signs,bpm,Numeric,220067
+90,220201,Non Invasive Blood Pressure systolic 89,NBPs89,metavision,chartevents,Vital Signs,mmHg,Numeric,220201
+91,220299,SpO2 90,SpO290,metavision,chartevents,Vital Signs,%,Numeric,220299
+92,223784,Temperature 91,TEMP91,metavision,chartevents,Vital Signs,C,Numeric,223784
+93,220068,Heart Rate 92,HR92,metavision,chartevents,Vital Signs,bpm,Numeric,220068
+94,220202,Non Invasive Blood Pressure systolic 93,NBPs93,metavision,chartevents,Vital Signs,mmHg,Numeric,220202
+95,220300,SpO2 94,SpO294,metavision,chartevents,Vital Signs,%,Numeric,220300
+96,223785,Temperature 95,TEMP95,metavision,chartevents,Vital Signs,C,Numeric,223785
+97,220069,Heart Rate 96,HR96,metavision,chartevents,Vital Signs,bpm,Numeric,220069
+98,220203,Non Invasive Blood Pressure systolic 97,NBPs97,metavision,chartevents,Vital Signs,mmHg,Numeric,220203
+99,220301,SpO2 98,SpO298,metavision,chartevents,Vital Signs,%,Numeric,220301
+100,223786,Temperature 99,TEMP99,metavision,chartevents,Vital Signs,C,Numeric,223786
+101,220070,Heart Rate 100,HR100,metavision,chartevents,Vital Signs,bpm,Numeric,220070
+102,220204,Non Invasive Blood Pressure systolic 101,NBPs101,metavision,chartevents,Vital Signs,mmHg,Numeric,220204
+103,220302,SpO2 102,SpO2102,metavision,chartevents,Vital Signs,%,Numeric,220302
+104,223787,Temperature 103,TEMP103,metavision,chartevents,Vital Signs,C,Numeric,223787
+105,220071,Heart Rate 104,HR104,metavision,chartevents,Vital Signs,bpm,Numeric,220071
+106,220205,Non Invasive Blood Pressure systolic 105,NBPs105,metavision,chartevents,Vital Signs,mmHg,Numeric,220205
+107,220303,SpO2 106,SpO2106,metavision,chartevents,Vital Signs,%,Numeric,220303
+108,223788,Temperature 107,TEMP107,metavision,chartevents,Vital Signs,C,Numeric,223788
+109,220072,Heart Rate 108,HR108,metavision,chartevents,Vital Signs,bpm,Numeric,220072
+110,220206,Non Invasive Blood Pressure systolic 109,NBPs109,metavision,chartevents,Vital Signs,mmHg,Numeric,220206
+111,220304,SpO2 110,SpO2110,metavision,chartevents,Vital Signs,%,Numeric,220304
+112,223789,Temperature 111,TEMP111,metavision,chartevents,Vital Signs,C,Numeric,223789
+113,220073,Heart Rate 112,HR112,metavision,chartevents,Vital Signs,bpm,Numeric,220073
+114,220207,Non Invasive Blood Pressure systolic 113,NBPs113,metavision,chartevents,Vital Signs,mmHg,Numeric,220207
+115,220305,SpO2 114,SpO2114,metavision,chartevents,Vital Signs,%,Numeric,220305
+116,223790,Temperature 115,TEMP115,metavision,chartevents,Vital Signs,C,Numeric,223790
+117,220074,Heart Rate 116,HR116,metavision,chartevents,Vital Signs,bpm,Numeric,220074
+118,220208,Non Invasive Blood Pressure systolic 117,NBPs117,metavision,chartevents,Vital Signs,mmHg,Numeric,220208
+119,220306,SpO2 118,SpO2118,metavision,chartevents,Vital Signs,%,Numeric,220306
+120,223791,Temperature 119,TEMP119,metavision,chartevents,Vital Signs,C,Numeric,223791
+121,220075,Heart Rate 120,HR120,metavision,chartevents,Vital Signs,bpm,Numeric,220075
+122,220209,Non Invasive Blood Pressure systolic 121,NBPs121,metavision,chartevents,Vital Signs,mmHg,Numeric,220209
+123,220307,SpO2 122,SpO2122,metavision,chartevents,Vital Signs,%,Numeric,220307
+124,223792,Temperature 123,TEMP123,metavision,chartevents,Vital Signs,C,Numeric,223792
+125,220076,Heart Rate 124,HR124,metavision,chartevents,Vital Signs,bpm,Numeric,220076
+126,220210,Non Invasive Blood Pressure systolic 125,NBPs125,metavision,chartevents,Vital Signs,mmHg,Numeric,220210
+127,220308,SpO2 126,SpO2126,metavision,chartevents,Vital Signs,%,Numeric,220308
+128,223793,Temperature 127,TEMP127,metavision,chartevents,Vital Signs,C,Numeric,223793
+129,220077,Heart Rate 128,HR128,metavision,chartevents,Vital Signs,bpm,Numeric,220077
+130,220211,Non Invasive Blood Pressure systolic 129,NBPs129,metavision,chartevents,Vital Signs,mmHg,Numeric,220211
+131,220309,SpO2 130,SpO2130,metavision,chartevents,Vital Signs,%,Numeric,220309
+132,223794,Temperature 131,TEMP131,metavision,chartevents,Vital Signs,C,Numeric,223794
+133,220078,Heart Rate 132,HR132,metavision,chartevents,Vital Signs,bpm,Numeric,220078
+134,220212,Non Invasive Blood Pressure systolic 133,NBPs133,metavision,chartevents,Vital Signs,mmHg,Numeric,220212
+135,220310,SpO2 134,SpO2134,metavision,chartevents,Vital Signs,%,Numeric,220310
+136,223795,Temperature 135,TEMP135,metavision,chartevents,Vital Signs,C,Numeric,223795
+137,220079,Heart Rate 136,HR136,metavision,chartevents,Vital Signs,bpm,Numeric,220079
+138,220213,Non Invasive Blood Pressure systolic 137,NBPs137,metavision,chartevents,Vital Signs,mmHg,Numeric,220213
+139,220311,SpO2 138,SpO2138,metavision,chartevents,Vital Signs,%,Numeric,220311
+140,223796,Temperature 139,TEMP139,metavision,chartevents,Vital Signs,C,Numeric,223796
+141,220080,Heart Rate 140,HR140,metavision,chartevents,Vital Signs,bpm,Numeric,220080
+142,220214,Non Invasive Blood Pressure systolic 141,NBPs141,metavision,chartevents,Vital Signs,mmHg,Numeric,220214
+143,220312,SpO2 142,SpO2142,metavision,chartevents,Vital Signs,%,Numeric,220312
+144,223797,Temperature 143,TEMP143,metavision,chartevents,Vital Signs,C,Numeric,223797
+145,220081,Heart Rate 144,HR144,metavision,chartevents,Vital Signs,bpm,Numeric,220081
+146,220215,Non Invasive Blood Pressure systolic 145,NBPs145,metavision,chartevents,Vital Signs,mmHg,Numeric,220215
+147,220313,SpO2 146,SpO2146,metavision,chartevents,Vital Signs,%,Numeric,220313
+148,223798,Temperature 147,TEMP147,metavision,chartevents,Vital Signs,C,Numeric,223798
+149,220082,Heart Rate 148,HR148,metavision,chartevents,Vital Signs,bpm,Numeric,220082
+150,220216,Non Invasive Blood Pressure systolic 149,NBPs149,metavision,chartevents,Vital Signs,mmHg,Numeric,220216
+151,220314,SpO2 150,SpO2150,metavision,chartevents,Vital Signs,%,Numeric,220314
+152,223799,Temperature 151,TEMP151,metavision,chartevents,Vital Signs,C,Numeric,223799
+153,220083,Heart Rate 152,HR152,metavision,chartevents,Vital Signs,bpm,Numeric,220083
+154,220217,Non Invasive Blood Pressure systolic 153,NBPs153,metavision,chartevents,Vital Signs,mmHg,Numeric,220217
+155,220315,SpO2 154,SpO2154,metavision,chartevents,Vital Signs,%,Numeric,220315
+156,223800,Temperature 155,TEMP155,metavision,chartevents,Vital Signs,C,Numeric,223800
+157,220084,Heart Rate 156,HR156,metavision,chartevents,Vital Signs,bpm,Numeric,220084
+158,220218,Non Invasive Blood Pressure systolic 157,NBPs157,metavision,chartevents,Vital Signs,mmHg,Numeric,220218
+159,220316,SpO2 158,SpO2158,metavision,chartevents,Vital Signs,%,Numeric,220316
+160,223801,Temperature 159,TEMP159,metavision,chartevents,Vital Signs,C,Numeric,223801
+161,220085,Heart Rate 160,HR160,metavision,chartevents,Vital Signs,bpm,Numeric,220085
+162,220219,Non Invasive Blood Pressure systolic 161,NBPs161,metavision,chartevents,Vital Signs,mmHg,Numeric,220219
+163,220317,SpO2 162,SpO2162,metavision,chartevents,Vital Signs,%,Numeric,220317
+164,223802,Temperature 163,TEMP163,metavision,chartevents,Vital Signs,C,Numeric,223802
+165,220086,Heart Rate 164,HR164,metavision,chartevents,Vital Signs,bpm,Numeric,220086
+166,220220,Non Invasive Blood Pressure systolic 165,NBPs165,metavision,chartevents,Vital Signs,mmHg,Numeric,220220
+167,220318,SpO2 166,SpO2166,metavision,chartevents,Vital Signs,%,Numeric,220318
+168,223803,Temperature 167,TEMP167,metavision,chartevents,Vital Signs,C,Numeric,223803
+169,220087,Heart Rate 168,HR168,metavision,chartevents,Vital Signs,bpm,Numeric,220087
+170,220221,Non Invasive Blood Pressure systolic 169,NBPs169,metavision,chartevents,Vital Signs,mmHg,Numeric,220221
+171,220319,SpO2 170,SpO2170,metavision,chartevents,Vital Signs,%,Numeric,220319
+172,223804,Temperature 171,TEMP171,metavision,chartevents,Vital Signs,C,Numeric,223804
+173,220088,Heart Rate 172,HR172,metavision,chartevents,Vital Signs,bpm,Numeric,220088
+174,220222,Non Invasive Blood Pressure systolic 173,NBPs173,metavision,chartevents,Vital Signs,mmHg,Numeric,220222
+175,220320,SpO2 174,SpO2174,metavision,chartevents,Vital Signs,%,Numeric,220320
+176,223805,Temperature 175,TEMP175,metavision,chartevents,Vital Signs,C,Numeric,223805
+177,220089,Heart Rate 176,HR176,metavision,chartevents,Vital Signs,bpm,Numeric,220089
+178,220223,Non Invasive Blood Pressure systolic 177,NBPs177,metavision,chartevents,Vital Signs,mmHg,Numeric,220223
+179,220321,SpO2 178,SpO2178,metavision,chartevents,Vital Signs,%,Numeric,220321
+180,223806,Temperature 179,TEMP179,metavision,chartevents,Vital Signs,C,Numeric,223806
+181,220090,Heart Rate 180,HR180,metavision,chartevents,Vital Signs,bpm,Numeric,220090
+182,220224,Non Invasive Blood Pressure systolic 181,NBPs181,metavision,chartevents,Vital Signs,mmHg,Numeric,220224
+183,220322,SpO2 182,SpO2182,metavision,chartevents,Vital Signs,%,Numeric,220322
+184,223807,Temperature 183,TEMP183,metavision,chartevents,Vital Signs,C,Numeric,223807
+185,220091,Heart Rate 184,HR184,metavision,chartevents,Vital Signs,bpm,Numeric,220091
+186,220225,Non Invasive Blood Pressure systolic 185,NBPs185,metavision,chartevents,Vital Signs,mmHg,Numeric,220225
+187,220323,SpO2 186,SpO2186,metavision,chartevents,Vital Signs,%,Numeric,220323
+188,223808,Temperature 187,TEMP187,metavision,chartevents,Vital Signs,C,Numeric,223808
+189,220092,Heart Rate 188,HR188,metavision,chartevents,Vital Signs,bpm,Numeric,220092
+190,220226,Non Invasive Blood Pressure systolic 189,NBPs189,metavision,chartevents,Vital Signs,mmHg,Numeric,220226
+191,220324,SpO2 190,SpO2190,metavision,chartevents,Vital Signs,%,Numeric,220324
+192,223809,Temperature 191,TEMP191,metavision,chartevents,Vital Signs,C,Numeric,223809
+193,220093,Heart Rate 192,HR192,metavision,chartevents,Vital Signs,bpm,Numeric,220093
+194,220227,Non Invasive Blood Pressure systolic 193,NBPs193,metavision,chartevents,Vital Signs,mmHg,Numeric,220227
+195,220325,SpO2 194,SpO2194,metavision,chartevents,Vital Signs,%,Numeric,220325
+196,223810,Temperature 195,TEMP195,metavision,chartevents,Vital Signs,C,Numeric,223810
+197,220094,Heart Rate 196,HR196,metavision,chartevents,Vital Signs,bpm,Numeric,220094
+198,220228,Non Invasive Blood Pressure systolic 197,NBPs197,metavision,chartevents,Vital Signs,mmHg,Numeric,220228
+199,220326,SpO2 198,SpO2198,metavision,chartevents,Vital Signs,%,Numeric,220326
+200,223811,Temperature 199,TEMP199,metavision,chartevents,Vital Signs,C,Numeric,223811
+201,220095,Heart Rate 200,HR200,metavision,chartevents,Vital Signs,bpm,Numeric,220095
+202,220229,Non Invasive Blood Pressure systolic 201,NBPs201,metavision,chartevents,Vital Signs,mmHg,Numeric,220229
+203,220327,SpO2 202,SpO2202,metavision,chartevents,Vital Signs,%,Numeric,220327
+204,223812,Temperature 203,TEMP203,metavision,chartevents,Vital Signs,C,Numeric,223812
+205,220096,Heart Rate 204,HR204,metavision,chartevents,Vital Signs,bpm,Numeric,220096
+206,220230,Non Invasive Blood Pressure systolic 205,NBPs205,metavision,chartevents,Vital Signs,mmHg,Numeric,220230
+207,220328,SpO2 206,SpO2206,metavision,chartevents,Vital Signs,%,Numeric,220328
+208,223813,Temperature 207,TEMP207,metavision,chartevents,Vital Signs,C,Numeric,223813
+209,220097,Heart Rate 208,HR208,metavision,chartevents,Vital Signs,bpm,Numeric,220097
+210,220231,Non Invasive Blood Pressure systolic 209,NBPs209,metavision,chartevents,Vital Signs,mmHg,Numeric,220231
+211,220329,SpO2 210,SpO2210,metavision,chartevents,Vital Signs,%,Numeric,220329
+212,223814,Temperature 211,TEMP211,metavision,chartevents,Vital Signs,C,Numeric,223814
+213,220098,Heart Rate 212,HR212,metavision,chartevents,Vital Signs,bpm,Numeric,220098
+214,220232,Non Invasive Blood Pressure systolic 213,NBPs213,metavision,chartevents,Vital Signs,mmHg,Numeric,220232
+215,220330,SpO2 214,SpO2214,metavision,chartevents,Vital Signs,%,Numeric,220330
+216,223815,Temperature 215,TEMP215,metavision,chartevents,Vital Signs,C,Numeric,223815
+217,220099,Heart Rate 216,HR216,metavision,chartevents,Vital Signs,bpm,Numeric,220099
+218,220233,Non Invasive Blood Pressure systolic 217,NBPs217,metavision,chartevents,Vital Signs,mmHg,Numeric,220233
+219,220331,SpO2 218,SpO2218,metavision,chartevents,Vital Signs,%,Numeric,220331
+220,223816,Temperature 219,TEMP219,metavision,chartevents,Vital Signs,C,Numeric,223816
+221,220100,Heart Rate 220,HR220,metavision,chartevents,Vital Signs,bpm,Numeric,220100
+222,220234,Non Invasive Blood Pressure systolic 221,NBPs221,metavision,chartevents,Vital Signs,mmHg,Numeric,220234
+223,220332,SpO2 222,SpO2222,metavision,chartevents,Vital Signs,%,Numeric,220332
+224,223817,Temperature 223,TEMP223,metavision,chartevents,Vital Signs,C,Numeric,223817
+225,220101,Heart Rate 224,HR224,metavision,chartevents,Vital Signs,bpm,Numeric,220101
+226,220235,Non Invasive Blood Pressure systolic 225,NBPs225,metavision,chartevents,Vital Signs,mmHg,Numeric,220235
+227,220333,SpO2 226,SpO2226,metavision,chartevents,Vital Signs,%,Numeric,220333
+228,223818,Temperature 227,TEMP227,metavision,chartevents,Vital Signs,C,Numeric,223818
+229,220102,Heart Rate 228,HR228,metavision,chartevents,Vital Signs,bpm,Numeric,220102
+230,220236,Non Invasive Blood Pressure systolic 229,NBPs229,metavision,chartevents,Vital Signs,mmHg,Numeric,220236
+231,220334,SpO2 230,SpO2230,metavision,chartevents,Vital Signs,%,Numeric,220334
+232,223819,Temperature 231,TEMP231,metavision,chartevents,Vital Signs,C,Numeric,223819
+233,220103,Heart Rate 232,HR232,metavision,chartevents,Vital Signs,bpm,Numeric,220103
+234,220237,Non Invasive Blood Pressure systolic 233,NBPs233,metavision,chartevents,Vital Signs,mmHg,Numeric,220237
+235,220335,SpO2 234,SpO2234,metavision,chartevents,Vital Signs,%,Numeric,220335
+236,223820,Temperature 235,TEMP235,metavision,chartevents,Vital Signs,C,Numeric,223820
+237,220104,Heart Rate 236,HR236,metavision,chartevents,Vital Signs,bpm,Numeric,220104
+238,220238,Non Invasive Blood Pressure systolic 237,NBPs237,metavision,chartevents,Vital Signs,mmHg,Numeric,220238
+239,220336,SpO2 238,SpO2238,metavision,chartevents,Vital Signs,%,Numeric,220336
+240,223821,Temperature 239,TEMP239,metavision,chartevents,Vital Signs,C,Numeric,223821
+241,220105,Heart Rate 240,HR240,metavision,chartevents,Vital Signs,bpm,Numeric,220105
+242,220239,Non Invasive Blood Pressure systolic 241,NBPs241,metavision,chartevents,Vital Signs,mmHg,Numeric,220239
+243,220337,SpO2 242,SpO2242,metavision,chartevents,Vital Signs,%,Numeric,220337
+244,223822,Temperature 243,TEMP243,metavision,chartevents,Vital Signs,C,Numeric,223822
+245,220106,Heart Rate 244,HR244,metavision,chartevents,Vital Signs,bpm,Numeric,220106
+246,220240,Non Invasive Blood Pressure systolic 245,NBPs245,metavision,chartevents,Vital Signs,mmHg,Numeric,220240
+247,220338,SpO2 246,SpO2246,metavision,chartevents,Vital Signs,%,Numeric,220338
+248,223823,Temperature 247,TEMP247,metavision,chartevents,Vital Signs,C,Numeric,223823
+249,220107,Heart Rate 248,HR248,metavision,chartevents,Vital Signs,bpm,Numeric,220107
+250,220241,Non Invasive Blood Pressure systolic 249,NBPs249,metavision,chartevents,Vital Signs,mmHg,Numeric,220241
+251,220339,SpO2 250,SpO2250,metavision,chartevents,Vital Signs,%,Numeric,220339
+252,223824,Temperature 251,TEMP251,metavision,chartevents,Vital Signs,C,Numeric,223824
+253,220108,Heart Rate 252,HR252,metavision,chartevents,Vital Signs,bpm,Numeric,220108
+254,220242,Non Invasive Blood Pressure systolic 253,NBPs253,metavision,chartevents,Vital Signs,mmHg,Numeric,220242
+255,220340,SpO2 254,SpO2254,metavision,chartevents,Vital Signs,%,Numeric,220340
+256,223825,Temperature 255,TEMP255,metavision,chartevents,Vital Signs,C,Numeric,223825
+257,220109,Heart Rate 256,HR256,metavision,chartevents,Vital Signs,bpm,Numeric,220109
+258,220243,Non Invasive Blood Pressure systolic 257,NBPs257,metavision,chartevents,Vital Signs,mmHg,Numeric,220243
+259,220341,SpO2 258,SpO2258,metavision,chartevents,Vital Signs,%,Numeric,220341
+260,223826,Temperature 259,TEMP259,metavision,chartevents,Vital Signs,C,Numeric,223826
+261,220110,Heart Rate 260,HR260,metavision,chartevents,Vital Signs,bpm,Numeric,220110
+262,220244,Non Invasive Blood Pressure systolic 261,NBPs261,metavision,chartevents,Vital Signs,mmHg,Numeric,220244
+263,220342,SpO2 262,SpO2262,metavision,chartevents,Vital Signs,%,Numeric,220342
+264,223827,Temperature 263,TEMP263,metavision,chartevents,Vital Signs,C,Numeric,223827
+265,220111,Heart Rate 264,HR264,metavision,chartevents,Vital Signs,bpm,Numeric,220111
+266,220245,Non Invasive Blood Pressure systolic 265,NBPs265,metavision,chartevents,Vital Signs,mmHg,Numeric,220245
+267,220343,SpO2 266,SpO2266,metavision,chartevents,Vital Signs,%,Numeric,220343
+268,223828,Temperature 267,TEMP267,metavision,chartevents,Vital Signs,C,Numeric,223828
+269,220112,Heart Rate 268,HR268,metavision,chartevents,Vital Signs,bpm,Numeric,220112
+270,220246,Non Invasive Blood Pressure systolic 269,NBPs269,metavision,chartevents,Vital Signs,mmHg,Numeric,220246
+271,220344,SpO2 270,SpO2270,metavision,chartevents,Vital Signs,%,Numeric,220344
+272,223829,Temperature 271,TEMP271,metavision,chartevents,Vital Signs,C,Numeric,223829
+273,220113,Heart Rate 272,HR272,metavision,chartevents,Vital Signs,bpm,Numeric,220113
+274,220247,Non Invasive Blood Pressure systolic 273,NBPs273,metavision,chartevents,Vital Signs,mmHg,Numeric,220247
+275,220345,SpO2 274,SpO2274,metavision,chartevents,Vital Signs,%,Numeric,220345
+276,223830,Temperature 275,TEMP275,metavision,chartevents,Vital Signs,C,Numeric,223830
+277,220114,Heart Rate 276,HR276,metavision,chartevents,Vital Signs,bpm,Numeric,220114
+278,220248,Non Invasive Blood Pressure systolic 277,NBPs277,metavision,chartevents,Vital Signs,mmHg,Numeric,220248
+279,220346,SpO2 278,SpO2278,metavision,chartevents,Vital Signs,%,Numeric,220346
+280,223831,Temperature 279,TEMP279,metavision,chartevents,Vital Signs,C,Numeric,223831
+281,220115,Heart Rate 280,HR280,metavision,chartevents,Vital Signs,bpm,Numeric,220115
+282,220249,Non Invasive Blood Pressure systolic 281,NBPs281,metavision,chartevents,Vital Signs,mmHg,Numeric,220249
+283,220347,SpO2 282,SpO2282,metavision,chartevents,Vital Signs,%,Numeric,220347
+284,223832,Temperature 283,TEMP283,metavision,chartevents,Vital Signs,C,Numeric,223832
+285,220116,Heart Rate 284,HR284,metavision,chartevents,Vital Signs,bpm,Numeric,220116
+286,220250,Non Invasive Blood Pressure systolic 285,NBPs285,metavision,chartevents,Vital Signs,mmHg,Numeric,220250
+287,220348,SpO2 286,SpO2286,metavision,chartevents,Vital Signs,%,Numeric,220348
+288,223833,Temperature 287,TEMP287,metavision,chartevents,Vital Signs,C,Numeric,223833
+289,220117,Heart Rate 288,HR288,metavision,chartevents,Vital Signs,bpm,Numeric,220117
+290,220251,Non Invasive Blood Pressure systolic 289,NBPs289,metavision,chartevents,Vital Signs,mmHg,Numeric,220251
+291,220349,SpO2 290,SpO2290,metavision,chartevents,Vital Signs,%,Numeric,220349
+292,223834,Temperature 291,TEMP291,metavision,chartevents,Vital Signs,C,Numeric,223834
+293,220118,Heart Rate 292,HR292,metavision,chartevents,Vital Signs,bpm,Numeric,220118
+294,220252,Non Invasive Blood Pressure systolic 293,NBPs293,metavision,chartevents,Vital Signs,mmHg,Numeric,220252
+295,220350,SpO2 294,SpO2294,metavision,chartevents,Vital Signs,%,Numeric,220350
+296,223835,Temperature 295,TEMP295,metavision,chartevents,Vital Signs,C,Numeric,223835
+297,220119,Heart Rate 296,HR296,metavision,chartevents,Vital Signs,bpm,Numeric,220119
+298,220253,Non Invasive Blood Pressure systolic 297,NBPs297,metavision,chartevents,Vital Signs,mmHg,Numeric,220253
+299,220351,SpO2 298,SpO2298,metavision,chartevents,Vital Signs,%,Numeric,220351
+300,223836,Temperature 299,TEMP299,metavision,chartevents,Vital Signs,C,Numeric,223836
+301,220120,Heart Rate 300,HR300,metavision,chartevents,Vital Signs,bpm,Numeric,220120
+302,220254,Non Invasive Blood Pressure systolic 301,NBPs301,metavision,chartevents,Vital Signs,mmHg,Numeric,220254
+303,220352,SpO2 302,SpO2302,metavision,chartevents,Vital Signs,%,Numeric,220352
+304,223837,Temperature 303,TEMP303,metavision,chartevents,Vital Signs,C,Numeric,223837
+305,220121,Heart Rate 304,HR304,metavision,chartevents,Vital Signs,bpm,Numeric,220121
+306,220255,Non Invasive Blood Pressure systolic 305,NBPs305,metavision,chartevents,Vital Signs,mmHg,Numeric,220255
+307,220353,SpO2 306,SpO2306,metavision,chartevents,Vital Signs,%,Numeric,220353
+308,223838,Temperature 307,TEMP307,metavision,chartevents,Vital Signs,C,Numeric,223838
+309,220122,Heart Rate 308,HR308,metavision,chartevents,Vital Signs,bpm,Numeric,220122
+310,220256,Non Invasive Blood Pressure systolic 309,NBPs309,metavision,chartevents,Vital Signs,mmHg,Numeric,220256
+311,220354,SpO2 310,SpO2310,metavision,chartevents,Vital Signs,%,Numeric,220354
+312,223839,Temperature 311,TEMP311,metavision,chartevents,Vital Signs,C,Numeric,223839
+313,220123,Heart Rate 312,HR312,metavision,chartevents,Vital Signs,bpm,Numeric,220123
+314,220257,Non Invasive Blood Pressure systolic 313,NBPs313,metavision,chartevents,Vital Signs,mmHg,Numeric,220257
+315,220355,SpO2 314,SpO2314,metavision,chartevents,Vital Signs,%,Numeric,220355
+316,223840,Temperature 315,TEMP315,metavision,chartevents,Vital Signs,C,Numeric,223840
+317,220124,Heart Rate 316,HR316,metavision,chartevents,Vital Signs,bpm,Numeric,220124
+318,220258,Non Invasive Blood Pressure systolic 317,NBPs317,metavision,chartevents,Vital Signs,mmHg,Numeric,220258
+319,220356,SpO2 318,SpO2318,metavision,chartevents,Vital Signs,%,Numeric,220356
+320,223841,Temperature 319,TEMP319,metavision,chartevents,Vital Signs,C,Numeric,223841
+321,220125,Heart Rate 320,HR320,metavision,chartevents,Vital Signs,bpm,Numeric,220125
+322,220259,Non Invasive Blood Pressure systolic 321,NBPs321,metavision,chartevents,Vital Signs,mmHg,Numeric,220259
+323,220357,SpO2 322,SpO2322,metavision,chartevents,Vital Signs,%,Numeric,220357
+324,223842,Temperature 323,TEMP323,metavision,chartevents,Vital Signs,C,Numeric,223842
+325,220126,Heart Rate 324,HR324,metavision,chartevents,Vital Signs,bpm,Numeric,220126
+326,220260,Non Invasive Blood Pressure systolic 325,NBPs325,metavision,chartevents,Vital Signs,mmHg,Numeric,220260
+327,220358,SpO2 326,SpO2326,metavision,chartevents,Vital Signs,%,Numeric,220358
+328,223843,Temperature 327,TEMP327,metavision,chartevents,Vital Signs,C,Numeric,223843
+329,220127,Heart Rate 328,HR328,metavision,chartevents,Vital Signs,bpm,Numeric,220127
+330,220261,Non Invasive Blood Pressure systolic 329,NBPs329,metavision,chartevents,Vital Signs,mmHg,Numeric,220261
+331,220359,SpO2 330,SpO2330,metavision,chartevents,Vital Signs,%,Numeric,220359
+332,223844,Temperature 331,TEMP331,metavision,chartevents,Vital Signs,C,Numeric,223844
+333,220128,Heart Rate 332,HR332,metavision,chartevents,Vital Signs,bpm,Numeric,220128
+334,220262,Non Invasive Blood Pressure systolic 333,NBPs333,metavision,chartevents,Vital Signs,mmHg,Numeric,220262
+335,220360,SpO2 334,SpO2334,metavision,chartevents,Vital Signs,%,Numeric,220360
+336,223845,Temperature 335,TEMP335,metavision,chartevents,Vital Signs,C,Numeric,223845
+337,220129,Heart Rate 336,HR336,metavision,chartevents,Vital Signs,bpm,Numeric,220129
+338,220263,Non Invasive Blood Pressure systolic 337,NBPs337,metavision,chartevents,Vital Signs,mmHg,Numeric,220263
+339,220361,SpO2 338,SpO2338,metavision,chartevents,Vital Signs,%,Numeric,220361
+340,223846,Temperature 339,TEMP339,metavision,chartevents,Vital Signs,C,Numeric,223846
+341,220130,Heart Rate 340,HR340,metavision,chartevents,Vital Signs,bpm,Numeric,220130
+342,220264,Non Invasive Blood Pressure systolic 341,NBPs341,metavision,chartevents,Vital Signs,mmHg,Numeric,220264
+343,220362,SpO2 342,SpO2342,metavision,chartevents,Vital Signs,%,Numeric,220362
+344,223847,Temperature 343,TEMP343,metavision,chartevents,Vital Signs,C,Numeric,223847
+345,220131,Heart Rate 344,HR344,metavision,chartevents,Vital Signs,bpm,Numeric,220131
+346,220265,Non Invasive Blood Pressure systolic 345,NBPs345,metavision,chartevents,Vital Signs,mmHg,Numeric,220265
+347,220363,SpO2 346,SpO2346,metavision,chartevents,Vital Signs,%,Numeric,220363
+348,223848,Temperature 347,TEMP347,metavision,chartevents,Vital Signs,C,Numeric,223848
+349,220132,Heart Rate 348,HR348,metavision,chartevents,Vital Signs,bpm,Numeric,220132
+350,220266,Non Invasive Blood Pressure systolic 349,NBPs349,metavision,chartevents,Vital Signs,mmHg,Numeric,220266
+351,220364,SpO2 350,SpO2350,metavision,chartevents,Vital Signs,%,Numeric,220364
+352,223849,Temperature 351,TEMP351,metavision,chartevents,Vital Signs,C,Numeric,223849
+353,220133,Heart Rate 352,HR352,metavision,chartevents,Vital Signs,bpm,Numeric,220133
+354,220267,Non Invasive Blood Pressure systolic 353,NBPs353,metavision,chartevents,Vital Signs,mmHg,Numeric,220267
+355,220365,SpO2 354,SpO2354,metavision,chartevents,Vital Signs,%,Numeric,220365
+356,223850,Temperature 355,TEMP355,metavision,chartevents,Vital Signs,C,Numeric,223850
+357,220134,Heart Rate 356,HR356,metavision,chartevents,Vital Signs,bpm,Numeric,220134
+358,220268,Non Invasive Blood Pressure systolic 357,NBPs357,metavision,chartevents,Vital Signs,mmHg,Numeric,220268
+359,220366,SpO2 358,SpO2358,metavision,chartevents,Vital Signs,%,Numeric,220366
+360,223851,Temperature 359,TEMP359,metavision,chartevents,Vital Signs,C,Numeric,223851
+361,220135,Heart Rate 360,HR360,metavision,chartevents,Vital Signs,bpm,Numeric,220135
+362,220269,Non Invasive Blood Pressure systolic 361,NBPs361,metavision,chartevents,Vital Signs,mmHg,Numeric,220269
+363,220367,SpO2 362,SpO2362,metavision,chartevents,Vital Signs,%,Numeric,220367
+364,223852,Temperature 363,TEMP363,metavision,chartevents,Vital Signs,C,Numeric,223852
+365,220136,Heart Rate 364,HR364,metavision,chartevents,Vital Signs,bpm,Numeric,220136
+366,220270,Non Invasive Blood Pressure systolic 365,NBPs365,metavision,chartevents,Vital Signs,mmHg,Numeric,220270
+367,220368,SpO2 366,SpO2366,metavision,chartevents,Vital Signs,%,Numeric,220368
+368,223853,Temperature 367,TEMP367,metavision,chartevents,Vital Signs,C,Numeric,223853
+369,220137,Heart Rate 368,HR368,metavision,chartevents,Vital Signs,bpm,Numeric,220137
+370,220271,Non Invasive Blood Pressure systolic 369,NBPs369,metavision,chartevents,Vital Signs,mmHg,Numeric,220271
+371,220369,SpO2 370,SpO2370,metavision,chartevents,Vital Signs,%,Numeric,220369
+372,223854,Temperature 371,TEMP371,metavision,chartevents,Vital Signs,C,Numeric,223854
+373,220138,Heart Rate 372,HR372,metavision,chartevents,Vital Signs,bpm,Numeric,220138
+374,220272,Non Invasive Blood Pressure systolic 373,NBPs373,metavision,chartevents,Vital Signs,mmHg,Numeric,220272
+375,220370,SpO2 374,SpO2374,metavision,chartevents,Vital Signs,%,Numeric,220370
+376,223855,Temperature 375,TEMP375,metavision,chartevents,Vital Signs,C,Numeric,223855
+377,220139,Heart Rate 376,HR376,metavision,chartevents,Vital Signs,bpm,Numeric,220139
+378,220273,Non Invasive Blood Pressure systolic 377,NBPs377,metavision,chartevents,Vital Signs,mmHg,Numeric,220273
+379,220371,SpO2 378,SpO2378,metavision,chartevents,Vital Signs,%,Numeric,220371
+380,223856,Temperature 379,TEMP379,metavision,chartevents,Vital Signs,C,Numeric,223856
+381,220140,Heart Rate 380,HR380,metavision,chartevents,Vital Signs,bpm,Numeric,220140
+382,220274,Non Invasive Blood Pressure systolic 381,NBPs381,metavision,chartevents,Vital Signs,mmHg,Numeric,220274
+383,220372,SpO2 382,SpO2382,metavision,chartevents,Vital Signs,%,Numeric,220372
+384,223857,Temperature 383,TEMP383,metavision,chartevents,Vital Signs,C,Numeric,223857
+385,220141,Heart Rate 384,HR384,metavision,chartevents,Vital Signs,bpm,Numeric,220141
+386,220275,Non Invasive Blood Pressure systolic 385,NBPs385,metavision,chartevents,Vital Signs,mmHg,Numeric,220275
+387,220373,SpO2 386,SpO2386,metavision,chartevents,Vital Signs,%,Numeric,220373
+388,223858,Temperature 387,TEMP387,metavision,chartevents,Vital Signs,C,Numeric,223858
+389,220142,Heart Rate 388,HR388,metavision,chartevents,Vital Signs,bpm,Numeric,220142
+390,220276,Non Invasive Blood Pressure systolic 389,NBPs389,metavision,chartevents,Vital Signs,mmHg,Numeric,220276
+391,220374,SpO2 390,SpO2390,metavision,chartevents,Vital Signs,%,Numeric,220374
+392,223859,Temperature 391,TEMP391,metavision,chartevents,Vital Signs,C,Numeric,223859
+393,220143,Heart Rate 392,HR392,metavision,chartevents,Vital Signs,bpm,Numeric,220143
+394,220277,Non Invasive Blood Pressure systolic 393,NBPs393,metavision,chartevents,Vital Signs,mmHg,Numeric,220277
+395,220375,SpO2 394,SpO2394,metavision,chartevents,Vital Signs,%,Numeric,220375
+396,223860,Temperature 395,TEMP395,metavision,chartevents,Vital Signs,C,Numeric,223860
+397,220144,Heart Rate 396,HR396,metavision,chartevents,Vital Signs,bpm,Numeric,220144
+398,220278,Non Invasive Blood Pressure systolic 397,NBPs397,metavision,chartevents,Vital Signs,mmHg,Numeric,220278
+399,220376,SpO2 398,SpO2398,metavision,chartevents,Vital Signs,%,Numeric,220376
+400,223861,Temperature 399,TEMP399,metavision,chartevents,Vital Signs,C,Numeric,223861
+401,220145,Heart Rate 400,HR400,metavision,chartevents,Vital Signs,bpm,Numeric,220145
+402,220279,Non Invasive Blood Pressure systolic 401,NBPs401,metavision,chartevents,Vital Signs,mmHg,Numeric,220279
+403,220377,SpO2 402,SpO2402,metavision,chartevents,Vital Signs,%,Numeric,220377
+404,223862,Temperature 403,TEMP403,metavision,chartevents,Vital Signs,C,Numeric,223862
+405,220146,Heart Rate 404,HR404,metavision,chartevents,Vital Signs,bpm,Numeric,220146
+406,220280,Non Invasive Blood Pressure systolic 405,NBPs405,metavision,chartevents,Vital Signs,mmHg,Numeric,220280
+407,220378,SpO2 406,SpO2406,metavision,chartevents,Vital Signs,%,Numeric,220378
+408,223863,Temperature 407,TEMP407,metavision,chartevents,Vital Signs,C,Numeric,223863
+409,220147,Heart Rate 408,HR408,metavision,chartevents,Vital Signs,bpm,Numeric,220147
+410,220281,Non Invasive Blood Pressure systolic 409,NBPs409,metavision,chartevents,Vital Signs,mmHg,Numeric,220281
+411,220379,SpO2 410,SpO2410,metavision,chartevents,Vital Signs,%,Numeric,220379
+412,223864,Temperature 411,TEMP411,metavision,chartevents,Vital Signs,C,Numeric,223864
+413,220148,Heart Rate 412,HR412,metavision,chartevents,Vital Signs,bpm,Numeric,220148
+414,220282,Non Invasive Blood Pressure systolic 413,NBPs413,metavision,chartevents,Vital Signs,mmHg,Numeric,220282
+415,220380,SpO2 414,SpO2414,metavision,chartevents,Vital Signs,%,Numeric,220380
+416,223865,Temperature 415,TEMP415,metavision,chartevents,Vital Signs,C,Numeric,223865
+417,220149,Heart Rate 416,HR416,metavision,chartevents,Vital Signs,bpm,Numeric,220149
+418,220283,Non Invasive Blood Pressure systolic 417,NBPs417,metavision,chartevents,Vital Signs,mmHg,Numeric,220283
+419,220381,SpO2 418,SpO2418,metavision,chartevents,Vital Signs,%,Numeric,220381
+420,223866,Temperature 419,TEMP419,metavision,chartevents,Vital Signs,C,Numeric,223866
+421,220150,Heart Rate 420,HR420,metavision,chartevents,Vital Signs,bpm,Numeric,220150
+422,220284,Non Invasive Blood Pressure systolic 421,NBPs421,metavision,chartevents,Vital Signs,mmHg,Numeric,220284
+423,220382,SpO2 422,SpO2422,metavision,chartevents,Vital Signs,%,Numeric,220382
+424,223867,Temperature 423,TEMP423,metavision,chartevents,Vital Signs,C,Numeric,223867
+425,220151,Heart Rate 424,HR424,metavision,chartevents,Vital Signs,bpm,Numeric,220151
+426,220285,Non Invasive Blood Pressure systolic 425,NBPs425,metavision,chartevents,Vital Signs,mmHg,Numeric,220285
+427,220383,SpO2 426,SpO2426,metavision,chartevents,Vital Signs,%,Numeric,220383
+428,223868,Temperature 427,TEMP427,metavision,chartevents,Vital Signs,C,Numeric,223868
+429,220152,Heart Rate 428,HR428,metavision,chartevents,Vital Signs,bpm,Numeric,220152
+430,220286,Non Invasive Blood Pressure systolic 429,NBPs429,metavision,chartevents,Vital Signs,mmHg,Numeric,220286
+431,220384,SpO2 430,SpO2430,metavision,chartevents,Vital Signs,%,Numeric,220384
+432,223869,Temperature 431,TEMP431,metavision,chartevents,Vital Signs,C,Numeric,223869
+433,220153,Heart Rate 432,HR432,metavision,chartevents,Vital Signs,bpm,Numeric,220153
+434,220287,Non Invasive Blood Pressure systolic 433,NBPs433,metavision,chartevents,Vital Signs,mmHg,Numeric,220287
+435,220385,SpO2 434,SpO2434,metavision,chartevents,Vital Signs,%,Numeric,220385
+436,223870,Temperature 435,TEMP435,metavision,chartevents,Vital Signs,C,Numeric,223870
+437,220154,Heart Rate 436,HR436,metavision,chartevents,Vital Signs,bpm,Numeric,220154
+438,220288,Non Invasive Blood Pressure systolic 437,NBPs437,metavision,chartevents,Vital Signs,mmHg,Numeric,220288
+439,220386,SpO2 438,SpO2438,metavision,chartevents,Vital Signs,%,Numeric,220386
+440,223871,Temperature 439,TEMP439,metavision,chartevents,Vital Signs,C,Numeric,223871
+441,220155,Heart Rate 440,HR440,metavision,chartevents,Vital Signs,bpm,Numeric,220155
+442,220289,Non Invasive Blood Pressure systolic 441,NBPs441,metavision,chartevents,Vital Signs,mmHg,Numeric,220289
+443,220387,SpO2 442,SpO2442,metavision,chartevents,Vital Signs,%,Numeric,220387
+444,223872,Temperature 443,TEMP443,metavision,chartevents,Vital Signs,C,Numeric,223872
+445,220156,Heart Rate 444,HR444,metavision,chartevents,Vital Signs,bpm,Numeric,220156
+446,220290,Non Invasive Blood Pressure systolic 445,NBPs445,metavision,chartevents,Vital Signs,mmHg,Numeric,220290
+447,220388,SpO2 446,SpO2446,metavision,chartevents,Vital Signs,%,Numeric,220388
+448,223873,Temperature 447,TEMP447,metavision,chartevents,Vital Signs,C,Numeric,223873
+449,220157,Heart Rate 448,HR448,metavision,chartevents,Vital Signs,bpm,Numeric,220157
+450,220291,Non Invasive Blood Pressure systolic 449,NBPs449,metavision,chartevents,Vital Signs,mmHg,Numeric,220291
+451,220389,SpO2 450,SpO2450,metavision,chartevents,Vital Signs,%,Numeric,220389
+452,223874,Temperature 451,TEMP451,metavision,chartevents,Vital Signs,C,Numeric,223874
+453,220158,Heart Rate 452,HR452,metavision,chartevents,Vital Signs,bpm,Numeric,220158
+454,220292,Non Invasive Blood Pressure systolic 453,NBPs453,metavision,chartevents,Vital Signs,mmHg,Numeric,220292
+455,220390,SpO2 454,SpO2454,metavision,chartevents,Vital Signs,%,Numeric,220390
+456,223875,Temperature 455,TEMP455,metavision,chartevents,Vital Signs,C,Numeric,223875
+457,220159,Heart Rate 456,HR456,metavision,chartevents,Vital Signs,bpm,Numeric,220159
+458,220293,Non Invasive Blood Pressure systolic 457,NBPs457,metavision,chartevents,Vital Signs,mmHg,Numeric,220293
+459,220391,SpO2 458,SpO2458,metavision,chartevents,Vital Signs,%,Numeric,220391
+460,223876,Temperature 459,TEMP459,metavision,chartevents,Vital Signs,C,Numeric,223876
+461,220160,Heart Rate 460,HR460,metavision,chartevents,Vital Signs,bpm,Numeric,220160
+462,220294,Non Invasive Blood Pressure systolic 461,NBPs461,metavision,chartevents,Vital Signs,mmHg,Numeric,220294
+463,220392,SpO2 462,SpO2462,metavision,chartevents,Vital Signs,%,Numeric,220392
+464,223877,Temperature 463,TEMP463,metavision,chartevents,Vital Signs,C,Numeric,223877
+465,220161,Heart Rate 464,HR464,metavision,chartevents,Vital Signs,bpm,Numeric,220161
+466,220295,Non Invasive Blood Pressure systolic 465,NBPs465,metavision,chartevents,Vital Signs,mmHg,Numeric,220295
+467,220393,SpO2 466,SpO2466,metavision,chartevents,Vital Signs,%,Numeric,220393
+468,223878,Temperature 467,TEMP467,metavision,chartevents,Vital Signs,C,Numeric,223878
+469,220162,Heart Rate 468,HR468,metavision,chartevents,Vital Signs,bpm,Numeric,220162
+470,220296,Non Invasive Blood Pressure systolic 469,NBPs469,metavision,chartevents,Vital Signs,mmHg,Numeric,220296
+471,220394,SpO2 470,SpO2470,metavision,chartevents,Vital Signs,%,Numeric,220394
+472,223879,Temperature 471,TEMP471,metavision,chartevents,Vital Signs,C,Numeric,223879
+473,220163,Heart Rate 472,HR472,metavision,chartevents,Vital Signs,bpm,Numeric,220163
+474,220297,Non Invasive Blood Pressure systolic 473,NBPs473,metavision,chartevents,Vital Signs,mmHg,Numeric,220297
+475,220395,SpO2 474,SpO2474,metavision,chartevents,Vital Signs,%,Numeric,220395
+476,223880,Temperature 475,TEMP475,metavision,chartevents,Vital Signs,C,Numeric,223880
+477,220164,Heart Rate 476,HR476,metavision,chartevents,Vital Signs,bpm,Numeric,220164
+478,220298,Non Invasive Blood Pressure systolic 477,NBPs477,metavision,chartevents,Vital Signs,mmHg,Numeric,220298
+479,220396,SpO2 478,SpO2478,metavision,chartevents,Vital Signs,%,Numeric,220396
+480,223881,Temperature 479,TEMP479,metavision,chartevents,Vital Signs,C,Numeric,223881
+481,220165,Heart Rate 480,HR480,metavision,chartevents,Vital Signs,bpm,Numeric,220165
+482,220299,Non Invasive Blood Pressure systolic 481,NBPs481,metavision,chartevents,Vital Signs,mmHg,Numeric,220299
+483,220397,SpO2 482,SpO2482,metavision,chartevents,Vital Signs,%,Numeric,220397
+484,223882,Temperature 483,TEMP483,metavision,chartevents,Vital Signs,C,Numeric,223882
+485,220166,Heart Rate 484,HR484,metavision,chartevents,Vital Signs,bpm,Numeric,220166
+486,220300,Non Invasive Blood Pressure systolic 485,NBPs485,metavision,chartevents,Vital Signs,mmHg,Numeric,220300
+487,220398,SpO2 486,SpO2486,metavision,chartevents,Vital Signs,%,Numeric,220398
+488,223883,Temperature 487,TEMP487,metavision,chartevents,Vital Signs,C,Numeric,223883
+489,220167,Heart Rate 488,HR488,metavision,chartevents,Vital Signs,bpm,Numeric,220167
+490,220301,Non Invasive Blood Pressure systolic 489,NBPs489,metavision,chartevents,Vital Signs,mmHg,Numeric,220301
+491,220399,SpO2 490,SpO2490,metavision,chartevents,Vital Signs,%,Numeric,220399
+492,223884,Temperature 491,TEMP491,metavision,chartevents,Vital Signs,C,Numeric,223884
+493,220168,Heart Rate 492,HR492,metavision,chartevents,Vital Signs,bpm,Numeric,220168
+494,220302,Non Invasive Blood Pressure systolic 493,NBPs493,metavision,chartevents,Vital Signs,mmHg,Numeric,220302
+495,220400,SpO2 494,SpO2494,metavision,chartevents,Vital Signs,%,Numeric,220400
+496,223885,Temperature 495,TEMP495,metavision,chartevents,Vital Signs,C,Numeric,223885
+497,220169,Heart Rate 496,HR496,metavision,chartevents,Vital Signs,bpm,Numeric,220169
+498,220303,Non Invasive Blood Pressure systolic 497,NBPs497,metavision,chartevents,Vital Signs,mmHg,Numeric,220303
+499,220401,SpO2 498,SpO2498,metavision,chartevents,Vital Signs,%,Numeric,220401
+500,223886,Temperature 499,TEMP499,metavision,chartevents,Vital Signs,C,Numeric,223886
