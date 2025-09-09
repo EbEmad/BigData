@@ -1,47 +1,31 @@
 version: '3.8'
 
 services:
-  zookeeper:
-    image: bitnami/zookeeper:latest
-    container_name: zookeeper
-    environment:
-      - ALLOW_ANONYMOUS_LOGIN=yes
-    healthcheck:
-      test: ["CMD", "echo", "ruok", "|", "nc", "-z", "localhost", "2181"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    ports:
-      - "2181:2181"
-    networks:
-      - spark-network
-
   kafka:
     build: ./kafka
     container_name: kafka
     environment:
-      - KAFKA_CFG_BROKER_ID=1
-      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
-      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
-      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,EXTERNAL://:29092
-      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:29092
-      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
-      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
-      - KAFKA_CFG_NUM_PARTITIONS=1
-      - KAFKA_CFG_DEFAULT_REPLICATION_FACTOR=1
+      - KAFKA_ENABLE_KRAFT=yes
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_CFG_PROCESS_ROLES=broker,controller
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka:9093
+      - KAFKA_CFG_LISTENERS=INTERNAL://:9092,CONTROLLER://:9093
+      - KAFKA_CFG_ADVERTISED_LISTENERS=INTERNAL://kafka:9092
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=INTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=INTERNAL
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+      - KAFKA_LOG_DIRS=/bitnami/kafka/data
       - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
     healthcheck:
-      test: ["CMD", "echo", "ruok", "|", "nc", "-z", "localhost", "2181"]
+      test: ["CMD-SHELL", "/opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list | cat"]
       interval: 10s
       timeout: 5s
       retries: 5
     ports:
       - "9092:9092"
-      - "29092:29092"
     networks:
-      - spark-network
-    depends_on:
-      - zookeeper
+      - stream-processing
     volumes:
       - .:/app
 
@@ -65,7 +49,7 @@ services:
     depends_on:
       - kafka
     networks:
-      - spark-network
+      - stream-processing
 
   spark-worker:
     image: docker.io/bitnami/spark:3
@@ -84,7 +68,22 @@ services:
     volumes:
       - .:/app
     networks:
-      - spark-network
+      - stream-processing
+  spark-submit:
+    image: docker.io/bitnami/spark:3
+    container_name: spark-submit
+    environment:
+      - SPARK_MODE=client
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - KAFKA_BROKERS=kafka:9092
+    depends_on:
+      - spark-master
+      - kafka
+    volumes:
+      - .:/app
+    networks:
+      - stream-processing
+    command: ["bash", "-lc", "tail -f /dev/null"]
   postgres:
     image: postgres:latest
     container_name: postgres
@@ -101,7 +100,7 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - spark-network
+      - stream-processing
 
   prometheus:
     image: prom/prometheus:latest
@@ -114,5 +113,5 @@ services:
       - spark-network
 
 networks:
-  spark-network:
+  stream-processing:
     driver: bridge
