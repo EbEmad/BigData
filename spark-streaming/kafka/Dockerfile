@@ -1,5 +1,5 @@
 # Use the Bitnami Kafka image that supports ZooKeeper
-FROM bitnami/kafka:3.6.1
+FROM bitnami/kafka:3.7
 
 # Switch to root user for installations
 USER root
