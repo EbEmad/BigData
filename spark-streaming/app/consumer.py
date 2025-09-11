@@ -4,7 +4,7 @@ import json
 import threading
 
 # Kafka Configuration
-KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
+KAFKA_BOOTSTRAP_SERVERS = 'kafka:9092'
 TOPIC_PATIENT_VITALS = 'patient-vitals'
 TOPIC_ABNORMAL_VITAL_SIGN = 'abnormal-vital-sign'
 

@@ -6,10 +6,10 @@ from kafka import KafkaProducer
 
 # Kafka configuration
 KAFKA_TOPIC = "patient-vitals"
-KAFKA_BROKER = "localhost:9092"  # Adjust to your Kafka setup
+KAFKA_BROKER = "kafka:9092"  # Adjust to your Kafka setup
 
 # File path to the dataset
-DATA_FILE = "/app/CHARTEVENTS.csv"
+DATA_FILE = "../data/patient_vitals_raw.csv"
 
 # Initialize Kafka producer
 producer = KafkaProducer(
@@ -18,7 +18,7 @@ producer = KafkaProducer(
 )
 
 # Chunk size for reading the file
-CHUNK_SIZE = 1000
+CHUNK_SIZE = 100
 
 def produce_vitals_from_csv(file_path, chunk_size):
     """
@@ -30,12 +30,12 @@ def produce_vitals_from_csv(file_path, chunk_size):
         for _, row in chunk.iterrows():
             # Create a dictionary for the vital sign record
             record = {
-                "subject_id": int(row["SUBJECT_ID"]),
-                "icustay_id": int(row["ICUSTAY_ID"]),
-                "charttime": row["CHARTTIME"],
-                "vital_sign": int(row["ITEMID"]),
-                "value": float(row["VALUENUM"]),
-                "unit": row["VALUEUOM"],
+                "subject_id": int(row["subject_id"]),
+                "icustay_id": int(row["icustay_id"]),
+                "charttime": row["charttime"],
+                "vital_sign": int(row["vital_sign"]),
+                "value": float(row["value"]),
+                "unit": row["unit"],
             }
 
             # Send record to Kafka
