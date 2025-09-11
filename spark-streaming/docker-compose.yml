@@ -28,9 +28,21 @@ services:
       - stream-processing
     volumes:
       - .:/app
+  kafka-ui:
+      image: provectuslabs/kafka-ui:latest
+      container_name: kafka-ui
+      environment:
+        - KAFKA_CLUSTERS_0_NAME=local
+        - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
+      ports:
+        - "8085:8080"
+      depends_on:
+        - kafka
+      networks:
+        - stream-processing
 
   spark-master:
-    image: docker.io/bitnami/spark:3
+    build: ./spark
     container_name: spark-master
     environment:
       - SPARK_MODE=master
@@ -44,15 +56,17 @@ services:
       - "8080:8080"
       - "7077:7077"
     volumes:
-      - .:/app
+      - ./app:/opt/bitnami/spark/app
+      - ./data:/opt/bitnami/spark/data
       - ./jars_dir:/opt/bitnami/spark/ivy:z
+
     depends_on:
       - kafka
     networks:
       - stream-processing
 
   spark-worker:
-    image: docker.io/bitnami/spark:3
+    build: ./spark
     container_name: spark-worker
     environment:
       - SPARK_MODE=worker
@@ -66,26 +80,30 @@ services:
     depends_on:
       - spark-master
     volumes:
-      - .:/app
+      - ./app:/opt/bitnami/spark/app
+      - ./data:/opt/bitnami/spark/data
       - ./jars_dir:/opt/bitnami/spark/ivy:z
     networks:
       - stream-processing
+
   spark-submit:
-    image: docker.io/bitnami/spark:3
+    build: ./spark
     container_name: spark-submit
     environment:
-      - SPARK_MODE=client
+      - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
       - KAFKA_BROKERS=kafka:9092
     depends_on:
       - spark-master
       - kafka
     volumes:
-      - .:/app
+      - ./app:/opt/bitnami/spark/app
+      - ./data:/opt/bitnami/spark/data
       - ./jars_dir:/opt/bitnami/spark/ivy:z
+    command: tail -f /dev/null
     networks:
       - stream-processing
-    command: ["bash", "-lc", "tail -f /dev/null"]
+
   postgres:
     image:  postgres:13
     container_name: postgres
