@@ -1,0 +1,32 @@
+scrape_configs:
+  - job_name: 'kafka-consumer'
+    static_configs:
+      - targets: ['kafka:8000']
+
+
+
+# scrape_configs:
+#   - job_name: 'pushgateway'
+#     honor_labels: true  # Preserve labels pushed to the gateway
+#     static_configs:
+#       - targets: ['pushgateway:9091']
+
+# # global:
+#   scrape_interval: 15s
+
+# scrape_configs:
+#   - job_name: 'flink_jobmanager'
+#     static_configs:
+#       - targets: ['jobmanager:9249']  # Flink Job Manager metrics
+
+#   - job_name: 'flink_taskmanager'
+#     static_configs:
+#       - targets: ['taskmanager:9250']  # Flink Task Manager metrics
+
+#   - job_name: 'kafka'
+#     static_configs:
+#       - targets: ['kafka:9092']  # Add a Kafka exporter if needed
+
+#   - job_name: 'prometheus'
+#     static_configs:
+#       - targets: ['localhost:9090']  # Prometheus itself

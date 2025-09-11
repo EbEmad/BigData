@@ -67,6 +67,7 @@ services:
       - spark-master
     volumes:
       - .:/app
+      - ./jars_dir:/opt/bitnami/spark/ivy:z
     networks:
       - stream-processing
   spark-submit:
@@ -81,11 +82,12 @@ services:
       - kafka
     volumes:
       - .:/app
+      - ./jars_dir:/opt/bitnami/spark/ivy:z
     networks:
       - stream-processing
     command: ["bash", "-lc", "tail -f /dev/null"]
   postgres:
-    image: postgres:latest
+    image:  postgres:13
     container_name: postgres
     environment:
       - POSTGRES_USER=user
@@ -110,7 +112,7 @@ services:
     ports:
       - "9090:9090"
     networks:
-      - spark-network
+      - stream-processing
 
 networks:
   stream-processing:
