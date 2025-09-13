@@ -70,7 +70,8 @@ services:
     container_name: spark-worker
     environment:
       - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_MASTER_URL=spark://spark-master:7077
+
       - SPARK_WORKER_MEMORY=1G
       - SPARK_WORKER_CORES=1
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
@@ -101,6 +102,7 @@ services:
       - ./data:/opt/bitnami/spark/data
       - ./jars_dir:/opt/bitnami/spark/ivy:z
     command: tail -f /dev/null
+
     networks:
       - stream-processing
 

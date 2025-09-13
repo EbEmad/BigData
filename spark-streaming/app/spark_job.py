@@ -1,4 +1,4 @@
-from spark.sql import SparkSession
+from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col, struct, to_json, when, broadcast, concat_ws, lit, window
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, TimestampType
 from pyspark.sql.functions import collect_list, array_join
@@ -34,7 +34,7 @@ def load_d_items(spark):
     return spark.read \
         .schema(d_items_schema) \
         .option("header","true") \
-        .csv("/data/D_ITEMS.csv") 
+        .csv("/opt/bitnami/spark/data/D_ITEMS.csv") 
 
 
 # Define schema for Kafka messages
@@ -64,7 +64,7 @@ spark=SparkSession.builder \
     .getOrCreate()
 
 # Set log level to reduce noise
-spark.sparkContext().setLogLevel("WARN")
+spark.sparkContext.setLogLevel("WARN")
 
 print('Spark Session created....')
 
