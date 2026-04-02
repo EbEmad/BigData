@@ -1,0 +1,144 @@
+services:
+  
+  pgbouncer:
+    image: edoburu/pgbouncer:latest
+    container_name: docs-pgbouncer
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      POOL_MODE: transaction
+      MAX_CLIENT_CONN: 1000
+      DEFAULT_POOL_SIZE: 50
+      RESERVE_POOL_SIZE: 10
+      AUTH_TYPE: scram-sha-256
+    ports:
+      - "6432:5432"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - docs-network
+    healthcheck:
+      test: [ "CMD-SHELL", "PGPASSWORD=${POSTGRES_PASSWORD} psql -h localhost -U ${POSTGRES_USER} -d ${POSTGRES_DB} -c 'SELECT 1' || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+  
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+
+
+    command:
+      - "postgres"
+      # WAL & Replication
+      - "-c"
+      - "wal_level=logical"
+      - "-c"
+      - "max_wal_senders=10"
+      - "-c"
+      - "max_replication_slots=10"
+
+      # Connection Settings
+      - "-c"
+      - "max_connections=200" # Increased from 100
+      - "-c"
+      - "superuser_reserved_connections=3"
+
+      # Memory Settings (Optimized for 2GB allocation)
+      - "-c"
+      - "shared_buffers=512MB" # Increased from 256MB (25% of RAM)
+      - "-c"
+      - "effective_cache_size=1536MB" # Increased from 1GB (75% of RAM)
+      - "-c"
+      - "work_mem=8MB" # Decreased from 16MB (avoid OOM)
+      - "-c"
+      - "maintenance_work_mem=128MB" # For VACUUM, CREATE INDEX
+      - "-c"
+      - "temp_buffers=16MB" # For temporary tables
+
+      # Query Planning
+      - "-c"
+      - "random_page_cost=1.1" # SSD optimization (default: 4.0)
+      - "-c"
+      - "effective_io_concurrency=200" # SSD optimization (default: 1)
+      - "-c"
+      - "default_statistics_target=100" # Better query plans
+
+      # Write Performance
+      - "-c"
+      - "wal_buffers=16MB" # WAL buffer size
+      - "-c"
+      - "checkpoint_completion_target=0.9" # Spread checkpoints
+      - "-c"
+      - "max_wal_size=1GB" # Increased from 1GB
+      - "-c"
+      - "min_wal_size=256MB"
+
+      # Parallel Query
+      - "-c"
+      - "max_worker_processes=4" # Use 4 CPU cores
+      - "-c"
+      - "max_parallel_workers_per_gather=2" # Parallel queries
+      - "-c"
+      - "max_parallel_workers=4"
+      - "-c"
+      - "max_parallel_maintenance_workers=2" # Parallel CREATE INDEX
+
+      # Logging (for debugging)
+      - "-c"
+      - "log_min_duration_statement=1000" # Log queries > 1 second
+      - "-c"
+      - "log_line_prefix=%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h "
+      - "-c"
+      - "log_checkpoints=on"
+      - "-c"
+      - "log_connections=on"
+      - "-c"
+      - "log_disconnections=on"
+      - "-c"
+      - "log_lock_waits=on" # Log lock waits
+
+      # Autovacuum (Prevent bloat)
+      - "-c"
+      - "autovacuum=on"
+      - "-c"
+      - "autovacuum_max_workers=3"
+      - "-c"
+      - "autovacuum_naptime=10s" # Check every 10 seconds
+
+      # Extensions
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+      - "-c"
+      - "pg_stat_statements.track=all"
+    networks:
+      - docs-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      interval: 10s
+      timeout: 10s
+      retries: 20
+
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 2G
+        reservations:
+          cpus: '2.0'
+          memory: 1G
+
+networks:
+  docs-network:
+    driver: bridge
