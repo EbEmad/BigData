@@ -24,6 +24,11 @@ graph TD
     
     User -->|View Dashboards| Grafana
 ```
+## Monitoring
+
+![alt text](img/fastapi.png)
+
+![alt text](img/node-exporter.png)
 
 ## Quick Start
 To start all services, run:
