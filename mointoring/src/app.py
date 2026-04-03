@@ -1,13 +1,13 @@
-from db.database import get_db,engine,Base
-from db.config import get_settings
-from db.schemes import Person
-from db.model import Persons
+from src.db.database import get_db,engine,Base
+from src.db.config import get_settings
+from src.db.schemes import Person
+from src.db.model import Persons
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from fastapi import Depends,FastAPI,Request, HTTPException
 import logging
 from contextlib import asynccontextmanager
-from utils.metrics import setup_metrics
+from src.utils.metrics import setup_metrics
 
 settings=get_settings()
 logging.basicConfig(level=logging.INFO)
