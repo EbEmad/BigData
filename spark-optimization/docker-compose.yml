@@ -1,0 +1,22 @@
+services:
+  spark:
+    image: tabulario/spark-iceberg:3.5.1_1.5.0
+    container_name: spark
+    volumes:
+      - ./notebooks:/home/iceberg/notebooks
+      - ./data:/home/iceberg/data
+      - ./conf/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
+    ports:
+      - 8888:8888  # Jupyter Notebook
+      - 4041:4041  # Spark UI
+      - 10000:10000  # Spark Thrift Server
+      - 10001:10001  # Spark History Server
+    environment:
+      - AWS_ACCESS_KEY_ID=admin
+      - AWS_SECRET_ACCESS_KEY=password
+      - AWS_REGION=us-east-1
+      - SPARK_SQL_CATALOG_NESSIE_WAREHOUSE=s3://warehouse/
+      - SPARK_SQL_CATALOG_NESSIE_REF=main
+      - SPARK_SQL_CATALOG_NESSIE_IO_IMPL=org.apache.iceberg.aws.s3.S3FileIO
+      - SPARK_SQL_CATALOG_NESSIE_S3_PATH_STYLE_ACCESS=true
+      - SPARK_SQL_CATALOG_NESSIE_CLIENT_REGION=us-east-1
