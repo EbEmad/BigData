@@ -119,7 +119,7 @@ services:
           cpus: '0.5'
           memory: 256M
 
-  document-service:
+  customer-service:
     build:
       context: .
       dockerfile: customer/Dockerfile
