@@ -7,8 +7,8 @@ from sqlalchemy.dialects.postgresql import UUID
 from .database import Base
 
 class Person(Base):
-    __tablename__ = "Person"
-    __table_args__: ClassVar[dict] = {"schema": "Persons"}
+    __tablename__ = "persons"
+    __table_args__: ClassVar[dict] = {"schema": "public"}
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid7)
     name=Column(String(255),nullable=False)

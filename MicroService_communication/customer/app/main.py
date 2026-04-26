@@ -1,7 +1,7 @@
 from fastapi import Depends,FastAPI,HTTPException,Request
 from sqlalchemy.ext.asyncio import AsyncSession
-from customer.app.db.config import get_settings
-from customer.app.db.database import get_db,engine,Base
+from db.config import get_settings
+from db.database import get_db,engine,Base
 from contextlib import asynccontextmanager
 from sqlalchemy import select
 from uuid import UUID
@@ -9,15 +9,15 @@ from uuid_extensions import uuid7
 import asyncio
 import logging
 
-from customer.app.db.schemes import PersonCreate,PersonResponse
-from customer.app.db.models import Person
+from db.schemes import PersonCreate,PersonResponse
+from db.models import Person
 settings=get_settings()
 logging.basicConfig(level=logging.INFO)
 logger=logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app:FastAPI):
-    logger.info(f"{settings.get_service_name} starting...")
+    logger.info(f"{settings.service_name} starting...")
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     
@@ -28,7 +28,7 @@ async def lifespan(app:FastAPI):
 
 
 
-app=FastAPI(title="Document Service",version="1.0.0",lifespan=lifespan)
+app=FastAPI(title="customer Service",version="1.0.0",lifespan=lifespan)
 
 
 @app.get("/health/live")
@@ -43,7 +43,7 @@ async def readiness(db:AsyncSession=Depends(get_db)):
     except Exception as e:
         logger.error(f"Readiness check failed: {e}")
         raise HTTPException(status_code=503, detail="Service is not ready")
-@app.post("/person",respose_model=PersonResponse,status_code=201)
+@app.post("/person",response_model=PersonResponse,status_code=201)
 async def create_person(person:PersonCreate,db:AsyncSession=Depends(get_db)):
     person_id=uuid7()
     obj=Person(

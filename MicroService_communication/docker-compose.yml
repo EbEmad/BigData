@@ -130,7 +130,7 @@ services:
     environment:
       - database_url=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
     volumes:
-      - ./customer/app/db:/app/db
+      - ./customer/app/:/app/
     depends_on:
       postgres:
         condition: service_healthy
