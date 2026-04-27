@@ -123,7 +123,7 @@ services:
     build:
       context: .
       dockerfile: customer/Dockerfile
-    container_name: docs-document-service
+    container_name: customer-service
     restart: unless-stopped
     ports:
       - "8005:8000"
@@ -144,6 +144,33 @@ services:
         reservations:
           cpus: '0.25'
           memory: 256M
+  
+  product-service:
+    build:
+      context: .
+      dockerfile: produc/Dockerfile
+    container_name: product-service
+    restart: unless-stopped
+    ports:
+      - "8002:8000"
+    environment:
+      - database_url=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    volumes:
+      - ./product/app/:/app/
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - docs-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5' # 0.5 CPU core (simulates t3.medium)
+          memory: 512M # 512 MB RAM
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
 
 networks:
   docs-network:
