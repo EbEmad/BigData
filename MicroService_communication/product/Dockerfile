@@ -9,10 +9,10 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+COPY product/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY services/signature/app .
+COPY product/app .
 # COPY services/protos ./protos
 # COPY services/signature/generate_protos.sh .
 # RUN chmod +x generate_protos.sh

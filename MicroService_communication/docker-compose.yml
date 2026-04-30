@@ -148,7 +148,7 @@ services:
   product-service:
     build:
       context: .
-      dockerfile: produc/Dockerfile
+      dockerfile: product/Dockerfile
     container_name: product-service
     restart: unless-stopped
     ports:
