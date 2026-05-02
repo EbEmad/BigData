@@ -1,45 +1,100 @@
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/big-data-europe/Lobby)
+# Hadoop & Hive Data Processing Pipeline
 
-# docker-hive
+A professional, automated data engineering pipeline for processing large datasets using Apache Hadoop, Hive, and Presto, orchestrated via Docker. This project demonstrates end-to-end data ingestion, preprocessing, and querying in a containerized Big Data environment.
 
-This is a docker container for Apache Hive 2.3.2. It is based on https://github.com/big-data-europe/docker-hadoop so check there for Hadoop configurations.
-This deploys Hive and starts a hiveserver2 on port 10000.
-Metastore is running with a connection to postgresql database.
-The hive configuration is performed with HIVE_SITE_CONF_ variables (see hadoop-hive.env for an example).
+##  Architecture & Data Flow
 
-To run Hive with postgresql metastore:
-```
-    docker-compose up -d
-```
+The following diagram illustrates the automated workflow from local data preprocessing to distributed querying.
 
-To deploy in Docker Swarm:
-```
-    docker stack deploy -c docker-compose.yml hive
-```
+```mermaid
+graph TD
+    subgraph Host ["Host Machine"]
+        P[main.py] -->|1. Preprocess| CSV[("ADMISSIONS.csv")]
+        CSV -->|2. Convert| PQ[("ADMISSIONS.parquet")]
+    end
 
-To run a PrestoDB 0.181 with Hive connector:
+    subgraph Cluster ["Dockerized Big Data Cluster"]
+        PQ -->|3. Docker CP| NN["Hadoop Namenode"]
+        NN -->|4. HDFS Put| HDFS[("/data (HDFS)")]
+        
+        HS["Hive Server 2"] -->|5. External Table| HDFS
+        HS -->|6. HiveQL Query| HDFS
+        
+        MS["Hive Metastore"] --- HS
+        DB[(PostgreSQL)] --- MS
+        
+        PC["Presto Coordinator"] -.->|Optional Query| HS
+    end
 
-```
-  docker-compose up -d presto-coordinator
-```
-
-This deploys a Presto server listens on port `8080`
-
-## Testing
-Load data into Hive:
-```
-  $ docker-compose exec hive-server bash
-  # /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
-  > CREATE TABLE pokes (foo INT, bar STRING);
-  > LOAD DATA LOCAL INPATH '/opt/hive/examples/files/kv1.txt' OVERWRITE INTO TABLE pokes;
+    DN["Hadoop Datanode"] --- NN
+    style Host fill:#fff,stroke:#333,stroke-width:2px
+    style Cluster fill:#fff,stroke:#333,stroke-width:2px
 ```
 
-Then query it from PrestoDB. You can get [presto.jar](https://prestosql.io/docs/current/installation/cli.html) from PrestoDB website:
+##  Technology Stack
+
+- **Orchestration**: Docker & Docker Compose
+- **Storage**: Apache Hadoop (HDFS 2.7.4)
+- **Data Warehouse**: Apache Hive (2.3.2)
+- **SQL Engine**: PrestoDB (0.181)
+- **Metadata Storage**: PostgreSQL (Metastore)
+- **Automation**: Python 3 (Pandas, Numpy)
+
+##  Getting Started
+
+### Prerequisites
+
+- Docker and Docker Compose
+- Python 3.x
+- `pandas` and `pyarrow` installed locally
+
+### 1. Start the Infrastructure
+
+Spin up the entire cluster using Docker Compose:
+
+```bash
+docker-compose up -d
 ```
-  $ wget https://repo1.maven.org/maven2/io/prestosql/presto-cli/308/presto-cli-308-executable.jar
-  $ mv presto-cli-308-executable.jar presto.jar
-  $ chmod +x presto.jar
-  $ ./presto.jar --server localhost:8080 --catalog hive --schema default
-  presto> select * from pokes;
+
+### 2. Run the Automated Pipeline
+
+The `main.py` script automates the entire lifecycle of the data processing:
+
+```bash
+python main.py
 ```
+
+**What the pipeline does:**
+1. **Preprocessing**: Cleans `ADMISSIONS.csv` and converts it to Parquet format.
+2. **Ingestion**: Transfers data into the `namenode` container and uploads it to HDFS.
+3. **Table Creation**: Dynamically creates external Hive tables pointing to the HDFS data.
+4. **Validation**: Runs sample HiveQL queries to verify data integrity.
+
+##  Manual Testing & Exploration
+
+### Accessing Hive (Beeline)
+
+```bash
+docker-compose exec hive-server bash
+/opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+```
+
+### Querying via Presto
+
+Presto is available on port `8080`. You can use the Presto CLI to query the Hive catalog:
+
+```bash
+./presto.jar --server localhost:8080 --catalog hive --schema default
+```
+
+##  Project Structure
+
+- `main.py`: Core automation script for the ETL pipeline.
+- `docker-compose.yml`: Infrastructure definition.
+- `hadoop-hive.env`: Environment configurations for the cluster.
+- `data/`: Local directory for source and processed data.
+- `conf/`: Custom configuration files for Hadoop and Hive.
+
+---
+*Developed as part of the Big Data Processing portfolio.*
 
