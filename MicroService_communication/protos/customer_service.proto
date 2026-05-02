@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package customer;
+
+service CustomerService{
+    rpc UpdateCustomerStatus(UpdateCustomerStatusRequest) returns (CustomerResponse);
+    rpc GetCustomer(GetCustomerRequest)returns(CustomerResponse);
+    rpc CustomerExists(CustomerExistsRequest)returns(CustomerExistsResponse);
+}
+
+message GetCustomerRequest{
+    string customer_id=1;
+}
+
+message CustomerExistsRequest{
+    string customer_id=1;
+}
+
+message CustomerResponse{
+    string id=1;
+    string name=2;
+    int32 age=3;
+    int32 salary=4;
+}
+message CustomerExistsResponse{
+    bool exists=1;
+    string status=2;
+}
