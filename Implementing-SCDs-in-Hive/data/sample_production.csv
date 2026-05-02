@@ -1,0 +1,3 @@
+dim_user_id,login,premium_user,address,phone,name,surname,year_of_birth,scd_version,scd_start_date,scd_end_date,scd_active
+1,user_001,false,123 Maple St,555-0101,John,Doe,1985,1,2023-01-01 00:00:00,9999-12-31 23:59:59,true
+2,user_002,true,456 Oak Ave,555-0202,Jane,Smith,1990,1,2023-01-01 00:00:00,9999-12-31 23:59:59,true

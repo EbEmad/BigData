@@ -1,0 +1,4 @@
+login,premium_user,address,phone,name,surname,year_of_birth
+user_001,false,123 Maple St,555-0101,Jonathan,Doe,1985
+user_002,true,789 Pine Rd,555-9999,Jane,Smith,1990
+user_003,true,321 Birch Blvd,555-0303,Alice,Johnson,1995
