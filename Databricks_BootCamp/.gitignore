@@ -1,0 +1,5 @@
+Infrastructure/.terraform.lock.hcl
+Infrastructure/.terraform
+Infrastructure/terraform.tfstate
+Infrastructure/terraform.tfstate.backup
+upload_data.py
