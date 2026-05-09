@@ -191,13 +191,13 @@ def read_single_date_year_month(base_path, target_date='2026-03-15'):
     )
 
     start_time=time.time()
-    df_month=time.time()
     df_month=pd.read_parquet(partition_path,engine='pyarrow')
     df=df_month[df_month['timestamp'].dt.date==target_dt.date()]
     elapsed=time.time()-start_time
     return df,elapsed
 
-def read_single_date_by_date(base_path,target_date='2026-03015'):
+
+def read_single_date_by_date(base_path, target_date='2026-03-15'):
     target_dt = pd.to_datetime(target_date)
     year = target_dt.year
     month = target_dt.month
@@ -209,11 +209,10 @@ def read_single_date_by_date(base_path,target_date='2026-03015'):
         'data.parquet'
     )
 
-    start_time=time.time()
-    df=pd.read_parquet(partition_path,engine='pyarrow')
-    elapsed=time.time()-start_time
-
-    return df,elapsed
+    start_time = time.time()
+    df = pd.read_parquet(partition_path, engine='pyarrow')
+    elapsed = time.time() - start_time
+    return df, elapsed
 
 
 def compare_single_date_reads(base_path,target_date='2026-03-15'):
@@ -235,16 +234,16 @@ def compare_single_date_reads(base_path,target_date='2026-03-15'):
     print(f"     Read {len(df_ym):,} records in {time_ym:.3f}s")
 
     # Date partitioned read
-    print("[3] Reading from date partitioned data (direct access)...")
-    df_date, time_date = read_single_date_by_date(base_path, target_date)
-    print(f"    ✓ Read {len(df_date):,} records in {time_date:.3f}s")
-    
+    print("[3] Reading from date partitioned data...")
+    df_date,time_date=read_single_date_by_date(base_path,target_date)
+    print(f"     Read {len(df_date):,} records in {time_date:.3f}s")
+
     # Summary
     print("\nPerformance Comparison:")
     print(f"  Unpartitioned (baseline):  {time_unpart:.3f}s")
     print(f"  Year/Month partitioned:    {time_ym:.3f}s ({(time_unpart/time_ym):.2f}x faster)")
     print(f"  Date partitioned:          {time_date:.3f}s ({(time_unpart/time_date):.2f}x faster)")
-    
+
     return {'unpartitioned': time_unpart, 'year_month': time_ym, 'by_date': time_date}
 
 def read_month_range_unpartitioned(base_path,months=None):
@@ -253,7 +252,7 @@ def read_month_range_unpartitioned(base_path,months=None):
     parquet_file = os.path.join(base_path, 'unpartitioned', 'data.parquet')
     start_time=time.time()
     df_full=pd.read_parquet(parquet_file,engine='pyarrow')
-    df = df_full[(df_full['timestamp'].dt.year == 2023) & 
+    df = df_full[(df_full['timestamp'].dt.year == 2026) & 
                  (df_full['timestamp'].dt.month.isin(months))]
     elapsed=time.time()-start_time
 
