@@ -1,2 +1,4 @@
 Parquet/Partitioning/output
 Parquet/column_selection/output
+Parquet/schema_evolution/output
+Parquet/metadata_inspection/output
