@@ -149,8 +149,86 @@ def get_column_statistics_summary(parquet_file_obj):
             row_group = metadata.row_group(rg_idx)
             col=row_group.column(col_idx)
 
-            
+            if col.is_stats_set:
+                stats = col.statistics
 
+                if hasattr(stats, 'min') and hasattr(stats, 'max'):
+                    try:
+                        if isinstance(stats.min, (int, float)):
+                            min_vals.append(stats.min)
+                            max_vals.append(stats.max)
+                    except:
+                        pass
+        if min_vals:
+            stats_summary[col_name] = {
+                'type': str(col_type),
+                'min': min(min_vals),
+                'max': max(max_vals),
+                'range': max(max_vals) - min(min_vals)
+            }
+
+    print("\nNumeric Column Ranges:")
+    for col_name, stats in stats_summary.items():
+        print(f"  {col_name}:")
+        print(f"    Type: {stats['type']}")
+        print(f"    Min: {stats['min']}")
+        print(f"    Max: {stats['max']}")
+        print(f"    Range: {stats['range']}")
+    
+    return stats_summary
+
+
+            
+def demonstrate_predicate_filtering(parquet_file_obj):
+    print("\n" + "=" * 60)
+    print("Predicate Pushdown Benefits")
+    print("=" * 60)
+
+    metadata=parquet_file_obj.metadata
+    schema=parquet_file_obj.schema
+
+    print("\nScenario: Find transactions >= 5000")
+    print("Without statistics: Read entire file")
+    print("With statistics: Use min/max to skip row groups\n")
+
+    query_min=5000
+
+    rows_skippable = 0
+    rows_scannable = 0
+
+    for rg_idx in range(metadata.num_row_groups):
+        row_group = metadata.row_group(rg_idx)
+
+        amount_col_idx = parquet_file_obj.schema_arrow.get_field_index('amount')
+        col = row_group.column(amount_col_idx)
+
+        if col.is_stats_set:
+            stats = col.statistics
+            col_max = stats.max
+
+            if col_max < query_min:
+                rows_skippable += row_group.num_rows
+                status = "SKIP (max < 5000)"
+            else:
+                rows_scannable += row_group.num_rows
+                status = "SCAN"
+
+            print(f"  Row Group {rg_idx}: max={col_max:.0f} → {status}")
+    total_rows = metadata.num_rows
+    print(f"\nResult:")
+    print(f"  Total rows: {total_rows:,}")
+    print(f"  Can skip: {rows_skippable:,} ({100*rows_skippable/total_rows:.1f}%)")
+    print(f"  Must scan: {rows_scannable:,} ({100*rows_scannable/total_rows:.1f}%)")
+
+
+
+
+
+
+    
+
+
+    
 
 
 
@@ -186,6 +264,9 @@ def main():
     inspect_file_metadata(parquet_file)
     inspect_column_statistics(parquet_file_obj)
     get_column_statistics_summary(parquet_file_obj)
+
+
+    demonstrate_predicate_filtering(parquet_file_obj)
 
 
 
