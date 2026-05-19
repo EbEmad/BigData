@@ -226,10 +226,78 @@ def demonstrate_predicate_filtering(parquet_file_obj):
 
 
     
+def demonstrate_schema_inspection(parquet_file_obj):
+
+    print("\n" + "=" * 60)
+    print("Schema Inspection (Zero Data Read)")
+    print("=" * 60)
+
+    schema=parquet_file_obj.schema
+    metadata=parquet_file_obj.metadata
+
+    print(f"\nDataset Overview:")
+    print(f"  Total Rows: {metadata.num_rows:,}")
+    print(f"  Columns: {len(schema)}")
+    print(f"  Row Groups: {metadata.num_row_groups}")
 
 
+    print(f"\nColumn Details:")
+    for i in range(len(schema)):
+        col=schema.column(i)
+        col_name=col.name
+        col_type=col.physical_type
+
+        null_count=0
+
+        for rg_idx in range(metadata.num_row_groups):
+            row_group=metadata.row_group(rg_idx)
+            row_col=row_group.column(i)
+
+            if row_col.is_stats_set:
+                stats = row_col.statistics
+                if hasattr(stats, 'null_count'):
+                    null_count += stats.null_count
+        
+        print(f"  {i+1}. {col_name}")
+        print(f"     Type: {col_type}")
+        print(f"     Nulls: {null_count}")
     
+    return schema
 
+
+
+def estimate_memory_usage(parquet_file_obj, columns=None):
+    
+    print("\n" + "=" * 60)
+    print("Memory Estimation")
+    print("=" * 60)
+
+    metadata=parquet_file_obj.metadata
+    schema=parquet_file_obj.schema
+
+    if columns is None:
+        columns=[schema.column(i).name for i in range(len(schema))]
+
+    print(f"\nEstimated memory to read {len(columns)} column(s):")
+
+    for col_name in columns:
+        col_idx = parquet_file_obj.schema_arrow.get_field_index(col_name)
+        uncompressed_size = 0
+
+        for rg_idx in range(metadata.num_row_groups):
+            row_group = metadata.row_group(rg_idx)
+            col = row_group.column(col_idx)
+            uncompressed_size += col.total_uncompressed_size
+        
+        uncompressed_mb = uncompressed_size / (1024**2)
+        total_uncompressed += uncompressed_size
+        
+        print(f"  {col_name}: {uncompressed_mb:.2f} MB")
+    
+    print(f"\n  Total: {total_uncompressed / (1024**2):.2f} MB")
+    print(f"  (Actual may vary with overhead)")
+    
+    return total_uncompressed
 
 
 
@@ -268,13 +336,27 @@ def main():
 
     demonstrate_predicate_filtering(parquet_file_obj)
 
+    demonstrate_schema_inspection(parquet_file_obj)
 
 
-
-
-
-
-
+    print("\nScenario 2: Read only [transaction_id, amount, timestamp]")
+    estimate_memory_usage(
+        parquet_file_obj,
+        columns=['transaction_id', 'amount', 'timestamp']
+    )
+    
+    print("\nScenario 3: Read only [amount]")
+    estimate_memory_usage(parquet_file_obj, columns=['amount'])
+    
+    # Summary
+    print("\n" + "=" * 60)
+    print("Summary")
+    print("=" * 60)
+    print(" Metadata read without loading any rows")
+    print(" Row counts and column statistics obtained instantly")
+    print(" Predicate pushdown feasibility assessed")
+    print(" Memory requirements estimated")
+    print("=" * 60)
 
 
 
