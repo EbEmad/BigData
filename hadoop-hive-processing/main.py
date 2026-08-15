@@ -73,15 +73,17 @@ def preprocess_admissions():
             if col in admission_df.columns:
                 admission_df[col] = admission_df[col].astype(np.int32)
 
-        admission_df["ADMITTIME"] = pd.to_datetime(admission_df["ADMITTIME"], errors="coerce")
-        admission_df["DISCHTIME"] = pd.to_datetime(admission_df["DISCHTIME"], errors="coerce")
+        timestamp_cols = ["ADMITTIME", "DISCHTIME", "DEATHTIME", "EDREGTIME", "EDOUTTIME"]
+        for col in timestamp_cols:
+            if col in admission_df.columns:
+                admission_df[col] = pd.to_datetime(admission_df[col], errors="coerce")
 
-        if admission_df["ADMITTIME"].isna().any() or admission_df["DISCHTIME"].isna().any():
-            print("Warning: Some ADMITTIME or DISCHTIME values could not be converted to datetime.")
+        if any(admission_df[col].isna().any() for col in timestamp_cols if col in admission_df.columns):
+            print("Warning: Some timestamp values could not be converted to datetime.")
 
         admission_df["LOS"] = (admission_df["DISCHTIME"] - admission_df["ADMITTIME"]).dt.days.astype(np.int32)
 
-        admission_df.to_parquet(output_parquet, index=False)
+        admission_df.to_parquet(output_parquet, index=False, use_deprecated_int96_timestamps=True)
         admission_df.to_csv(output_csv, index=False)
 
         print(f"Preprocessed {input_file} and saved as Parquet ({output_parquet}) and CSV ({output_csv}).")
@@ -145,7 +147,7 @@ def run_hive_queries():
         return False
     hive_queries = [
         """
-        SELECT ROW_ID
+        SELECT ROW_ID, SUBJECT_ID, HADM_ID, ADMITTIME, DISCHTIME, LOS
         FROM admissions
         ;
 

@@ -1,100 +1,139 @@
-# Hadoop & Hive Data Processing Pipeline
+# 🏗️ Cloudera CDP Data Lake Simulation
 
-A professional, automated data engineering pipeline for processing large datasets using Apache Hadoop, Hive, and Presto, orchestrated via Docker. This project demonstrates end-to-end data ingestion, preprocessing, and querying in a containerized Big Data environment.
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg) ![Hadoop](https://img.shields.io/badge/Storage-HDFS-yellow.svg) ![Iceberg](https://img.shields.io/badge/Format-Apache_Iceberg-cyan.svg) ![Trino](https://img.shields.io/badge/Query_Engine-Trino-magenta.svg) ![Spark](https://img.shields.io/badge/Compute-Apache_Spark-orange.svg)
 
-##  Architecture & Data Flow
+A professional, automated, and fully containerized Data Lake environment designed to simulate a modern enterprise **Cloudera Data Platform (CDP)** architecture. 
 
-The following diagram illustrates the automated workflow from local data preprocessing to distributed querying.
+This environment provides a comprehensive ecosystem for testing and developing end-to-end data pipelines, featuring raw data ingestion, robust metadata management, modern open table formats (ACID transactions), and high-performance interactive querying.
+
+---
+
+## 🏛️ Architecture & Data Flow
+
+The architecture is explicitly layered to decouple Storage, Metadata, and Compute—the hallmark of a modern data lake.
 
 ```mermaid
-graph TD
-    subgraph Host ["Host Machine"]
-        P[main.py] -->|1. Preprocess| CSV[("ADMISSIONS.csv")]
-        CSV -->|2. Convert| PQ[("ADMISSIONS.parquet")]
+flowchart TD
+    %% Define Layers
+    subgraph IngestionLayer ["1. Ingestion Layer (CDF)"]
+        NiFi[Apache NiFi\n(Data Routing)]
     end
 
-    subgraph Cluster ["Dockerized Big Data Cluster"]
-        PQ -->|3. Docker CP| NN["Hadoop Namenode"]
-        NN -->|4. HDFS Put| HDFS[("/data (HDFS)")]
-        
-        HS["Hive Server 2"] -->|5. External Table| HDFS
-        HS -->|6. HiveQL Query| HDFS
-        
-        MS["Hive Metastore"] --- HS
-        DB[(PostgreSQL)] --- MS
-        
-        PC["Presto Coordinator"] -.->|Optional Query| HS
+    subgraph StorageLayer ["2. Storage Layer (HDFS)"]
+        direction LR
+        NameNode[HDFS NameNode\n(Namespaces)]
+        DataNode[HDFS DataNode\n(Data Blocks)]
+        NameNode --- DataNode
     end
 
-    DN["Hadoop Datanode"] --- NN
-    style Host fill:#fff,stroke:#333,stroke-width:2px
-    style Cluster fill:#fff,stroke:#333,stroke-width:2px
+    subgraph MetadataLayer ["3. Metadata Catalog (HMS)"]
+        HMS[Hive Metastore\n(Central Catalog)]
+        PG[(PostgreSQL\nDatabase)]
+        HMS --- PG
+    end
+
+    subgraph ComputeLayer ["4. Compute & Table Formatting (CDE)"]
+        Spark[Apache Spark\n(ETL Processing)]
+        Iceberg[Apache Iceberg\n(Table Format / ACID)]
+        Spark --- Iceberg
+    end
+
+    subgraph QueryLayer ["5. Interactive Analytics (CDW)"]
+        Trino[Trino / Starburst\n(SQL Engine)]
+        HiveServer[Hive Server\n(Legacy Engine)]
+    end
+
+    %% Define Flow
+    NiFi -- "Writes Raw Files" --> NameNode
+    
+    %% Compute reads raw, writes Iceberg
+    Spark -- "1. Reads Raw Files" --> NameNode
+    Spark -- "2. Registers Table Schema" --> HMS
+    Spark -- "3. Writes Optimized Parquet" --> NameNode
+
+    %% Query Engine fetches and queries
+    Trino -- "1. Fetches Schema" --> HMS
+    Trino -- "2. Queries Data Blocks" --> NameNode
+
+    %% Styling
+    classDef storage fill:#d4e157,stroke:#333,stroke-width:2px,color:#000;
+    classDef meta fill:#ce93d8,stroke:#333,stroke-width:2px,color:#000;
+    classDef compute fill:#90caf9,stroke:#333,stroke-width:2px,color:#000;
+    classDef ingest fill:#ffcc80,stroke:#333,stroke-width:2px,color:#000;
+    classDef query fill:#ffab91,stroke:#333,stroke-width:2px,color:#000;
+
+    class NameNode,DataNode storage;
+    class HMS,PG meta;
+    class Spark,Iceberg compute;
+    class Trino,HiveServer query;
+    class NiFi ingest;
 ```
 
-##  Technology Stack
+### 🔄 The Data Flow Explained
+1. **Ingestion (`NiFi`)**: Apache NiFi pulls raw data (e.g., CSV, JSON) from external APIs or local systems and writes it directly into the **HDFS** landing zone.
+2. **Compute & Formatting (`Spark` + `Iceberg`)**: Apache Spark picks up the raw data from HDFS, cleanses it, and writes it back to HDFS using the **Apache Iceberg** table format. This provides ACID guarantees (Updates/Deletes) and time-travel capabilities. Spark registers this new table's schema in the **Hive Metastore**.
+3. **Interactive Analytics (`Trino`)**: When a Data Analyst runs a query, **Trino** checks the **Hive Metastore** to understand the Iceberg table structure, then directly scans the highly-optimized Parquet data blocks in **HDFS** to return results in milliseconds.
 
-- **Orchestration**: Docker & Docker Compose
-- **Storage**: Apache Hadoop (HDFS 2.7.4)
-- **Data Warehouse**: Apache Hive (2.3.2)
-- **SQL Engine**: PrestoDB (0.181)
-- **Metadata Storage**: PostgreSQL (Metastore)
-- **Automation**: Python 3 (Pandas, Numpy)
+---
 
-##  Getting Started
+## 🛠️ Technology Stack (CDP Mapping)
 
-### Prerequisites
+| Local Service | Enterprise Cloudera (CDP) Equivalent | Port | Purpose |
+| :--- | :--- | :--- | :--- |
+| **HDFS** | HDFS / SDX | `50070` | Distributed raw file storage |
+| **Hive Metastore** | HMS / Data Catalog | `9083` | Centralized table schemas |
+| **Apache Spark** | Cloudera Data Engineering (CDE) | `8888` (Jupyter) | Heavy ETL and processing |
+| **Apache Iceberg** | Iceberg (Default Format) | - | Modern table format (ACID) |
+| **Trino** | Cloudera Data Warehouse (Impala) | `8085` | Lightning-fast SQL queries |
+| **Apache NiFi** | Cloudera DataFlow (CDF) | `8443` | Visual pipeline orchestration |
+| **PostgreSQL** | Backing Database | `5432` | Stores the HMS metadata |
 
-- Docker and Docker Compose
-- Python 3.x
-- `pandas` and `pyarrow` installed locally
+---
 
-### 1. Start the Infrastructure
+## 🚀 Getting Started
 
-Spin up the entire cluster using Docker Compose:
-
+### 1. Spin up the cluster
+Make sure Docker and Docker Compose are installed, then run:
 ```bash
 docker-compose up -d
 ```
+*(Wait 1-2 minutes for all services, especially the Hive Metastore, to become fully healthy).*
 
-### 2. Run the Automated Pipeline
+### 2. Run a Data Lake Workflow (Spark to Trino)
 
-The `main.py` script automates the entire lifecycle of the data processing:
-
+**Step A: Create an Iceberg Table using Spark**
+Connect to the Spark container to simulate an ETL job:
 ```bash
-python main.py
+docker exec -it spark-iceberg spark-sql
+```
+```sql
+CREATE TABLE iceberg.default.customers (id INT, name STRING) USING iceberg;
+INSERT INTO iceberg.default.customers VALUES (1, 'e& Data Team');
 ```
 
-**What the pipeline does:**
-1. **Preprocessing**: Cleans `ADMISSIONS.csv` and converts it to Parquet format.
-2. **Ingestion**: Transfers data into the `namenode` container and uploads it to HDFS.
-3. **Table Creation**: Dynamically creates external Hive tables pointing to the HDFS data.
-4. **Validation**: Runs sample HiveQL queries to verify data integrity.
-
-##  Manual Testing & Exploration
-
-### Accessing Hive (Beeline)
-
+**Step B: Query the Table using Trino**
+Connect to the Trino query engine to simulate an analyst running a report:
 ```bash
-docker-compose exec hive-server bash
-/opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+docker exec -it starburst trino --server localhost:8085
 ```
-
-### Querying via Presto
-
-Presto is available on port `8080`. You can use the Presto CLI to query the Hive catalog:
-
-```bash
-./presto.jar --server localhost:8080 --catalog hive --schema default
+```sql
+trino> SHOW CATALOGS;
+trino> SELECT * FROM iceberg.default.customers;
 ```
-
-##  Project Structure
-
-- `main.py`: Core automation script for the ETL pipeline.
-- `docker-compose.yml`: Infrastructure definition.
-- `hadoop-hive.env`: Environment configurations for the cluster.
-- `data/`: Local directory for source and processed data.
-- `conf/`: Custom configuration files for Hadoop and Hive.
 
 ---
-*Developed as part of the Big Data Processing portfolio.*
 
+## 📂 Project Structure
+
+```text
+├── docker-compose.yml       # Infrastructure definition
+├── hadoop-hive.env          # Core environment variables (HDFS/YARN/HMS)
+├── source/                  # Local directory mapped to containers for raw data
+└── conf/                    
+    ├── spark/               # Spark-Iceberg catalog definitions
+    ├── trino/               # Trino server config and Hive/Iceberg catalogs
+    └── core-site.xml        # Shared HDFS routing configuration
+```
+
+---
+*Built for advanced Data Engineering and Data Lake testing.*
