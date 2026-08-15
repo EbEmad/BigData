@@ -8,58 +8,67 @@ This environment provides a comprehensive ecosystem for testing and developing e
 
 ---
 
-##  Architecture & Data Flow
+## Architecture & Data Flow
 
-The architecture is explicitly layered to decouple Storage, Metadata, and Compute—the hallmark of a modern data lake.
+The architecture follows an enterprise **layered decoupling** pattern — separating Ingestion, Storage, Metadata, Compute, and Query into independent tiers. Data flows **top-to-bottom** from raw sources all the way to interactive SQL analytics.
 
 ```mermaid
-flowchart TD
-    %% Define Layers
-    subgraph IngestionLayer ["1. Ingestion Layer (CDF)"]
-        NiFi["Apache NiFi<br>(Data Routing)"]
+flowchart TB
+    ExternalSources["External Sources<br>(APIs / Databases / Files)"]
+
+    subgraph L1 ["Layer 1 : Ingestion"]
+        NiFi["Apache NiFi :8443"]
     end
 
-    subgraph StorageLayer ["2. Storage Layer (HDFS)"]
+    subgraph L2 ["Layer 2 : Distributed Storage"]
         direction LR
-        NameNode["HDFS NameNode<br>(Namespaces)"]
-        DataNode["HDFS DataNode<br>(Data Blocks)"]
-        NameNode --- DataNode
+        NN["HDFS NameNode :50070"]
+        DN["HDFS DataNode :50075"]
+        NN --- DN
     end
 
-    subgraph MetadataLayer ["3. Metadata Catalog (HMS)"]
-        HMS["Hive Metastore<br>(Central Catalog)"]
-        PG[("PostgreSQL<br>Database")]
+    subgraph L3 ["Layer 3 : Compute and ETL"]
+        Spark["Apache Spark :8888"]
+        IcebergFmt["Apache Iceberg<br>ACID / Time-Travel / Schema Evolution"]
+        Spark --- IcebergFmt
+    end
+
+    subgraph L4 ["Layer 4 : Metadata Catalog"]
+        direction LR
+        HMS["Hive Metastore :9083"]
+        PG[("PostgreSQL :5432")]
         HMS --- PG
     end
 
-    subgraph ComputeLayer ["4. Compute & Table Formatting (CDE)"]
-        Spark["Apache Spark<br>(ETL Processing)"]
-        Iceberg["Apache Iceberg<br>(Table Format / ACID)"]
-        Spark --- Iceberg
+    subgraph L5 ["Layer 5 : Query Engine"]
+        direction LR
+        Trino["Trino / Starburst :8085"]
+        HiveS["Hive Server :10000"]
     end
 
-    subgraph QueryLayer ["5. Interactive Analytics (CDW)"]
-        Trino["Trino / Starburst<br>(SQL Engine)"]
-        HiveServer["Hive Server<br>(Legacy Engine)"]
-    end
+    Analyst["Data Analyst / BI Tool"]
 
-    %% Define Flow
-    NiFi -- "Writes Raw Files" --> NameNode
-    
-    %% Compute reads raw, writes Iceberg
-    Spark -- "1. Reads Raw Files" --> NameNode
-    Spark -- "2. Registers Table Schema" --> HMS
-    Spark -- "3. Writes Optimized Parquet" --> NameNode
-
-    %% Query Engine fetches and queries
-    Trino -- "1. Fetches Schema" --> HMS
-    Trino -- "2. Queries Data Blocks" --> NameNode
+    ExternalSources -- "Raw CSV, JSON, Logs" --> NiFi
+    NiFi -- "Lands raw files into HDFS" --> NN
+    NN -- "Spark reads raw data" --> Spark
+    Spark -- "Writes optimized Iceberg tables" --> NN
+    Spark -- "Registers table schemas" --> HMS
+    HMS -- "Trino fetches table definitions" --> Trino
+    NN -- "Trino scans data files" --> Trino
+    HMS -- "Hive fetches table definitions" --> HiveS
+    NN -- "Hive scans data files" --> HiveS
+    Trino -- "Returns query results" --> Analyst
 ```
 
-###  The Data Flow Explained
-1. **Ingestion (`NiFi`)**: Apache NiFi pulls raw data (e.g., CSV, JSON) from external APIs or local systems and writes it directly into the **HDFS** landing zone.
-2. **Compute & Formatting (`Spark` + `Iceberg`)**: Apache Spark picks up the raw data from HDFS, cleanses it, and writes it back to HDFS using the **Apache Iceberg** table format. This provides ACID guarantees (Updates/Deletes) and time-travel capabilities. Spark registers this new table's schema in the **Hive Metastore**.
-3. **Interactive Analytics (`Trino`)**: When a Data Analyst runs a query, **Trino** checks the **Hive Metastore** to understand the Iceberg table structure, then directly scans the highly-optimized Parquet data blocks in **HDFS** to return results in milliseconds.
+### The Data Flow — Step by Step
+
+| Step | Layer | What Happens |
+| :---: | :--- | :--- |
+| **1** | **Ingestion** | Raw data (CSV, JSON, telecom logs) arrives from external sources. **Apache NiFi** visually routes and lands these files into the HDFS landing zone — no code required. |
+| **2** | **Storage** | **HDFS** stores the raw files in a distributed, fault-tolerant manner. The **NameNode** tracks file locations while the **DataNode** holds the actual data blocks. |
+| **3** | **Compute** | **Apache Spark** reads the raw files from HDFS, cleanses and transforms them, then writes the output back to HDFS using the **Apache Iceberg** table format. Iceberg adds enterprise capabilities: ACID transactions (UPDATE/DELETE), time-travel queries, and safe schema evolution. |
+| **4** | **Metadata** | Spark registers the new Iceberg table schema in the **Hive Metastore (HMS)**. The HMS acts as the central catalog — it knows every table's column names, data types, and physical HDFS location. PostgreSQL persistently stores this metadata. |
+| **5** | **Query Engine** | A Data Analyst connects to **Trino** and runs a SQL query. Trino fetches the table definition from the HMS, then directly scans the optimized Parquet files in HDFS. Results are returned in milliseconds — no data movement required. |
 
 ---
 
