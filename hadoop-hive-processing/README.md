@@ -40,9 +40,10 @@ flowchart TB
         HMS --- PG
     end
 
-    subgraph L5 ["Layer 5 : Query Engine"]
+    subgraph L5 ["Layer 5 : Query Engines"]
         direction LR
         Trino["Trino / Starburst :8085"]
+        SparkSQL["Spark SQL :8888"]
         HiveS["Hive Server :10000"]
     end
 
@@ -53,11 +54,14 @@ flowchart TB
     NN -- "Spark reads raw data" --> Spark
     Spark -- "Writes optimized Iceberg tables" --> NN
     Spark -- "Registers table schemas" --> HMS
-    HMS -- "Trino fetches table definitions" --> Trino
-    NN -- "Trino scans data files" --> Trino
-    HMS -- "Hive fetches table definitions" --> HiveS
-    NN -- "Hive scans data files" --> HiveS
+    HMS -- "Fetches table definitions" --> Trino
+    HMS -- "Fetches table definitions" --> SparkSQL
+    HMS -- "Fetches table definitions" --> HiveS
+    NN -- "Scans data files" --> Trino
+    NN -- "Scans data files" --> SparkSQL
+    NN -- "Scans data files" --> HiveS
     Trino -- "Returns query results" --> Analyst
+    SparkSQL -- "Returns query results" --> Analyst
 ```
 
 ### The Data Flow — Step by Step
@@ -68,7 +72,7 @@ flowchart TB
 | **2** | **Storage** | **HDFS** stores the raw files in a distributed, fault-tolerant manner. The **NameNode** tracks file locations while the **DataNode** holds the actual data blocks. |
 | **3** | **Compute** | **Apache Spark** reads the raw files from HDFS, cleanses and transforms them, then writes the output back to HDFS using the **Apache Iceberg** table format. Iceberg adds enterprise capabilities: ACID transactions (UPDATE/DELETE), time-travel queries, and safe schema evolution. |
 | **4** | **Metadata** | Spark registers the new Iceberg table schema in the **Hive Metastore (HMS)**. The HMS acts as the central catalog — it knows every table's column names, data types, and physical HDFS location. PostgreSQL persistently stores this metadata. |
-| **5** | **Query Engine** | A Data Analyst connects to **Trino** and runs a SQL query. Trino fetches the table definition from the HMS, then directly scans the optimized Parquet files in HDFS. Results are returned in milliseconds — no data movement required. |
+| **5** | **Query Engine** | Data Analysts can query the data using **three engines**: **Trino** for millisecond interactive analytics, **Spark SQL** for complex analytical queries on both Hive and Iceberg tables, or **Hive Server** for legacy HiveQL compatibility. All three engines read schemas from HMS and scan data from HDFS. |
 
 ---
 
