@@ -1,4 +1,4 @@
-# 🏗️ Cloudera CDP Data Lake Simulation
+#  Cloudera CDP Data Lake Simulation
 
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg) ![Hadoop](https://img.shields.io/badge/Storage-HDFS-yellow.svg) ![Iceberg](https://img.shields.io/badge/Format-Apache_Iceberg-cyan.svg) ![Trino](https://img.shields.io/badge/Query_Engine-Trino-magenta.svg) ![Spark](https://img.shields.io/badge/Compute-Apache_Spark-orange.svg)
 
@@ -8,7 +8,7 @@ This environment provides a comprehensive ecosystem for testing and developing e
 
 ---
 
-## 🏛️ Architecture & Data Flow
+##  Architecture & Data Flow
 
 The architecture is explicitly layered to decouple Storage, Metadata, and Compute—the hallmark of a modern data lake.
 
@@ -16,31 +16,31 @@ The architecture is explicitly layered to decouple Storage, Metadata, and Comput
 flowchart TD
     %% Define Layers
     subgraph IngestionLayer ["1. Ingestion Layer (CDF)"]
-        NiFi[Apache NiFi\n(Data Routing)]
+        NiFi["Apache NiFi<br>(Data Routing)"]
     end
 
     subgraph StorageLayer ["2. Storage Layer (HDFS)"]
         direction LR
-        NameNode[HDFS NameNode\n(Namespaces)]
-        DataNode[HDFS DataNode\n(Data Blocks)]
+        NameNode["HDFS NameNode<br>(Namespaces)"]
+        DataNode["HDFS DataNode<br>(Data Blocks)"]
         NameNode --- DataNode
     end
 
     subgraph MetadataLayer ["3. Metadata Catalog (HMS)"]
-        HMS[Hive Metastore\n(Central Catalog)]
-        PG[(PostgreSQL\nDatabase)]
+        HMS["Hive Metastore<br>(Central Catalog)"]
+        PG[("PostgreSQL<br>Database")]
         HMS --- PG
     end
 
     subgraph ComputeLayer ["4. Compute & Table Formatting (CDE)"]
-        Spark[Apache Spark\n(ETL Processing)]
-        Iceberg[Apache Iceberg\n(Table Format / ACID)]
+        Spark["Apache Spark<br>(ETL Processing)"]
+        Iceberg["Apache Iceberg<br>(Table Format / ACID)"]
         Spark --- Iceberg
     end
 
     subgraph QueryLayer ["5. Interactive Analytics (CDW)"]
-        Trino[Trino / Starburst\n(SQL Engine)]
-        HiveServer[Hive Server\n(Legacy Engine)]
+        Trino["Trino / Starburst<br>(SQL Engine)"]
+        HiveServer["Hive Server<br>(Legacy Engine)"]
     end
 
     %% Define Flow
@@ -54,29 +54,16 @@ flowchart TD
     %% Query Engine fetches and queries
     Trino -- "1. Fetches Schema" --> HMS
     Trino -- "2. Queries Data Blocks" --> NameNode
-
-    %% Styling
-    classDef storage fill:#d4e157,stroke:#333,stroke-width:2px,color:#000;
-    classDef meta fill:#ce93d8,stroke:#333,stroke-width:2px,color:#000;
-    classDef compute fill:#90caf9,stroke:#333,stroke-width:2px,color:#000;
-    classDef ingest fill:#ffcc80,stroke:#333,stroke-width:2px,color:#000;
-    classDef query fill:#ffab91,stroke:#333,stroke-width:2px,color:#000;
-
-    class NameNode,DataNode storage;
-    class HMS,PG meta;
-    class Spark,Iceberg compute;
-    class Trino,HiveServer query;
-    class NiFi ingest;
 ```
 
-### 🔄 The Data Flow Explained
+###  The Data Flow Explained
 1. **Ingestion (`NiFi`)**: Apache NiFi pulls raw data (e.g., CSV, JSON) from external APIs or local systems and writes it directly into the **HDFS** landing zone.
 2. **Compute & Formatting (`Spark` + `Iceberg`)**: Apache Spark picks up the raw data from HDFS, cleanses it, and writes it back to HDFS using the **Apache Iceberg** table format. This provides ACID guarantees (Updates/Deletes) and time-travel capabilities. Spark registers this new table's schema in the **Hive Metastore**.
 3. **Interactive Analytics (`Trino`)**: When a Data Analyst runs a query, **Trino** checks the **Hive Metastore** to understand the Iceberg table structure, then directly scans the highly-optimized Parquet data blocks in **HDFS** to return results in milliseconds.
 
 ---
 
-## 🛠️ Technology Stack (CDP Mapping)
+##  Technology Stack (CDP Mapping)
 
 | Local Service | Enterprise Cloudera (CDP) Equivalent | Port | Purpose |
 | :--- | :--- | :--- | :--- |
@@ -90,7 +77,7 @@ flowchart TD
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Spin up the cluster
 Make sure Docker and Docker Compose are installed, then run:
@@ -123,7 +110,7 @@ trino> SELECT * FROM iceberg.default.customers;
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── docker-compose.yml       # Infrastructure definition
