@@ -13,7 +13,6 @@ services:
     ports:
       - "50070:50070"
 
-
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8
     container_name: datanode
@@ -40,7 +39,6 @@ services:
       - "10000:10000"
     depends_on:
       - hive-metastore
-
 
   hive-metastore:
     image: bde2020/hive:2.3.2-postgresql-metastore
@@ -98,18 +96,19 @@ services:
       - ./conf/trino/log.properties:/etc/trino/log.properties
       - ./conf/trino/catalog/hive.properties:/etc/trino/catalog/hive.properties
       - ./conf/trino/catalog/iceberg.properties:/etc/trino/catalog/iceberg.properties
+      - ./conf/trino/catalog/iceberg_rest.properties:/etc/trino/catalog/iceberg_rest.properties
       - ./conf/core-site.xml:/etc/trino/core-site.xml
     depends_on:
       - hive-metastore
       - namenode
       - datanode
 
-  spark-iceberg:  
+  spark-iceberg:
     image: tabulario/spark-iceberg:3.5.1_1.5.0
     container_name: spark-iceberg
     ports:
-      - "8888:8888"   # Jupyter Notebook
-      - "8081:8080"   # Spark Master UI
+      - "8888:8888" # Jupyter Notebook
+      - "8081:8080" # Spark Master UI
       - "18080:18080" # Spark History Server
     environment:
       - AWS_REGION=us-east-1
@@ -122,6 +121,21 @@ services:
       - spark_data:/home/iceberg/warehouse
     depends_on:
       - hive-metastore
+      - namenode
+      - datanode
+      - iceberg-rest
+
+  iceberg-rest:
+    image: tabulario/iceberg-rest:latest
+    container_name: iceberg-rest
+    ports:
+      - "8181:8181"
+    environment:
+      - CATALOG_WAREHOUSE=hdfs://namenode:8020/user/iceberg/warehouse
+      - CATALOG_IO__IMPL=org.apache.iceberg.hadoop.HadoopFileIO
+    volumes:
+      - ./conf/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
+    depends_on:
       - namenode
       - datanode
 
