@@ -10,6 +10,8 @@ This environment provides a comprehensive ecosystem for testing and developing e
 
 ## Architecture & Data Flow
 
+![NiFi Flow Architecture](img/nifi-flow.png)
+
 The architecture follows an enterprise **layered decoupling** pattern — separating Ingestion, Storage, Metadata, Compute, and Query into independent tiers. Data flows **top-to-bottom** from raw sources all the way to interactive SQL analytics.
 
 ```mermaid

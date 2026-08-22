@@ -79,7 +79,9 @@ services:
       - nifi_data:/opt/nifi/nifi-current/data
       - nifi_conf:/opt/nifi/nifi-current/conf
       - ./source:/source
+      - ./src:/src
       - ./conf/core-site.xml:/etc/hadoop/core-site.xml
+      - ./tmp:/tmp
     depends_on:
       - namenode
       - datanode
@@ -98,6 +100,8 @@ services:
       - ./conf/trino/catalog/iceberg.properties:/etc/trino/catalog/iceberg.properties
       - ./conf/trino/catalog/iceberg_rest.properties:/etc/trino/catalog/iceberg_rest.properties
       - ./conf/core-site.xml:/etc/trino/core-site.xml
+      - ./conf/trino/resource-groups.properties:/etc/trino/resource-groups.properties
+      - ./conf/trino/resource-groups.json:/etc/trino/resource-groups.json
     depends_on:
       - hive-metastore
       - namenode
