@@ -5,7 +5,7 @@
 
 A comprehensive reference and practical guide demonstrating the usage, architecture, and best practices for big data file formats like **Apache Parquet** and **Apache Avro** using Python.
 
-## 📖 Overview
+##  Overview
 
 This repository serves as a study and implementation reference for working with popular big data file formats. It contains practical Python examples and theoretical documentation to help you understand how these formats work under the hood and how to leverage them for high-performance analytical workloads.
 
@@ -16,7 +16,7 @@ This repository serves as a study and implementation reference for working with 
 *   **Apache Avro:** A row-based storage format widely used for data serialization and streaming architectures.
     *   *Topics included:* Schema definition and Schema Evolution.
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ This repository serves as a study and implementation reference for working with 
     ```
     *(Note: You can also use `pip install -e .` if you want to install it as a local package based on `pyproject.toml`)*
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── avro/                   # Apache Avro examples and study material
@@ -60,15 +60,15 @@ This repository serves as a study and implementation reference for working with 
 └── requirements.txt        # Required Python packages
 ```
 
-## 🧠 Documentation & Study Guides
+##  Documentation & Study Guides
 
 Don't miss the detailed study references included in this repository:
 *   [Apache Parquet Study Reference](./Parquet/parquet.md) - Deep dive into Parquet's columnar architecture, compression, and query optimization features.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you have examples for other formats (like ORC, Iceberg, Delta Lake) or want to improve existing scripts, feel free to open a Pull Request.
 
-## 📝 License
+##  License
 
 This project is open-source and available under the standard MIT License.
