@@ -1,0 +1,30 @@
+---
+startDelaySeconds: 0
+hostPort: hive-server:10000
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
+
+rules:
+  - pattern: 'java.lang<type=Memory><(\w+)>(\w+): (\d+)'
+    name: jvm_memory_$1_$2
+    type: GAUGE
+
+  - pattern: 'java.lang<type=GarbageCollector, name=(\w+)><>CollectionCount'
+    name: jvm_gc_collection_count
+    labels:
+      gc: "$1"
+    type: COUNTER
+
+  - pattern: 'java.lang<type=GarbageCollector, name=(\w+)><>CollectionTime'
+    name: jvm_gc_collection_time_ms
+    labels:
+      gc: "$1"
+    type: COUNTER
+
+  - pattern: 'java.lang<type=Threading><>ThreadCount'
+    name: jvm_thread_count
+    type: GAUGE
+
+  - pattern: 'metrics<name=(\w+)\.(\w+)><>(\w+)'
+    name: hive_$1_$2_$3
+    type: UNTYPED

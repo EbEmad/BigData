@@ -82,6 +82,7 @@ services:
       - ./src:/src
       - ./conf/core-site.xml:/etc/hadoop/core-site.xml
       - ./tmp:/tmp
+      - ./overflow:/overflow
     depends_on:
       - namenode
       - datanode
@@ -123,6 +124,7 @@ services:
       - ./conf/core-site.xml:/opt/spark/conf/core-site.xml
       - ./source:/home/iceberg/source
       - spark_data:/home/iceberg/warehouse
+      - ./src:/opt/spark/src
     depends_on:
       - hive-metastore
       - namenode
@@ -143,9 +145,60 @@ services:
       - namenode
       - datanode
 
+  prometheus:
+    image: prom/prometheus:v2.51.0
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./conf/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.retention.time=15d'
+    depends_on:
+      - namenode
+      - datanode
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:10.4.1
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./conf/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    depends_on:
+      - prometheus
+      - starburst
+    restart: unless-stopped
+
+  jmx-exporter:
+    image: bitnami/jmx-exporter:0.20.0
+    container_name: jmx-exporter
+    ports:
+      - "5556:5556"
+    volumes:
+      - ./conf/prometheus/jmx_exporter_config.yml:/opt/bitnami/jmx-exporter/config.yml
+    restart: unless-stopped
+
+  node-exporter:
+    image: prom/node-exporter:v1.7.0
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
 volumes:
   namenode:
   datanode:
   nifi_data:
   nifi_conf:
   spark_data:
+  grafana_data:
+  prometheus_data:

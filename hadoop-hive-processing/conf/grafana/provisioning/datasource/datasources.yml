@@ -1,0 +1,24 @@
+apiVersion: 1
+
+datasources:
+  # ---- Prometheus (for infrastructure metrics) ----
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: true
+
+  # ---- PostgreSQL (Hive Metastore — for querying metadata) ----
+  - name: Hive-Metastore-PostgreSQL
+    type: postgres
+    access: proxy
+    url: hive-metastore-postgresql:5432
+    database: metastore
+    user: hive
+    secureJsonData:
+      password: hive
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1200
+    editable: true
