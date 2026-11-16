@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+10999,Dina_Gamal,75,2026-03-26,Anemia,Cardiology,Critical
+40266,Tarek_Samy,56,2026-11-16,Hypertension,Orthopedics,Low
+11536,Ahmed_Hassan,63,2026-08-12,Influenza,Internal_Medicine,High
+19942,Mona_Adel,66,2026-01-19,Pneumonia,Internal_Medicine,Low
+40351,Mona_Adel,32,2026-02-26,Cardiac_Arrest,Internal_Medicine,Critical
+40578,Khaled_Mostafa,47,2026-02-08,Appendicitis,Radiology,Critical
+28342,Khaled_Mostafa,34,2026-05-24,Asthma,Internal_Medicine,Medium

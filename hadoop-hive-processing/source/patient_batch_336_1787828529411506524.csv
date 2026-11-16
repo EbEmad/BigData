@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+26581,Dina_Gamal,83,2026-12-09,Diabetes,Emergency,Low
+26062,Mona_Adel,76,2026-12-07,Fracture,Pediatrics,Low
+36352,Tarek_Samy,72,2026-04-14,Fracture,Internal_Medicine,High
+21200,Youssef_Khalil,74,2026-06-21,Migraine,Oncology,Medium
+35487,Dina_Gamal,23,2026-04-28,Fracture,Cardiology,Medium
+42337,Nour_Salem,21,2026-07-10,Cardiac_Arrest,Cardiology,High

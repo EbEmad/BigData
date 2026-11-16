@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+11380,Nour_Salem,21,2026-04-23,Cardiac_Arrest,Oncology,Medium
+27851,Omar_Ali,24,2026-02-10,Appendicitis,Emergency,Medium
+28766,Khaled_Mostafa,62,2026-04-22,Asthma,Pediatrics,Low

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+35117,Fatma_Ibrahim,59,2026-06-22,Pneumonia,Radiology,High
+19111,Tarek_Samy,34,2026-08-23,Cardiac_Arrest,ICU,Low
+42039,Fatma_Ibrahim,71,2026-07-19,Diabetes,Pediatrics,High
+24649,Omar_Ali,48,2026-01-01,Influenza,Orthopedics,Critical
+15097,Omar_Ali,18,2026-10-10,Anemia,Emergency,Critical
+21687,Nour_Salem,59,2026-06-20,Appendicitis,Emergency,Critical
+19016,Nour_Salem,72,2026-12-23,Appendicitis,Internal_Medicine,High

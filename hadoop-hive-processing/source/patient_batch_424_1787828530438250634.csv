@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31938,Khaled_Mostafa,67,2026-12-21,Influenza,Radiology,Medium
+18434,Ahmed_Hassan,49,2026-09-06,Diabetes,Cardiology,Medium
+35813,Youssef_Khalil,27,2026-04-18,Asthma,Emergency,High

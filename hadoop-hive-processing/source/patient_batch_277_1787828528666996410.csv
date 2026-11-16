@@ -1,0 +1,13 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14093,Dina_Gamal,29,2026-01-19,Migraine,Oncology,Medium
+41158,Nour_Salem,56,2026-07-01,Influenza,Emergency,Critical
+10822,Tarek_Samy,61,2026-10-02,Influenza,Cardiology,High
+40888,Fatma_Ibrahim,61,2026-08-15,Asthma,Surgery,Low
+17983,Dina_Gamal,30,2026-02-02,Migraine,Oncology,Critical
+24924,Nour_Salem,25,2026-09-08,Migraine,Internal_Medicine,Critical
+25800,Youssef_Khalil,39,2026-09-19,Migraine,Radiology,High
+29037,Sara_Mohamed,61,2026-09-12,Hypertension,ICU,High
+16896,Ahmed_Hassan,74,2026-11-10,Appendicitis,Emergency,High
+11291,Khaled_Mostafa,85,2026-02-07,Cardiac_Arrest,Oncology,Medium
+32606,Ahmed_Hassan,74,2026-08-25,Cardiac_Arrest,Neurology,Low
+41641,Ahmed_Hassan,87,2026-01-18,Fracture,Pediatrics,Low

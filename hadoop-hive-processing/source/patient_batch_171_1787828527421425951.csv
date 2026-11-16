@@ -1,0 +1,15 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41501,Youssef_Khalil,52,2026-10-01,Anemia,Pediatrics,Low
+29164,Fatma_Ibrahim,35,2026-11-07,Pneumonia,Orthopedics,High
+14735,Omar_Ali,38,2026-07-06,Fracture,Internal_Medicine,Critical
+26071,Khaled_Mostafa,21,2026-07-01,Fracture,Neurology,High
+41107,Tarek_Samy,69,2026-12-23,Appendicitis,Radiology,Critical
+18022,Youssef_Khalil,60,2026-05-19,Hypertension,Pediatrics,Critical
+10666,Khaled_Mostafa,46,2026-08-20,Diabetes,Neurology,High
+21902,Khaled_Mostafa,59,2026-02-25,Anemia,ICU,Critical
+28038,Nour_Salem,48,2026-10-14,Asthma,Orthopedics,Critical
+20885,Sara_Mohamed,49,2026-06-19,Migraine,Pediatrics,High
+22344,Tarek_Samy,42,2026-10-09,Pneumonia,ICU,Critical
+36200,Omar_Ali,34,2026-03-06,Migraine,Oncology,Medium
+10493,Fatma_Ibrahim,37,2026-01-22,Anemia,Internal_Medicine,Low
+24941,Mona_Adel,28,2026-08-16,Anemia,Cardiology,High

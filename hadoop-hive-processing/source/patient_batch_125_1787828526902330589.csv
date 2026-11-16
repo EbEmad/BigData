@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24499,Fatma_Ibrahim,78,2026-01-03,Diabetes,Pediatrics,Critical
+35525,Nour_Salem,87,2026-07-21,Cardiac_Arrest,Cardiology,Critical
+12337,Youssef_Khalil,21,2026-02-09,Cardiac_Arrest,Radiology,Critical
+42277,Tarek_Samy,61,2026-01-09,Hypertension,Oncology,Critical

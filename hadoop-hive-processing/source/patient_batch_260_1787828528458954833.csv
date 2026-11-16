@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12522,Khaled_Mostafa,77,2026-06-02,Pneumonia,Surgery,Medium
+22822,Mona_Adel,64,2026-09-25,Migraine,Neurology,Medium
+36728,Omar_Ali,65,2026-04-12,Cardiac_Arrest,Emergency,Critical
+23725,Omar_Ali,33,2026-10-10,Hypertension,Emergency,High
+36584,Dina_Gamal,87,2026-10-12,Asthma,Internal_Medicine,Low
+42062,Youssef_Khalil,77,2026-05-10,Influenza,Pediatrics,Low
+33833,Tarek_Samy,60,2026-05-12,Hypertension,Cardiology,Low
+28013,Dina_Gamal,51,2026-06-02,Influenza,Oncology,Medium
+33867,Tarek_Samy,62,2026-05-09,Hypertension,ICU,High

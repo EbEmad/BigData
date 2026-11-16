@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+29728,Mona_Adel,55,2026-12-22,Diabetes,Neurology,High
+20657,Dina_Gamal,66,2026-11-26,Fracture,Surgery,Low
+33890,Fatma_Ibrahim,78,2026-07-26,Appendicitis,Oncology,Medium
+11292,Ahmed_Hassan,40,2026-07-11,Cardiac_Arrest,Internal_Medicine,Medium
+13480,Ahmed_Hassan,19,2026-06-27,Migraine,Internal_Medicine,Critical
+39372,Dina_Gamal,38,2026-08-01,Hypertension,Pediatrics,Critical
+17021,Youssef_Khalil,34,2026-06-02,Anemia,Neurology,Critical
+30161,Ahmed_Hassan,21,2026-08-22,Anemia,Neurology,Critical
+13305,Youssef_Khalil,66,2026-04-04,Diabetes,ICU,Medium

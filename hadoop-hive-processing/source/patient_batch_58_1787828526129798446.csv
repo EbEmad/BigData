@@ -1,0 +1,14 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38102,Youssef_Khalil,69,2026-07-23,Fracture,Surgery,High
+28756,Sara_Mohamed,62,2026-07-02,Pneumonia,Radiology,High
+33710,Mona_Adel,18,2026-01-27,Fracture,Neurology,Critical
+38427,Nour_Salem,34,2026-02-21,Anemia,Cardiology,Low
+26473,Ahmed_Hassan,73,2026-04-21,Diabetes,Emergency,Low
+22173,Ahmed_Hassan,31,2026-10-17,Anemia,ICU,Critical
+26001,Nour_Salem,35,2026-04-04,Fracture,Oncology,High
+22672,Nour_Salem,62,2026-07-25,Hypertension,Oncology,Low
+36929,Youssef_Khalil,52,2026-12-15,Pneumonia,Orthopedics,Medium
+12657,Ahmed_Hassan,29,2026-08-04,Anemia,Cardiology,Critical
+23238,Fatma_Ibrahim,56,2026-04-16,Influenza,Emergency,Critical
+30837,Ahmed_Hassan,24,2026-07-19,Cardiac_Arrest,Radiology,High
+36769,Khaled_Mostafa,36,2026-07-03,Influenza,Orthopedics,Medium

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37399,Youssef_Khalil,26,2026-07-07,Hypertension,Emergency,Critical
+35697,Youssef_Khalil,77,2026-01-09,Hypertension,Internal_Medicine,Critical
+40840,Sara_Mohamed,41,2026-10-20,Anemia,Pediatrics,High
+20169,Fatma_Ibrahim,41,2026-05-05,Hypertension,Emergency,Medium
+39023,Mona_Adel,81,2026-08-26,Pneumonia,Pediatrics,Medium
+18092,Fatma_Ibrahim,70,2026-08-09,Pneumonia,Orthopedics,Low
+22736,Sara_Mohamed,86,2026-04-23,Anemia,Surgery,Medium

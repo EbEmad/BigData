@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32951,Khaled_Mostafa,62,2026-07-02,Appendicitis,Surgery,Low
+14836,Tarek_Samy,26,2026-11-11,Migraine,ICU,Low
+30987,Ahmed_Hassan,71,2026-09-04,Cardiac_Arrest,Cardiology,Low
+19606,Tarek_Samy,83,2026-10-17,Cardiac_Arrest,Oncology,High
+39908,Ahmed_Hassan,50,2026-07-08,Appendicitis,Emergency,High
+11042,Sara_Mohamed,44,2026-03-23,Influenza,Orthopedics,High
+24872,Omar_Ali,83,2026-12-27,Hypertension,Internal_Medicine,Medium

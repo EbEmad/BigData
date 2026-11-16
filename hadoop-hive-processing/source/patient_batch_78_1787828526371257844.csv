@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24683,Khaled_Mostafa,84,2026-09-07,Appendicitis,Cardiology,Critical
+40603,Youssef_Khalil,55,2026-09-17,Migraine,Oncology,Critical
+36574,Dina_Gamal,44,2026-12-24,Migraine,Surgery,Medium
+21188,Fatma_Ibrahim,74,2026-09-15,Migraine,ICU,Low
+32557,Khaled_Mostafa,21,2026-12-16,Fracture,Cardiology,Medium
+14543,Nour_Salem,26,2026-10-06,Fracture,Surgery,High

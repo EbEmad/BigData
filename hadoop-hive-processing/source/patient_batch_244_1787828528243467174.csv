@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41528,Khaled_Mostafa,45,2026-08-22,Pneumonia,Cardiology,High
+33804,Youssef_Khalil,47,2026-11-11,Asthma,Internal_Medicine,Critical
+23309,Tarek_Samy,66,2026-08-10,Cardiac_Arrest,Pediatrics,High
+16506,Khaled_Mostafa,82,2026-07-25,Fracture,Neurology,Low
+42735,Ahmed_Hassan,66,2026-07-04,Appendicitis,Cardiology,High
+27232,Sara_Mohamed,67,2026-03-27,Appendicitis,ICU,Medium
+29791,Nour_Salem,23,2026-04-23,Pneumonia,ICU,High
+28398,Fatma_Ibrahim,19,2026-11-12,Diabetes,Orthopedics,Medium
+33408,Khaled_Mostafa,61,2026-07-06,Appendicitis,Pediatrics,Critical

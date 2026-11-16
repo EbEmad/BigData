@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+33030,Ahmed_Hassan,39,2026-04-11,Appendicitis,Internal_Medicine,Medium
+37262,Ahmed_Hassan,25,2026-06-28,Asthma,ICU,Critical
+18833,Khaled_Mostafa,50,2026-03-02,Appendicitis,ICU,Medium
+14184,Sara_Mohamed,42,2026-09-28,Appendicitis,ICU,Medium
+28731,Omar_Ali,51,2026-10-03,Diabetes,Emergency,High
+39439,Tarek_Samy,24,2026-11-13,Migraine,Oncology,Critical
+39730,Mona_Adel,85,2026-03-06,Migraine,Neurology,Critical
+19410,Dina_Gamal,41,2026-12-22,Anemia,Internal_Medicine,Medium

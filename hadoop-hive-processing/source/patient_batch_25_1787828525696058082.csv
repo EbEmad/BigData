@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31630,Nour_Salem,19,2026-12-07,Influenza,Orthopedics,Critical
+36938,Nour_Salem,24,2026-04-04,Appendicitis,Pediatrics,Critical
+40792,Fatma_Ibrahim,74,2026-10-22,Pneumonia,Emergency,Critical
+30772,Omar_Ali,19,2026-11-10,Appendicitis,Neurology,Critical
+26732,Mona_Adel,55,2026-03-08,Diabetes,Neurology,High
+29131,Omar_Ali,38,2026-07-07,Fracture,ICU,Medium
+16513,Fatma_Ibrahim,61,2026-07-28,Diabetes,Emergency,Critical

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30726,Sara_Mohamed,69,2026-02-11,Cardiac_Arrest,Emergency,High
+39329,Khaled_Mostafa,34,2026-07-22,Fracture,Internal_Medicine,Low
+36290,Youssef_Khalil,62,2026-06-11,Migraine,Pediatrics,Critical
+34764,Omar_Ali,72,2026-04-01,Fracture,Emergency,High
+37560,Khaled_Mostafa,69,2026-06-10,Diabetes,Internal_Medicine,Low
+32844,Mona_Adel,63,2026-10-28,Pneumonia,Radiology,Critical
+40007,Dina_Gamal,37,2026-04-04,Appendicitis,Cardiology,Low

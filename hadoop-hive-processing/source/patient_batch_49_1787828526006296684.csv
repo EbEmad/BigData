@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32067,Khaled_Mostafa,48,2026-04-08,Cardiac_Arrest,Emergency,Medium
+39082,Ahmed_Hassan,44,2026-01-11,Asthma,Surgery,High
+31557,Youssef_Khalil,68,2026-10-06,Pneumonia,Oncology,Critical
+10327,Khaled_Mostafa,70,2026-05-10,Migraine,ICU,Low
+18371,Ahmed_Hassan,55,2026-07-13,Pneumonia,Neurology,High
+15924,Khaled_Mostafa,51,2026-01-18,Migraine,Internal_Medicine,Critical
+16208,Mona_Adel,76,2026-05-17,Influenza,Internal_Medicine,Medium
+34325,Youssef_Khalil,22,2026-02-01,Appendicitis,ICU,High
+29629,Fatma_Ibrahim,81,2026-03-25,Diabetes,Radiology,High
+28338,Omar_Ali,79,2026-03-08,Migraine,Orthopedics,Critical

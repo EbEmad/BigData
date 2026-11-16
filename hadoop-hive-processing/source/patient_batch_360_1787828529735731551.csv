@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+17123,Fatma_Ibrahim,21,2026-08-23,Cardiac_Arrest,Radiology,Medium
+32420,Omar_Ali,81,2026-04-27,Hypertension,Radiology,Critical
+33670,Sara_Mohamed,68,2026-11-09,Appendicitis,Emergency,Critical
+39745,Fatma_Ibrahim,85,2026-04-08,Influenza,Orthopedics,Medium
+24697,Nour_Salem,52,2026-12-04,Appendicitis,Radiology,Medium
+15200,Sara_Mohamed,83,2026-05-19,Appendicitis,Oncology,Critical
+13657,Ahmed_Hassan,29,2026-03-05,Diabetes,Oncology,Critical
+35263,Nour_Salem,48,2026-07-27,Asthma,Surgery,Critical
+23761,Fatma_Ibrahim,59,2026-02-28,Influenza,Surgery,High
+25346,Tarek_Samy,58,2026-07-11,Migraine,Internal_Medicine,Low

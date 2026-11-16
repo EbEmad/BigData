@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+28917,Sara_Mohamed,21,2026-07-21,Diabetes,Orthopedics,Critical
+31494,Mona_Adel,75,2026-02-03,Influenza,Orthopedics,Low
+33850,Dina_Gamal,53,2026-02-03,Anemia,Emergency,Medium
+39540,Omar_Ali,49,2026-03-08,Appendicitis,ICU,Medium
+31666,Tarek_Samy,38,2026-11-28,Asthma,Oncology,Critical

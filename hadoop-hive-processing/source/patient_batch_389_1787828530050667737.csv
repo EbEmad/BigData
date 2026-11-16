@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38145,Tarek_Samy,80,2026-01-27,Migraine,Emergency,Critical
+29299,Mona_Adel,75,2026-12-16,Migraine,Pediatrics,Low
+19524,Nour_Salem,50,2026-04-03,Asthma,ICU,Low
+27338,Mona_Adel,43,2026-02-07,Diabetes,Internal_Medicine,Low
+40456,Omar_Ali,61,2026-04-15,Influenza,Neurology,Low
+21190,Ahmed_Hassan,42,2026-10-25,Influenza,Cardiology,High

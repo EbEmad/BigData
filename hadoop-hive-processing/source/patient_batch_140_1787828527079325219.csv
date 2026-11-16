@@ -1,0 +1,14 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37582,Ahmed_Hassan,33,2026-06-22,Diabetes,Pediatrics,High
+15329,Nour_Salem,70,2026-05-27,Pneumonia,Surgery,Low
+16200,Nour_Salem,50,2026-04-27,Asthma,Surgery,High
+18759,Tarek_Samy,21,2026-08-12,Hypertension,Surgery,Critical
+23650,Omar_Ali,53,2026-06-28,Fracture,Cardiology,Low
+17647,Youssef_Khalil,38,2026-11-22,Pneumonia,Neurology,High
+30996,Ahmed_Hassan,75,2026-06-11,Hypertension,Radiology,Low
+23011,Ahmed_Hassan,41,2026-03-25,Appendicitis,Emergency,Medium
+26528,Mona_Adel,82,2026-09-18,Appendicitis,Orthopedics,Critical
+17192,Tarek_Samy,68,2026-05-28,Appendicitis,Radiology,Medium
+13867,Fatma_Ibrahim,84,2026-01-20,Anemia,Pediatrics,Critical
+34488,Ahmed_Hassan,77,2026-05-13,Diabetes,Oncology,Low
+40142,Omar_Ali,72,2026-05-03,Cardiac_Arrest,Pediatrics,Low

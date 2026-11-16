@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+25251,Nour_Salem,53,2026-06-16,Appendicitis,Oncology,Low
+33994,Nour_Salem,48,2026-03-14,Influenza,Orthopedics,Medium
+24031,Tarek_Samy,20,2026-10-25,Fracture,Neurology,High
+14462,Youssef_Khalil,82,2026-05-22,Hypertension,Emergency,Medium
+30707,Omar_Ali,20,2026-01-17,Appendicitis,Radiology,Critical

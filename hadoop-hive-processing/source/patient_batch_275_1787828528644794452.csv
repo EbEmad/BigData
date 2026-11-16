@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+29887,Tarek_Samy,69,2026-12-10,Migraine,Cardiology,Medium
+20632,Tarek_Samy,34,2026-06-04,Anemia,Neurology,Critical
+41838,Dina_Gamal,82,2026-07-24,Migraine,Oncology,Critical
+36855,Sara_Mohamed,66,2026-05-25,Influenza,Orthopedics,Low
+32112,Nour_Salem,81,2026-11-07,Influenza,Pediatrics,Critical
+18067,Khaled_Mostafa,36,2026-02-03,Anemia,Orthopedics,Critical
+24624,Nour_Salem,19,2026-08-26,Fracture,Emergency,Medium

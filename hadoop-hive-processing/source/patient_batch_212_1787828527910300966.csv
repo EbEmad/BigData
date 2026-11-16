@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21522,Khaled_Mostafa,27,2026-04-13,Diabetes,Internal_Medicine,Critical
+24684,Mona_Adel,65,2026-07-19,Hypertension,Pediatrics,Medium
+35096,Youssef_Khalil,52,2026-09-22,Appendicitis,ICU,Medium
+31277,Youssef_Khalil,28,2026-12-26,Pneumonia,Pediatrics,Critical
+14401,Dina_Gamal,86,2026-10-11,Influenza,Orthopedics,Critical
+38966,Sara_Mohamed,52,2026-01-15,Appendicitis,Surgery,High
+29338,Nour_Salem,38,2026-12-19,Migraine,Radiology,Low

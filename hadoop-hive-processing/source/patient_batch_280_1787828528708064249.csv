@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37320,Fatma_Ibrahim,41,2026-11-12,Asthma,Emergency,Low
+12583,Dina_Gamal,57,2026-08-05,Fracture,Orthopedics,Critical
+34165,Fatma_Ibrahim,75,2026-04-19,Hypertension,Internal_Medicine,Medium
+34057,Nour_Salem,20,2026-09-22,Hypertension,Surgery,Medium
+17420,Dina_Gamal,78,2026-10-15,Influenza,Pediatrics,Critical
+38929,Tarek_Samy,41,2026-06-20,Fracture,Neurology,High
+15623,Dina_Gamal,19,2026-02-14,Influenza,Emergency,Medium
+26453,Dina_Gamal,48,2026-09-23,Influenza,Radiology,Low

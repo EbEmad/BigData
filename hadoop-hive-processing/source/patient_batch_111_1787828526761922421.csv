@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+40922,Mona_Adel,26,2026-09-14,Hypertension,Radiology,Low
+25562,Sara_Mohamed,40,2026-10-24,Diabetes,Orthopedics,Low

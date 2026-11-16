@@ -1,0 +1,14 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14504,Youssef_Khalil,23,2026-06-05,Asthma,ICU,Critical
+33700,Tarek_Samy,70,2026-04-20,Pneumonia,Oncology,Low
+31393,Dina_Gamal,63,2026-02-14,Fracture,Orthopedics,High
+10184,Ahmed_Hassan,38,2026-07-24,Hypertension,Surgery,Critical
+14781,Omar_Ali,19,2026-03-06,Appendicitis,Orthopedics,Medium
+13282,Youssef_Khalil,51,2026-03-17,Fracture,Internal_Medicine,Low
+41627,Tarek_Samy,87,2026-08-23,Appendicitis,Oncology,Medium
+15328,Tarek_Samy,52,2026-05-07,Cardiac_Arrest,Radiology,High
+21060,Dina_Gamal,64,2026-09-24,Influenza,Internal_Medicine,High
+39594,Nour_Salem,66,2026-03-27,Migraine,Emergency,Critical
+17471,Ahmed_Hassan,46,2026-02-14,Fracture,Surgery,High
+15298,Ahmed_Hassan,55,2026-11-21,Anemia,Oncology,Critical
+40169,Dina_Gamal,62,2026-08-09,Influenza,Neurology,High

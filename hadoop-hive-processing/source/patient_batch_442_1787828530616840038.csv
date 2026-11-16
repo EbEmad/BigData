@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20355,Nour_Salem,39,2026-09-20,Anemia,Pediatrics,High
+24116,Fatma_Ibrahim,86,2026-09-27,Appendicitis,Surgery,Medium
+39542,Mona_Adel,78,2026-09-27,Fracture,Internal_Medicine,Medium

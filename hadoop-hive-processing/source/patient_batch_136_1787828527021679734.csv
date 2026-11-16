@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31210,Nour_Salem,34,2026-01-15,Anemia,Orthopedics,Medium
+24446,Tarek_Samy,80,2026-12-20,Cardiac_Arrest,Neurology,Low
+41574,Dina_Gamal,82,2026-08-14,Migraine,Neurology,Medium
+29950,Tarek_Samy,55,2026-05-13,Influenza,Radiology,Medium

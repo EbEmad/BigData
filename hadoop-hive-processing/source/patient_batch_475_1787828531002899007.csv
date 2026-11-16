@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32080,Sara_Mohamed,74,2026-11-04,Pneumonia,Internal_Medicine,Low
+22542,Mona_Adel,38,2026-05-06,Anemia,Surgery,Critical
+11077,Sara_Mohamed,65,2026-01-04,Fracture,ICU,Critical
+36831,Dina_Gamal,83,2026-08-23,Influenza,Orthopedics,High
+27894,Tarek_Samy,79,2026-05-06,Asthma,Orthopedics,Medium
+16666,Khaled_Mostafa,77,2026-03-12,Appendicitis,Cardiology,Medium
+36404,Sara_Mohamed,34,2026-04-04,Appendicitis,Orthopedics,Medium
+23467,Dina_Gamal,74,2026-05-26,Appendicitis,Neurology,Low

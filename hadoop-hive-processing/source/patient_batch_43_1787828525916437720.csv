@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38314,Ahmed_Hassan,35,2026-07-17,Anemia,ICU,Low
+41831,Fatma_Ibrahim,42,2026-05-27,Pneumonia,ICU,Medium
+33823,Khaled_Mostafa,31,2026-01-13,Diabetes,Surgery,Medium
+34207,Ahmed_Hassan,32,2026-02-12,Migraine,Cardiology,Medium
+24580,Youssef_Khalil,32,2026-02-13,Diabetes,Emergency,Low
+25671,Khaled_Mostafa,56,2026-11-09,Anemia,ICU,Medium
+24634,Tarek_Samy,23,2026-03-06,Migraine,Internal_Medicine,Low
+14248,Dina_Gamal,65,2026-04-24,Cardiac_Arrest,ICU,Low

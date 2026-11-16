@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30493,Mona_Adel,53,2026-01-04,Fracture,Oncology,Critical
+13910,Ahmed_Hassan,70,2026-02-14,Diabetes,Radiology,Medium

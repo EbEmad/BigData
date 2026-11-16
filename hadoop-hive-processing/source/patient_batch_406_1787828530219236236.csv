@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+36191,Fatma_Ibrahim,30,2026-02-07,Anemia,Pediatrics,Low
+13910,Youssef_Khalil,34,2026-02-23,Influenza,Pediatrics,High
+34739,Mona_Adel,41,2026-03-18,Pneumonia,Internal_Medicine,High
+40810,Dina_Gamal,34,2026-05-11,Migraine,Radiology,Low
+29229,Mona_Adel,43,2026-08-09,Fracture,Emergency,High
+19478,Nour_Salem,22,2026-12-04,Appendicitis,Cardiology,Low
+21944,Mona_Adel,68,2026-10-25,Migraine,Orthopedics,Low
+34988,Youssef_Khalil,48,2026-01-15,Migraine,Cardiology,Critical

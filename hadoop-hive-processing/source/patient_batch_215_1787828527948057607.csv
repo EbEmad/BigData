@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+11071,Sara_Mohamed,47,2026-06-22,Pneumonia,ICU,Medium
+33803,Ahmed_Hassan,71,2026-12-28,Migraine,Pediatrics,Medium
+21911,Omar_Ali,65,2026-06-11,Fracture,Pediatrics,Critical
+33741,Omar_Ali,33,2026-07-21,Asthma,Neurology,Medium

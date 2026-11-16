@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30340,Omar_Ali,85,2026-06-15,Anemia,Internal_Medicine,Critical
+13397,Khaled_Mostafa,53,2026-02-13,Fracture,Radiology,High
+28462,Youssef_Khalil,21,2026-05-28,Cardiac_Arrest,Cardiology,Medium
+20691,Khaled_Mostafa,70,2026-09-02,Hypertension,Internal_Medicine,Medium
+26550,Dina_Gamal,86,2026-04-15,Pneumonia,Orthopedics,Critical
+30273,Mona_Adel,36,2026-04-01,Migraine,Cardiology,Critical
+18959,Sara_Mohamed,45,2026-11-22,Cardiac_Arrest,Internal_Medicine,Critical
+14768,Mona_Adel,75,2026-12-06,Anemia,Internal_Medicine,Medium
+37776,Dina_Gamal,47,2026-12-08,Hypertension,ICU,Low

@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37069,Omar_Ali,58,2026-11-01,Cardiac_Arrest,Surgery,Medium
+13415,Sara_Mohamed,50,2026-01-22,Cardiac_Arrest,Emergency,Critical
+35394,Ahmed_Hassan,81,2026-02-22,Appendicitis,Oncology,Critical
+28107,Tarek_Samy,28,2026-01-13,Cardiac_Arrest,Emergency,Critical
+39843,Tarek_Samy,55,2026-04-16,Asthma,Radiology,Critical
+26420,Mona_Adel,81,2026-07-04,Hypertension,Emergency,High
+10293,Youssef_Khalil,31,2026-07-01,Anemia,Oncology,Critical
+27047,Fatma_Ibrahim,71,2026-04-12,Fracture,Radiology,Medium
+24795,Ahmed_Hassan,19,2026-08-06,Pneumonia,Emergency,Low
+19398,Nour_Salem,81,2026-04-28,Diabetes,Neurology,Critical

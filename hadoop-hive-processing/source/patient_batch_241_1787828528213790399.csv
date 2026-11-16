@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+16319,Dina_Gamal,84,2026-11-16,Influenza,Oncology,Low
+19560,Tarek_Samy,54,2026-11-02,Cardiac_Arrest,Pediatrics,High

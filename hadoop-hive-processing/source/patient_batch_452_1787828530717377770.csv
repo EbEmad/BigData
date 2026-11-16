@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+23485,Dina_Gamal,38,2026-04-01,Appendicitis,Oncology,Low
+36433,Nour_Salem,37,2026-09-15,Cardiac_Arrest,ICU,Critical
+11957,Khaled_Mostafa,55,2026-04-14,Influenza,ICU,Low
+24821,Khaled_Mostafa,32,2026-08-18,Asthma,Pediatrics,Low
+16662,Tarek_Samy,58,2026-04-09,Diabetes,Cardiology,Critical
+31083,Fatma_Ibrahim,77,2026-09-27,Cardiac_Arrest,ICU,High
+19034,Dina_Gamal,46,2026-02-07,Pneumonia,Surgery,Low
+20295,Fatma_Ibrahim,26,2026-09-22,Hypertension,Pediatrics,Low
+24785,Youssef_Khalil,77,2026-03-04,Cardiac_Arrest,Pediatrics,Medium
+40481,Youssef_Khalil,68,2026-02-15,Influenza,ICU,High

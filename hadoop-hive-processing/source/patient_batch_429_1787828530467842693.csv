@@ -1,0 +1,12 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+35098,Omar_Ali,48,2026-05-16,Pneumonia,Surgery,High
+29082,Khaled_Mostafa,73,2026-08-13,Fracture,Oncology,High
+18362,Sara_Mohamed,84,2026-11-28,Anemia,Neurology,Medium
+23202,Khaled_Mostafa,76,2026-06-12,Appendicitis,Pediatrics,Critical
+10945,Nour_Salem,39,2026-01-25,Cardiac_Arrest,Surgery,Medium
+24589,Dina_Gamal,41,2026-12-25,Migraine,Surgery,Low
+10766,Mona_Adel,76,2026-04-09,Cardiac_Arrest,Surgery,High
+31226,Fatma_Ibrahim,84,2026-04-11,Migraine,Pediatrics,High
+37552,Omar_Ali,44,2026-07-19,Appendicitis,Neurology,Low
+42441,Tarek_Samy,19,2026-05-02,Migraine,Oncology,Low
+13529,Omar_Ali,69,2026-10-25,Anemia,Neurology,Critical

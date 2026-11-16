@@ -1,0 +1,12 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+29576,Tarek_Samy,68,2026-03-03,Hypertension,Surgery,Low
+40853,Khaled_Mostafa,61,2026-09-03,Pneumonia,Radiology,Low
+17944,Ahmed_Hassan,30,2026-09-03,Influenza,Neurology,Low
+42621,Tarek_Samy,54,2026-07-06,Appendicitis,Cardiology,Medium
+16109,Nour_Salem,62,2026-03-26,Diabetes,ICU,Low
+35280,Omar_Ali,42,2026-06-25,Asthma,Internal_Medicine,High
+24407,Sara_Mohamed,23,2026-05-18,Influenza,Surgery,Critical
+32433,Mona_Adel,69,2026-05-23,Appendicitis,Cardiology,Medium
+41753,Tarek_Samy,29,2026-11-10,Diabetes,Neurology,Low
+32431,Mona_Adel,21,2026-04-25,Pneumonia,Orthopedics,Medium
+29870,Dina_Gamal,54,2026-01-14,Fracture,ICU,High

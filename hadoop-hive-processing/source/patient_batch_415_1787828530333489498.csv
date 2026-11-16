@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21673,Tarek_Samy,59,2026-12-20,Hypertension,ICU,Critical
+16637,Mona_Adel,63,2026-11-14,Diabetes,Neurology,Critical
+26998,Dina_Gamal,60,2026-01-02,Hypertension,Pediatrics,High
+33344,Mona_Adel,82,2026-11-25,Asthma,Emergency,High
+16350,Nour_Salem,81,2026-01-02,Anemia,Internal_Medicine,Medium

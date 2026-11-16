@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+16834,Sara_Mohamed,39,2026-02-05,Diabetes,Internal_Medicine,Low
+16062,Tarek_Samy,51,2026-09-16,Migraine,Internal_Medicine,Medium
+16338,Mona_Adel,46,2026-03-12,Migraine,Internal_Medicine,Critical

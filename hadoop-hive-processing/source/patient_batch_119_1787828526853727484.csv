@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+39327,Sara_Mohamed,42,2026-12-25,Migraine,Radiology,Low
+32382,Nour_Salem,70,2026-05-08,Pneumonia,Cardiology,Low
+23082,Ahmed_Hassan,52,2026-09-20,Pneumonia,Internal_Medicine,Low
+20639,Omar_Ali,35,2026-08-22,Cardiac_Arrest,ICU,Low

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+25454,Dina_Gamal,37,2026-02-08,Pneumonia,Orthopedics,Low
+20781,Dina_Gamal,71,2026-06-13,Hypertension,Cardiology,Medium
+20825,Omar_Ali,85,2026-09-04,Migraine,Neurology,Low
+40468,Dina_Gamal,87,2026-01-04,Asthma,Radiology,Medium
+25937,Ahmed_Hassan,68,2026-07-26,Appendicitis,Internal_Medicine,High
+42406,Mona_Adel,50,2026-09-05,Influenza,Pediatrics,High
+28197,Sara_Mohamed,42,2026-08-10,Influenza,Cardiology,Critical

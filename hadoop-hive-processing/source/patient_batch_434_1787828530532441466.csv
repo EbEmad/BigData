@@ -1,0 +1,16 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+27555,Sara_Mohamed,28,2026-12-01,Diabetes,Radiology,Medium
+31861,Dina_Gamal,72,2026-04-01,Cardiac_Arrest,Neurology,Medium
+22142,Ahmed_Hassan,59,2026-08-04,Migraine,Emergency,Low
+33349,Tarek_Samy,39,2026-09-27,Influenza,Internal_Medicine,High
+26312,Tarek_Samy,45,2026-01-12,Anemia,Emergency,Critical
+18568,Mona_Adel,64,2026-10-27,Cardiac_Arrest,Emergency,Low
+36317,Ahmed_Hassan,60,2026-04-03,Migraine,Pediatrics,Low
+31689,Ahmed_Hassan,80,2026-06-04,Appendicitis,ICU,Low
+40450,Tarek_Samy,75,2026-11-08,Diabetes,ICU,Critical
+36043,Tarek_Samy,78,2026-03-11,Diabetes,Radiology,Medium
+29714,Mona_Adel,32,2026-08-16,Influenza,Pediatrics,Low
+39797,Omar_Ali,86,2026-09-24,Migraine,Pediatrics,Low
+35459,Sara_Mohamed,18,2026-06-01,Migraine,Internal_Medicine,Critical
+28338,Nour_Salem,70,2026-06-07,Hypertension,ICU,Low
+30403,Khaled_Mostafa,42,2026-12-13,Appendicitis,Surgery,High

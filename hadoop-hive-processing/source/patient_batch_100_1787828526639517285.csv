@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+33952,Omar_Ali,77,2026-03-19,Cardiac_Arrest,Radiology,Medium
+40030,Tarek_Samy,59,2026-08-15,Pneumonia,ICU,Low
+36843,Khaled_Mostafa,76,2026-10-24,Diabetes,Radiology,Medium
+22831,Tarek_Samy,41,2026-05-23,Cardiac_Arrest,Neurology,Low
+26596,Fatma_Ibrahim,30,2026-10-25,Cardiac_Arrest,Cardiology,High
+24431,Tarek_Samy,35,2026-05-02,Appendicitis,Internal_Medicine,Critical
+35614,Tarek_Samy,64,2026-11-24,Pneumonia,Oncology,Medium
+41616,Ahmed_Hassan,35,2026-06-02,Fracture,Internal_Medicine,Critical
+40564,Nour_Salem,58,2026-03-05,Pneumonia,Surgery,High
+32502,Dina_Gamal,29,2026-05-19,Migraine,Internal_Medicine,Critical

@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20565,Fatma_Ibrahim,46,2026-08-08,Migraine,Radiology,Low
+21824,Youssef_Khalil,34,2026-05-03,Anemia,ICU,High
+23379,Nour_Salem,39,2026-11-22,Migraine,Internal_Medicine,Medium
+31403,Fatma_Ibrahim,47,2026-01-09,Appendicitis,ICU,High
+34806,Mona_Adel,66,2026-03-07,Influenza,Pediatrics,Medium
+22084,Fatma_Ibrahim,33,2026-10-08,Asthma,Orthopedics,Medium
+12146,Youssef_Khalil,78,2026-11-14,Hypertension,Orthopedics,Low
+24338,Fatma_Ibrahim,40,2026-04-08,Pneumonia,Oncology,High
+28119,Khaled_Mostafa,27,2026-04-12,Asthma,Orthopedics,Low
+37175,Nour_Salem,73,2026-07-09,Fracture,Pediatrics,Low

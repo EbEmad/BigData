@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+29344,Youssef_Khalil,37,2026-11-11,Pneumonia,Oncology,Low
+23098,Fatma_Ibrahim,61,2026-10-22,Influenza,ICU,High
+18087,Dina_Gamal,30,2026-06-01,Migraine,Orthopedics,Low
+34675,Youssef_Khalil,58,2026-12-13,Pneumonia,Neurology,Medium
+38904,Khaled_Mostafa,71,2026-04-20,Diabetes,Radiology,Medium

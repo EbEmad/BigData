@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21163,Fatma_Ibrahim,26,2026-01-25,Cardiac_Arrest,Surgery,Critical
+39259,Nour_Salem,41,2026-11-13,Influenza,Orthopedics,Critical
+33042,Youssef_Khalil,74,2026-03-02,Anemia,Orthopedics,Critical
+36240,Khaled_Mostafa,63,2026-10-20,Anemia,Oncology,Low
+22960,Fatma_Ibrahim,69,2026-04-02,Hypertension,Pediatrics,Critical

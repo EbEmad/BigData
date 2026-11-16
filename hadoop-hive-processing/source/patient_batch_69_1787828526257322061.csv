@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21457,Nour_Salem,84,2026-03-18,Migraine,Pediatrics,High
+39699,Khaled_Mostafa,68,2026-05-28,Fracture,Internal_Medicine,Medium
+25393,Khaled_Mostafa,67,2026-02-03,Appendicitis,Emergency,High
+34663,Khaled_Mostafa,44,2026-12-25,Migraine,Surgery,Critical
+31294,Tarek_Samy,46,2026-10-28,Pneumonia,Neurology,Critical
+35259,Fatma_Ibrahim,31,2026-01-25,Asthma,Orthopedics,High
+20768,Ahmed_Hassan,79,2026-10-06,Pneumonia,Neurology,Medium
+18546,Mona_Adel,55,2026-07-28,Appendicitis,ICU,Critical
+36841,Sara_Mohamed,85,2026-02-08,Appendicitis,Oncology,Critical

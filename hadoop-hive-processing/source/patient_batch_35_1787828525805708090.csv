@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12077,Ahmed_Hassan,41,2026-05-18,Pneumonia,Cardiology,Medium
+40173,Khaled_Mostafa,27,2026-08-10,Hypertension,ICU,High

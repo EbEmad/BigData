@@ -59,6 +59,7 @@ services:
     container_name: jupyter
     ports:
       - "8888:8888"   # jupyter ui
+      - "4040:4040"   # spark ui
     environment:
       - SPARK_OPTS="--master spark://spark-master:7077"
     volumes:

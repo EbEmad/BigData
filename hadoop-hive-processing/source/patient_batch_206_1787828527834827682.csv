@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24574,Dina_Gamal,37,2026-06-20,Fracture,Surgery,Critical
+12079,Mona_Adel,50,2026-06-24,Diabetes,Orthopedics,High
+27084,Nour_Salem,83,2026-02-23,Fracture,Oncology,Critical
+25987,Tarek_Samy,61,2026-11-10,Fracture,Oncology,Low
+37915,Mona_Adel,36,2026-11-14,Influenza,Internal_Medicine,Low

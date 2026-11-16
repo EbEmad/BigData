@@ -1,0 +1,15 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14360,Fatma_Ibrahim,56,2026-11-15,Anemia,Emergency,Low
+35952,Nour_Salem,52,2026-08-21,Diabetes,Surgery,Low
+40710,Tarek_Samy,40,2026-07-03,Anemia,Internal_Medicine,High
+27172,Dina_Gamal,64,2026-10-27,Hypertension,Radiology,Low
+26291,Sara_Mohamed,67,2026-09-16,Asthma,Pediatrics,High
+42641,Dina_Gamal,26,2026-07-26,Appendicitis,Radiology,Critical
+18778,Khaled_Mostafa,28,2026-03-25,Asthma,Internal_Medicine,Low
+15081,Omar_Ali,25,2026-10-21,Diabetes,ICU,Low
+13170,Ahmed_Hassan,50,2026-03-25,Influenza,Pediatrics,High
+21558,Sara_Mohamed,79,2026-05-13,Migraine,ICU,Low
+22293,Dina_Gamal,39,2026-08-20,Fracture,ICU,High
+14041,Sara_Mohamed,40,2026-09-14,Anemia,Pediatrics,Critical
+17218,Sara_Mohamed,66,2026-07-10,Anemia,Neurology,High
+27739,Ahmed_Hassan,37,2026-07-06,Asthma,Pediatrics,Low

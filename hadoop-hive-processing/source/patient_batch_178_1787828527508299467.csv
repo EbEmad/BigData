@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24353,Ahmed_Hassan,71,2026-02-27,Fracture,Orthopedics,Medium
+40725,Sara_Mohamed,46,2026-10-22,Cardiac_Arrest,Internal_Medicine,High
+34154,Dina_Gamal,63,2026-03-25,Pneumonia,Internal_Medicine,Low
+25861,Sara_Mohamed,22,2026-07-21,Anemia,Oncology,Medium
+31367,Fatma_Ibrahim,51,2026-11-06,Cardiac_Arrest,Surgery,Medium
+17556,Sara_Mohamed,54,2026-09-15,Pneumonia,Surgery,High

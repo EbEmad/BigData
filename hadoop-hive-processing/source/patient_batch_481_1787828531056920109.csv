@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12406,Khaled_Mostafa,70,2026-07-27,Pneumonia,Surgery,High
+32784,Dina_Gamal,59,2026-11-20,Pneumonia,Surgery,Low
+37014,Khaled_Mostafa,76,2026-01-26,Influenza,Pediatrics,High
+40900,Youssef_Khalil,57,2026-11-03,Asthma,Cardiology,Critical
+21629,Sara_Mohamed,47,2026-12-26,Fracture,Oncology,Low

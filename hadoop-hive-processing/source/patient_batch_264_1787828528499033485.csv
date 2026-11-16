@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20951,Dina_Gamal,58,2026-08-10,Asthma,Emergency,Low
+19661,Dina_Gamal,28,2026-09-15,Anemia,Surgery,Medium
+11983,Dina_Gamal,36,2026-03-01,Fracture,Oncology,Medium
+35670,Ahmed_Hassan,57,2026-03-14,Hypertension,Cardiology,High
+17505,Sara_Mohamed,28,2026-10-26,Influenza,Radiology,Critical
+25647,Ahmed_Hassan,79,2026-02-16,Pneumonia,Pediatrics,Low
+42264,Tarek_Samy,58,2026-11-17,Diabetes,Surgery,Medium

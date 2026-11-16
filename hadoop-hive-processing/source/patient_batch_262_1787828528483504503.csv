@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37589,Omar_Ali,70,2026-03-06,Asthma,Radiology,High
+25755,Ahmed_Hassan,65,2026-06-01,Influenza,Internal_Medicine,Medium
+32574,Fatma_Ibrahim,66,2026-08-17,Influenza,Orthopedics,High
+15895,Mona_Adel,51,2026-04-19,Cardiac_Arrest,Cardiology,Medium

@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+15018,Fatma_Ibrahim,54,2026-12-24,Hypertension,Surgery,Low
+17935,Youssef_Khalil,30,2026-01-01,Migraine,Cardiology,Critical
+13939,Nour_Salem,29,2026-04-21,Asthma,Radiology,Low
+22571,Mona_Adel,21,2026-01-03,Influenza,Radiology,Critical
+39403,Sara_Mohamed,39,2026-09-06,Diabetes,Pediatrics,Critical

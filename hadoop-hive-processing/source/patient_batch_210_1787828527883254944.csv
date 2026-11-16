@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+35020,Ahmed_Hassan,42,2026-03-04,Fracture,Oncology,Low
+17888,Youssef_Khalil,78,2026-10-04,Asthma,ICU,Critical
+30280,Nour_Salem,52,2026-08-19,Migraine,Surgery,Medium
+35010,Nour_Salem,20,2026-03-09,Fracture,Radiology,High
+39875,Sara_Mohamed,35,2026-12-24,Influenza,Orthopedics,Critical
+34514,Youssef_Khalil,35,2026-09-27,Hypertension,Surgery,Critical
+12598,Fatma_Ibrahim,72,2026-01-26,Appendicitis,Cardiology,High

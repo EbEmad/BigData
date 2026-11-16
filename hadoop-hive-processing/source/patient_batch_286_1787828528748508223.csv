@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24331,Nour_Salem,70,2026-11-22,Anemia,Internal_Medicine,Medium
+37338,Nour_Salem,49,2026-07-26,Pneumonia,Pediatrics,Medium
+36931,Ahmed_Hassan,48,2026-07-27,Cardiac_Arrest,Oncology,Critical
+30238,Youssef_Khalil,77,2026-12-06,Cardiac_Arrest,Internal_Medicine,Critical
+18766,Khaled_Mostafa,25,2026-06-03,Appendicitis,ICU,Critical
+20862,Youssef_Khalil,21,2026-06-05,Influenza,Oncology,Medium
+30337,Youssef_Khalil,50,2026-01-07,Migraine,Emergency,Low
+25234,Mona_Adel,55,2026-04-21,Influenza,Oncology,High
+36862,Ahmed_Hassan,47,2026-07-20,Diabetes,Orthopedics,High
+18560,Dina_Gamal,75,2026-01-25,Hypertension,Surgery,Low

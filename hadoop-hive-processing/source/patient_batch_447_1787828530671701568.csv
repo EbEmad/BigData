@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12175,Ahmed_Hassan,23,2026-04-02,Influenza,Neurology,Medium
+37055,Omar_Ali,25,2026-03-12,Influenza,Internal_Medicine,High

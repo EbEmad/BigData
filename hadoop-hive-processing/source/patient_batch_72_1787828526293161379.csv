@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14000,Sara_Mohamed,37,2026-08-26,Diabetes,Radiology,High
+26206,Nour_Salem,59,2026-12-23,Cardiac_Arrest,Neurology,High
+26745,Youssef_Khalil,43,2026-10-17,Influenza,Orthopedics,Medium
+24467,Omar_Ali,86,2026-03-18,Influenza,ICU,High

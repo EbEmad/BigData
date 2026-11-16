@@ -11,7 +11,7 @@ def get_spark(app_name="SparkOptDemo", configs=None):
             builder = builder.config(k, v)
     return builder.getOrCreate()
 
-def generate_large_table(spark, num_rows=10_000_000, num_partitions=200):
+def generate_large_table(spark, num_rows=1000_000, num_partitions=200):
     """Simulate a protocol-events-style table (large fact table)."""
     return (
         spark.range(0, num_rows, numPartitions=num_partitions)
@@ -32,7 +32,7 @@ def generate_small_lookup(spark, num_rows=5_000):
         .withColumn("priority", (F.rand() * 10).cast("int"))
     )
 
-def generate_skewed_table(spark, num_rows=10_000_000, hot_keys=5, hot_key_ratio=0.6):
+def generate_skewed_table(spark, num_rows=1000_000, hot_keys=5, hot_key_ratio=0.6):
     """
     Generate a table where a few 'hot' keys hold 60% of the data.
     This simulates real-world data skew (e.g., a few heavy-usage accounts).

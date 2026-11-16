@@ -1,0 +1,14 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12299,Tarek_Samy,79,2026-11-09,Fracture,Orthopedics,Low
+36518,Ahmed_Hassan,41,2026-09-19,Appendicitis,Surgery,Low
+36617,Ahmed_Hassan,36,2026-01-01,Anemia,Internal_Medicine,Medium
+19285,Sara_Mohamed,39,2026-11-18,Hypertension,Orthopedics,Medium
+17639,Dina_Gamal,44,2026-06-25,Asthma,Pediatrics,Medium
+12773,Nour_Salem,44,2026-02-15,Influenza,Pediatrics,Medium
+34268,Tarek_Samy,57,2026-09-16,Diabetes,Cardiology,High
+42601,Youssef_Khalil,87,2026-04-10,Cardiac_Arrest,Internal_Medicine,Critical
+38373,Nour_Salem,61,2026-06-12,Diabetes,Internal_Medicine,Critical
+35663,Tarek_Samy,44,2026-10-21,Anemia,Oncology,Critical
+17890,Tarek_Samy,48,2026-01-26,Asthma,Cardiology,Medium
+34686,Ahmed_Hassan,32,2026-05-02,Diabetes,ICU,Low
+33081,Tarek_Samy,69,2026-03-28,Hypertension,ICU,High

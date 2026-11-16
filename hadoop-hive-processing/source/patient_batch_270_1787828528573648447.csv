@@ -1,0 +1,15 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+34439,Omar_Ali,75,2026-07-23,Cardiac_Arrest,Internal_Medicine,Low
+27225,Ahmed_Hassan,64,2026-04-16,Migraine,Cardiology,Medium
+21416,Dina_Gamal,55,2026-04-22,Migraine,Surgery,Medium
+21425,Tarek_Samy,84,2026-01-06,Hypertension,Surgery,Low
+28379,Omar_Ali,64,2026-04-26,Asthma,Internal_Medicine,High
+39445,Omar_Ali,61,2026-07-25,Anemia,Emergency,High
+42539,Fatma_Ibrahim,44,2026-05-27,Pneumonia,Radiology,Low
+19947,Dina_Gamal,19,2026-01-01,Influenza,ICU,High
+25694,Ahmed_Hassan,32,2026-03-11,Anemia,ICU,Medium
+39527,Mona_Adel,67,2026-02-24,Pneumonia,Radiology,Medium
+17758,Nour_Salem,36,2026-02-23,Anemia,Oncology,Critical
+27248,Omar_Ali,46,2026-12-14,Appendicitis,Internal_Medicine,Medium
+23893,Youssef_Khalil,87,2026-03-04,Hypertension,Surgery,Medium
+30962,Sara_Mohamed,32,2026-07-15,Diabetes,Surgery,Critical

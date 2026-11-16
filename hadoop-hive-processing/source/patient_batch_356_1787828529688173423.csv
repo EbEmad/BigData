@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+26148,Tarek_Samy,52,2026-10-17,Anemia,Emergency,Medium
+13219,Youssef_Khalil,31,2026-06-01,Asthma,ICU,High

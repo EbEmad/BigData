@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38057,Youssef_Khalil,72,2026-08-26,Influenza,Radiology,Low
+20498,Sara_Mohamed,62,2026-06-24,Appendicitis,Orthopedics,High
+15446,Youssef_Khalil,47,2026-03-04,Appendicitis,Pediatrics,High
+37912,Fatma_Ibrahim,85,2026-09-02,Anemia,Emergency,Low
+12267,Nour_Salem,67,2026-05-22,Hypertension,Surgery,High
+16206,Mona_Adel,66,2026-10-28,Hypertension,ICU,Critical
+29741,Ahmed_Hassan,62,2026-05-21,Pneumonia,Emergency,Medium
+19959,Dina_Gamal,35,2026-04-25,Influenza,Oncology,Low
+34865,Fatma_Ibrahim,55,2026-03-16,Appendicitis,Emergency,Low

@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20307,Youssef_Khalil,30,2026-03-23,Pneumonia,Emergency,High
+14484,Tarek_Samy,63,2026-12-22,Diabetes,Orthopedics,Low
+41753,Fatma_Ibrahim,79,2026-12-16,Cardiac_Arrest,ICU,Medium
+20252,Omar_Ali,37,2026-12-24,Migraine,Emergency,Medium
+28441,Dina_Gamal,39,2026-09-16,Diabetes,Surgery,Low
+20166,Dina_Gamal,20,2026-11-01,Fracture,Neurology,Medium

@@ -1,0 +1,99 @@
+version: '3.8'
+services:
+  kafka:
+    image: apache/kafka:4.2.0
+    container_name: kafka
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    networks:
+      - bgdcluster
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+  
+  zk:
+    image: zookeeper:3.8.4
+    container_name: zk
+    hostname: zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      - bgdcluster
+    healthcheck:
+      test: ["CMD-SHELL", "echo ruok | nc localhost 2181 | grep -q imok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    env_file:
+      - ./env_files/zk.env
+
+
+  hive:
+    image: ysfetman/bdss-hadoop-hive:4.1.0
+    container_name: hive
+    hostname: hive
+    ports:
+      - "10002:10002"
+    networks:
+      - bgdcluster
+    command: 
+      ["/scripts/hive.sh"]
+    env_file:
+      - ./env_files/hive.env
+    depends_on:
+      worker4:
+        condition: service_healthy
+      metastore-db:
+        condition: service_healthy
+  
+  metastore-db:
+    image: postgres:15
+    container_name: metastore-db
+    hostname: metastore-db
+    ports:
+      - "6432:5432"
+    networks:
+      - bgdcluster
+    environment:
+      POSTGRES_DB: metastore
+      POSTGRES_USER: hive
+      POSTGRES_PASSWORD: hive
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hive -d metastore -h localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  journalnode1:
+    image: ysfetman/bdss-hadoop-base:3.4.2
+    privileged: true
+    container_name: journalnode1
+    hostname: journalnode1
+    ports:
+      - "18480:8480"
+    volumes:
+      - ./volumes/jn1:/opt/hadoop/dfs/journal
+    networks:
+      - bd_ss_nw
+    command: 
+      ["/scripts/jn.sh"]
+    env_file:
+      - ./env_files/hadoop.env
+  
+
+
+
+networks:
+  bgdcluster:
+    driver: bridge

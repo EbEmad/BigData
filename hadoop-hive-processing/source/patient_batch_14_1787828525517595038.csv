@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30083,Khaled_Mostafa,60,2026-11-06,Pneumonia,Emergency,Low
+30958,Mona_Adel,52,2026-09-04,Influenza,ICU,Critical
+35620,Khaled_Mostafa,87,2026-11-22,Fracture,Surgery,High
+18396,Nour_Salem,72,2026-03-01,Cardiac_Arrest,Cardiology,Medium
+33948,Tarek_Samy,28,2026-12-27,Pneumonia,Emergency,Critical
+37831,Khaled_Mostafa,30,2026-10-15,Fracture,Orthopedics,Critical
+32079,Youssef_Khalil,86,2026-04-05,Influenza,Radiology,Medium

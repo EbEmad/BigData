@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+16245,Dina_Gamal,71,2026-04-18,Migraine,Emergency,Critical
+27763,Tarek_Samy,23,2026-02-28,Cardiac_Arrest,Internal_Medicine,Low
+22126,Khaled_Mostafa,75,2026-04-18,Cardiac_Arrest,Radiology,High

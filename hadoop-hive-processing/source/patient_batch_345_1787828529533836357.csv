@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+42019,Khaled_Mostafa,40,2026-12-16,Cardiac_Arrest,Pediatrics,High
+22728,Mona_Adel,22,2026-11-18,Hypertension,ICU,Critical

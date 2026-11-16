@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+39146,Fatma_Ibrahim,85,2026-02-07,Fracture,Radiology,High
+25595,Mona_Adel,64,2026-09-16,Diabetes,Oncology,Low
+14113,Khaled_Mostafa,21,2026-05-15,Asthma,Oncology,High
+27212,Dina_Gamal,26,2026-09-10,Anemia,Neurology,Medium
+13185,Khaled_Mostafa,45,2026-09-05,Migraine,Pediatrics,High
+28683,Dina_Gamal,79,2026-05-06,Migraine,Surgery,High
+42602,Omar_Ali,33,2026-07-04,Anemia,Emergency,Low
+23946,Mona_Adel,38,2026-01-01,Influenza,Orthopedics,Low

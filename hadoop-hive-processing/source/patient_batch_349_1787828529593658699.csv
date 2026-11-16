@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+28718,Fatma_Ibrahim,41,2026-12-23,Cardiac_Arrest,Pediatrics,Low
+30660,Khaled_Mostafa,50,2026-01-14,Appendicitis,Pediatrics,Low
+15213,Tarek_Samy,24,2026-05-23,Asthma,Neurology,Low
+27296,Omar_Ali,75,2026-04-09,Diabetes,Neurology,High

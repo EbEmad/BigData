@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+17283,Khaled_Mostafa,67,2026-03-18,Anemia,Emergency,Critical
+17352,Nour_Salem,75,2026-09-20,Appendicitis,Radiology,Critical
+16829,Sara_Mohamed,22,2026-01-13,Pneumonia,Internal_Medicine,High
+32162,Tarek_Samy,80,2026-08-28,Cardiac_Arrest,Emergency,Low
+33158,Omar_Ali,84,2026-05-12,Anemia,Radiology,High
+16611,Nour_Salem,73,2026-08-18,Appendicitis,ICU,Low

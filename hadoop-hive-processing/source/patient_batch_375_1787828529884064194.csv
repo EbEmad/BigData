@@ -1,0 +1,17 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32694,Fatma_Ibrahim,84,2026-06-02,Appendicitis,Internal_Medicine,High
+32753,Tarek_Samy,39,2026-06-18,Asthma,Internal_Medicine,High
+39598,Nour_Salem,84,2026-06-12,Asthma,Emergency,Low
+37245,Youssef_Khalil,20,2026-10-14,Pneumonia,Emergency,High
+41110,Sara_Mohamed,21,2026-09-07,Pneumonia,Pediatrics,Medium
+30525,Fatma_Ibrahim,76,2026-05-21,Migraine,Emergency,High
+38068,Nour_Salem,79,2026-07-21,Appendicitis,Pediatrics,Low
+33905,Youssef_Khalil,42,2026-06-20,Asthma,ICU,Critical
+39462,Youssef_Khalil,64,2026-01-15,Appendicitis,Emergency,Medium
+24854,Nour_Salem,67,2026-12-04,Appendicitis,Radiology,High
+36802,Fatma_Ibrahim,84,2026-01-09,Hypertension,Orthopedics,Medium
+29299,Mona_Adel,24,2026-11-24,Influenza,Oncology,Critical
+23354,Sara_Mohamed,79,2026-01-06,Cardiac_Arrest,Orthopedics,Medium
+31116,Ahmed_Hassan,30,2026-06-25,Influenza,Emergency,Low
+27354,Khaled_Mostafa,36,2026-12-05,Influenza,ICU,High
+41924,Tarek_Samy,46,2026-02-17,Pneumonia,Emergency,Critical

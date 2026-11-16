@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38098,Fatma_Ibrahim,19,2026-07-28,Influenza,Neurology,Medium
+27371,Omar_Ali,71,2026-10-15,Hypertension,Oncology,Medium
+25510,Sara_Mohamed,42,2026-04-08,Influenza,Surgery,Medium

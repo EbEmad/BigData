@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+10545,Nour_Salem,72,2026-05-23,Hypertension,Cardiology,High
+10419,Ahmed_Hassan,65,2026-02-28,Hypertension,Radiology,Critical
+26879,Tarek_Samy,78,2026-12-28,Pneumonia,Neurology,High
+17104,Tarek_Samy,33,2026-03-12,Asthma,Neurology,Low
+31380,Omar_Ali,19,2026-04-25,Migraine,Internal_Medicine,Medium
+16895,Omar_Ali,35,2026-05-18,Asthma,Radiology,High
+13722,Omar_Ali,32,2026-08-01,Appendicitis,ICU,Critical

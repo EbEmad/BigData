@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+40765,Youssef_Khalil,76,2026-08-23,Migraine,Emergency,High
+25515,Khaled_Mostafa,44,2026-08-27,Cardiac_Arrest,Emergency,Medium
+21566,Dina_Gamal,50,2026-06-11,Cardiac_Arrest,ICU,High
+15857,Mona_Adel,55,2026-07-01,Cardiac_Arrest,Radiology,Medium
+34945,Omar_Ali,22,2026-12-19,Asthma,Cardiology,Low
+41581,Fatma_Ibrahim,63,2026-06-26,Cardiac_Arrest,Cardiology,Critical
+11664,Ahmed_Hassan,75,2026-05-13,Hypertension,Neurology,High

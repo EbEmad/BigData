@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+15098,Mona_Adel,33,2026-05-24,Appendicitis,Oncology,Critical
+14198,Omar_Ali,79,2026-03-15,Influenza,Internal_Medicine,Critical
+27647,Mona_Adel,31,2026-04-26,Migraine,Cardiology,Critical
+14647,Sara_Mohamed,73,2026-09-28,Cardiac_Arrest,Neurology,Medium
+15872,Nour_Salem,84,2026-08-09,Fracture,Pediatrics,Medium

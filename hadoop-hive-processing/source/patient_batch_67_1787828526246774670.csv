@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+39491,Fatma_Ibrahim,54,2026-01-02,Cardiac_Arrest,Neurology,High
+13749,Fatma_Ibrahim,21,2026-04-04,Appendicitis,Radiology,Low
+35712,Sara_Mohamed,79,2026-11-15,Appendicitis,Pediatrics,Critical
+13600,Fatma_Ibrahim,78,2026-03-10,Migraine,Neurology,Low

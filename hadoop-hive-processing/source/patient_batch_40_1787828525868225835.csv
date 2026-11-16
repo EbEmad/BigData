@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31048,Fatma_Ibrahim,70,2026-04-28,Asthma,Pediatrics,Low
+36886,Ahmed_Hassan,66,2026-03-18,Anemia,ICU,Low
+34901,Fatma_Ibrahim,44,2026-04-14,Cardiac_Arrest,ICU,Critical
+42144,Youssef_Khalil,43,2026-11-23,Cardiac_Arrest,Internal_Medicine,Medium
+26294,Dina_Gamal,64,2026-05-08,Asthma,Emergency,Low
+36233,Tarek_Samy,73,2026-06-07,Pneumonia,Oncology,Medium
+24780,Dina_Gamal,72,2026-11-26,Pneumonia,Internal_Medicine,Medium
+24439,Youssef_Khalil,49,2026-06-22,Anemia,Internal_Medicine,Low
+15928,Tarek_Samy,49,2026-11-20,Pneumonia,Pediatrics,High

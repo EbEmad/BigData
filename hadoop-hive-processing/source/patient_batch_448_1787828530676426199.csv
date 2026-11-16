@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20203,Omar_Ali,23,2026-04-12,Diabetes,Radiology,Medium
+18257,Sara_Mohamed,61,2026-01-01,Cardiac_Arrest,Pediatrics,Medium
+27695,Khaled_Mostafa,71,2026-05-01,Fracture,Surgery,Critical
+20450,Mona_Adel,26,2026-10-11,Appendicitis,Internal_Medicine,Critical
+27247,Mona_Adel,19,2026-04-26,Anemia,Emergency,Medium
+20724,Fatma_Ibrahim,22,2026-03-16,Appendicitis,Radiology,Critical

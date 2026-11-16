@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+13257,Mona_Adel,25,2026-07-03,Diabetes,Cardiology,High
+17299,Ahmed_Hassan,26,2026-09-17,Influenza,ICU,Low

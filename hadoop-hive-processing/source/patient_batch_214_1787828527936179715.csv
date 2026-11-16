@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14085,Omar_Ali,55,2026-05-28,Migraine,Orthopedics,Medium
+17600,Dina_Gamal,33,2026-10-13,Cardiac_Arrest,Orthopedics,Medium
+28268,Fatma_Ibrahim,85,2026-10-14,Pneumonia,Orthopedics,Critical
+42048,Mona_Adel,80,2026-05-25,Fracture,Pediatrics,Medium
+39098,Fatma_Ibrahim,37,2026-08-10,Hypertension,Orthopedics,Critical
+34545,Nour_Salem,27,2026-12-17,Anemia,Orthopedics,Low
+38682,Ahmed_Hassan,46,2026-06-08,Hypertension,Internal_Medicine,Critical
+13794,Ahmed_Hassan,56,2026-11-01,Asthma,Emergency,Low
+15291,Tarek_Samy,22,2026-07-21,Anemia,Oncology,High
+37067,Sara_Mohamed,83,2026-07-06,Hypertension,Oncology,High

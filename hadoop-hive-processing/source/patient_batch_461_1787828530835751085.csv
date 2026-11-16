@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31062,Dina_Gamal,35,2026-01-12,Diabetes,Emergency,High
+39686,Sara_Mohamed,23,2026-03-25,Pneumonia,Cardiology,Low
+14073,Nour_Salem,53,2026-04-10,Fracture,Radiology,High
+18937,Youssef_Khalil,64,2026-03-14,Asthma,Orthopedics,Medium

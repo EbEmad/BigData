@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+27573,Ahmed_Hassan,37,2026-08-22,Influenza,Emergency,Medium
+24593,Dina_Gamal,27,2026-04-12,Appendicitis,Neurology,High
+17425,Tarek_Samy,28,2026-12-05,Fracture,ICU,Low
+11475,Sara_Mohamed,36,2026-01-14,Hypertension,Neurology,High
+16735,Nour_Salem,62,2026-01-09,Cardiac_Arrest,Internal_Medicine,Critical
+14782,Sara_Mohamed,31,2026-06-12,Fracture,ICU,Low
+16859,Youssef_Khalil,79,2026-03-02,Asthma,Pediatrics,Medium
+38549,Sara_Mohamed,76,2026-06-15,Influenza,Cardiology,Low
+32434,Dina_Gamal,77,2026-03-20,Appendicitis,Pediatrics,Critical

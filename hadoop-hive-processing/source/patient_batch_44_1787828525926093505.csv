@@ -1,0 +1,17 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+34095,Youssef_Khalil,81,2026-01-24,Diabetes,Radiology,High
+30514,Fatma_Ibrahim,70,2026-12-08,Appendicitis,ICU,Medium
+17487,Nour_Salem,69,2026-04-12,Asthma,Orthopedics,Critical
+17658,Mona_Adel,82,2026-04-13,Migraine,ICU,Medium
+35815,Youssef_Khalil,78,2026-08-19,Asthma,Neurology,Medium
+37197,Youssef_Khalil,56,2026-08-10,Appendicitis,Neurology,Low
+22469,Ahmed_Hassan,43,2026-12-06,Asthma,Internal_Medicine,Critical
+14313,Youssef_Khalil,67,2026-08-04,Hypertension,Surgery,High
+21181,Tarek_Samy,47,2026-07-08,Asthma,Orthopedics,Medium
+11184,Dina_Gamal,84,2026-12-19,Hypertension,Pediatrics,Low
+29335,Youssef_Khalil,42,2026-09-06,Influenza,Emergency,High
+34501,Dina_Gamal,79,2026-10-28,Asthma,Emergency,Low
+23103,Omar_Ali,26,2026-08-15,Asthma,Neurology,Critical
+36251,Dina_Gamal,48,2026-01-17,Asthma,Neurology,Low
+13140,Sara_Mohamed,49,2026-03-13,Hypertension,Orthopedics,Critical
+33296,Youssef_Khalil,23,2026-02-24,Diabetes,ICU,Critical

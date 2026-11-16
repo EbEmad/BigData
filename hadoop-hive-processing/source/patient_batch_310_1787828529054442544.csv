@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+18319,Khaled_Mostafa,26,2026-06-27,Pneumonia,Neurology,Medium
+10280,Ahmed_Hassan,22,2026-11-26,Appendicitis,Pediatrics,Low

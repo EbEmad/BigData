@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+23968,Sara_Mohamed,39,2026-02-09,Pneumonia,Oncology,Medium
+17974,Youssef_Khalil,24,2026-11-10,Migraine,Orthopedics,High
+12389,Sara_Mohamed,29,2026-07-19,Pneumonia,Internal_Medicine,Medium

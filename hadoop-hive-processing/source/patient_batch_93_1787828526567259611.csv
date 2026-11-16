@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+22756,Dina_Gamal,30,2026-08-08,Influenza,Emergency,Medium
+36939,Dina_Gamal,30,2026-12-19,Anemia,Surgery,Medium
+22705,Khaled_Mostafa,52,2026-01-20,Pneumonia,ICU,High
+12835,Mona_Adel,50,2026-04-05,Appendicitis,Radiology,Medium
+15964,Fatma_Ibrahim,19,2026-11-03,Appendicitis,Internal_Medicine,High
+31219,Tarek_Samy,47,2026-05-05,Migraine,Orthopedics,Critical
+37644,Tarek_Samy,68,2026-02-01,Hypertension,ICU,Critical
+38384,Tarek_Samy,60,2026-07-24,Hypertension,Emergency,High

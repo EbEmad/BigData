@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+33249,Ahmed_Hassan,33,2026-07-20,Influenza,Oncology,Critical
+37937,Omar_Ali,36,2026-03-11,Anemia,Emergency,Medium
+30192,Sara_Mohamed,74,2026-04-15,Fracture,Pediatrics,Critical
+39595,Mona_Adel,87,2026-10-06,Asthma,Internal_Medicine,Low
+28934,Mona_Adel,72,2026-01-15,Pneumonia,ICU,High
+42491,Omar_Ali,19,2026-12-11,Influenza,Neurology,High
+31190,Omar_Ali,54,2026-06-05,Anemia,Internal_Medicine,Critical
+22351,Ahmed_Hassan,26,2026-03-11,Influenza,ICU,Critical
+17131,Khaled_Mostafa,21,2026-06-17,Cardiac_Arrest,Radiology,Medium
+23787,Nour_Salem,41,2026-04-09,Migraine,Surgery,Critical

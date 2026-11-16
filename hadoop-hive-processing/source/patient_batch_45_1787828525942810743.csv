@@ -1,0 +1,12 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41574,Khaled_Mostafa,72,2026-05-15,Diabetes,Cardiology,High
+12266,Omar_Ali,32,2026-09-04,Influenza,Internal_Medicine,Medium
+27983,Omar_Ali,28,2026-08-16,Asthma,Surgery,Medium
+32973,Dina_Gamal,83,2026-03-12,Appendicitis,Pediatrics,Low
+42652,Sara_Mohamed,80,2026-08-16,Asthma,Neurology,Medium
+14390,Youssef_Khalil,54,2026-04-01,Fracture,Cardiology,Critical
+17172,Mona_Adel,30,2026-10-18,Anemia,ICU,High
+24548,Omar_Ali,56,2026-04-19,Fracture,Pediatrics,Medium
+40809,Tarek_Samy,80,2026-01-16,Migraine,ICU,Low
+31110,Ahmed_Hassan,25,2026-11-10,Diabetes,Emergency,Low
+23257,Mona_Adel,87,2026-08-09,Cardiac_Arrest,Radiology,Medium

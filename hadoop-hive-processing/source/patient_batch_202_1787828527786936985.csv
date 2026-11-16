@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+28595,Ahmed_Hassan,59,2026-07-07,Influenza,Surgery,Critical
+41689,Mona_Adel,48,2026-05-22,Hypertension,Emergency,High

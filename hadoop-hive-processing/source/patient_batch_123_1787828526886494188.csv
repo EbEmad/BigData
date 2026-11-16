@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+34760,Youssef_Khalil,78,2026-04-13,Anemia,Internal_Medicine,High
+33409,Tarek_Samy,22,2026-09-16,Fracture,Surgery,Medium
+39152,Sara_Mohamed,72,2026-01-23,Asthma,Emergency,High
+14357,Mona_Adel,59,2026-09-28,Hypertension,Orthopedics,Critical
+35623,Sara_Mohamed,38,2026-08-19,Cardiac_Arrest,Neurology,Low
+38906,Sara_Mohamed,76,2026-07-15,Pneumonia,Surgery,Critical
+27454,Fatma_Ibrahim,70,2026-02-15,Asthma,Cardiology,Low

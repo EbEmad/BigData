@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+22309,Fatma_Ibrahim,59,2026-10-18,Migraine,Orthopedics,Low
+10635,Fatma_Ibrahim,59,2026-03-17,Diabetes,Radiology,Low
+27861,Ahmed_Hassan,65,2026-05-04,Anemia,Orthopedics,Low
+16463,Omar_Ali,85,2026-11-09,Hypertension,Pediatrics,High
+33357,Dina_Gamal,34,2026-05-08,Anemia,Pediatrics,Low
+15469,Ahmed_Hassan,66,2026-07-11,Appendicitis,Radiology,Medium

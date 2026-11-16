@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+13303,Dina_Gamal,24,2026-11-25,Diabetes,Orthopedics,High
+14489,Ahmed_Hassan,24,2026-05-16,Influenza,Pediatrics,Low
+19215,Nour_Salem,46,2026-02-14,Asthma,Surgery,High
+14982,Dina_Gamal,24,2026-10-27,Hypertension,Surgery,Low
+37455,Youssef_Khalil,58,2026-01-10,Influenza,Neurology,High
+23019,Youssef_Khalil,65,2026-01-17,Fracture,Surgery,Medium
+19457,Sara_Mohamed,23,2026-01-14,Asthma,Oncology,High
+30164,Sara_Mohamed,80,2026-05-05,Hypertension,Neurology,Critical
+28342,Ahmed_Hassan,76,2026-02-15,Asthma,Oncology,Low

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+22508,Khaled_Mostafa,19,2026-11-03,Pneumonia,Oncology,Critical
+41583,Khaled_Mostafa,66,2026-04-17,Pneumonia,Internal_Medicine,High
+37320,Tarek_Samy,65,2026-07-15,Hypertension,Cardiology,Medium
+32334,Tarek_Samy,79,2026-02-19,Migraine,Pediatrics,Medium
+34049,Ahmed_Hassan,26,2026-11-20,Pneumonia,Oncology,Low
+19401,Khaled_Mostafa,53,2026-08-01,Anemia,Oncology,High
+36136,Omar_Ali,52,2026-05-13,Influenza,Internal_Medicine,High

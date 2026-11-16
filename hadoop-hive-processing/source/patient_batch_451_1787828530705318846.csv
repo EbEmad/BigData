@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20860,Nour_Salem,20,2026-10-20,Appendicitis,Internal_Medicine,Medium
+28825,Nour_Salem,73,2026-10-16,Fracture,Neurology,High
+31548,Sara_Mohamed,75,2026-08-01,Appendicitis,Oncology,Medium
+22183,Tarek_Samy,20,2026-02-01,Asthma,Internal_Medicine,Low
+13938,Khaled_Mostafa,21,2026-08-10,Asthma,Oncology,Critical
+37991,Omar_Ali,87,2026-05-02,Anemia,Surgery,Low
+25939,Nour_Salem,24,2026-09-01,Hypertension,Orthopedics,High
+34931,Nour_Salem,37,2026-01-07,Asthma,Oncology,Critical
+39193,Youssef_Khalil,77,2026-02-05,Anemia,Emergency,Critical
+38812,Ahmed_Hassan,80,2026-08-08,Anemia,Pediatrics,Critical

@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38989,Dina_Gamal,53,2026-06-01,Asthma,Oncology,Medium
+13143,Khaled_Mostafa,29,2026-01-12,Pneumonia,Internal_Medicine,Medium
+23053,Sara_Mohamed,37,2026-09-26,Cardiac_Arrest,Orthopedics,Low
+13813,Dina_Gamal,67,2026-02-14,Appendicitis,Neurology,Critical
+30961,Youssef_Khalil,20,2026-05-02,Appendicitis,Neurology,Medium
+31169,Fatma_Ibrahim,80,2026-09-08,Asthma,Orthopedics,High

@@ -1,0 +1,15 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+16417,Dina_Gamal,59,2026-09-11,Hypertension,Cardiology,Critical
+18009,Youssef_Khalil,35,2026-07-11,Fracture,Pediatrics,High
+30119,Dina_Gamal,74,2026-02-17,Fracture,Surgery,Critical
+14462,Nour_Salem,68,2026-08-13,Hypertension,Orthopedics,Medium
+41065,Ahmed_Hassan,48,2026-07-18,Appendicitis,Internal_Medicine,Critical
+22207,Youssef_Khalil,73,2026-11-10,Appendicitis,Internal_Medicine,Medium
+24174,Khaled_Mostafa,87,2026-07-24,Influenza,Emergency,Low
+31052,Omar_Ali,20,2026-03-15,Pneumonia,Oncology,Medium
+30822,Tarek_Samy,31,2026-12-19,Pneumonia,Cardiology,High
+16857,Mona_Adel,27,2026-04-08,Migraine,Internal_Medicine,Medium
+31822,Omar_Ali,30,2026-08-09,Hypertension,Neurology,Critical
+20821,Fatma_Ibrahim,84,2026-02-08,Fracture,Pediatrics,Low
+30673,Sara_Mohamed,62,2026-01-13,Hypertension,Orthopedics,Medium
+13138,Dina_Gamal,68,2026-08-19,Migraine,Cardiology,Critical

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+11213,Omar_Ali,48,2026-09-05,Hypertension,Internal_Medicine,High
+21268,Youssef_Khalil,28,2026-05-08,Influenza,ICU,Critical
+24494,Khaled_Mostafa,55,2026-08-06,Cardiac_Arrest,Neurology,Critical
+21401,Youssef_Khalil,79,2026-12-02,Appendicitis,Emergency,High
+13789,Dina_Gamal,35,2026-07-26,Hypertension,Surgery,High
+30698,Khaled_Mostafa,80,2026-11-10,Appendicitis,Oncology,Medium
+30512,Dina_Gamal,40,2026-02-10,Fracture,Pediatrics,High

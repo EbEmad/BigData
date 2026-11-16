@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+25638,Ahmed_Hassan,47,2026-11-28,Cardiac_Arrest,Emergency,Critical
+27512,Nour_Salem,40,2026-07-24,Cardiac_Arrest,ICU,Low

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24309,Sara_Mohamed,59,2026-02-10,Hypertension,Orthopedics,Critical
+26348,Youssef_Khalil,43,2026-08-02,Hypertension,Oncology,High
+26554,Youssef_Khalil,64,2026-03-15,Hypertension,Neurology,Medium
+36269,Dina_Gamal,20,2026-07-02,Asthma,ICU,Medium
+10028,Youssef_Khalil,84,2026-12-23,Anemia,Orthopedics,Medium
+18696,Youssef_Khalil,61,2026-09-06,Migraine,Orthopedics,Critical
+35201,Khaled_Mostafa,27,2026-10-20,Fracture,Internal_Medicine,Medium

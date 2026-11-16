@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20034,Khaled_Mostafa,63,2026-10-18,Fracture,Cardiology,Medium
+15760,Mona_Adel,24,2026-04-06,Fracture,Internal_Medicine,Low
+25235,Omar_Ali,86,2026-03-11,Appendicitis,Cardiology,Low

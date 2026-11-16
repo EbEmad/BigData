@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32507,Mona_Adel,25,2026-03-16,Asthma,Neurology,Low
+28483,Fatma_Ibrahim,79,2026-07-07,Hypertension,Radiology,Critical
+32619,Nour_Salem,66,2026-10-12,Anemia,Neurology,Medium

@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+11199,Dina_Gamal,68,2026-12-25,Appendicitis,Emergency,High
+39579,Ahmed_Hassan,70,2026-02-28,Appendicitis,Neurology,Low
+30455,Dina_Gamal,67,2026-03-06,Diabetes,Internal_Medicine,High
+28414,Dina_Gamal,56,2026-05-13,Diabetes,Cardiology,Medium
+38155,Omar_Ali,41,2026-09-22,Appendicitis,ICU,Low

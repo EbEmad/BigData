@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+12852,Omar_Ali,60,2026-08-27,Asthma,ICU,High
+24150,Fatma_Ibrahim,35,2026-05-01,Fracture,ICU,Critical
+15515,Fatma_Ibrahim,83,2026-09-17,Pneumonia,Orthopedics,Medium
+36306,Tarek_Samy,50,2026-11-04,Anemia,Orthopedics,Low
+19105,Sara_Mohamed,44,2026-11-15,Hypertension,Orthopedics,Medium

@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41067,Nour_Salem,83,2026-09-08,Fracture,Cardiology,Medium
+30973,Nour_Salem,44,2026-07-21,Fracture,Internal_Medicine,Low
+12433,Dina_Gamal,63,2026-08-15,Fracture,Radiology,Medium
+29260,Mona_Adel,63,2026-04-11,Asthma,Emergency,Medium
+31892,Nour_Salem,22,2026-10-24,Migraine,Emergency,High
+29487,Youssef_Khalil,20,2026-07-21,Appendicitis,Emergency,High
+19192,Youssef_Khalil,26,2026-05-11,Influenza,Oncology,Low

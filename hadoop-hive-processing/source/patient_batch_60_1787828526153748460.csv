@@ -1,0 +1,13 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+26342,Fatma_Ibrahim,58,2026-11-17,Asthma,Internal_Medicine,High
+24058,Dina_Gamal,79,2026-11-22,Fracture,Neurology,Medium
+32565,Sara_Mohamed,51,2026-02-18,Hypertension,Pediatrics,High
+19800,Mona_Adel,81,2026-11-06,Cardiac_Arrest,Oncology,Low
+35507,Khaled_Mostafa,50,2026-01-26,Diabetes,Radiology,High
+27587,Tarek_Samy,71,2026-06-20,Cardiac_Arrest,Surgery,Medium
+13812,Fatma_Ibrahim,18,2026-11-17,Asthma,ICU,High
+33501,Ahmed_Hassan,57,2026-12-18,Pneumonia,Radiology,High
+21551,Youssef_Khalil,67,2026-11-18,Cardiac_Arrest,Radiology,Low
+37211,Fatma_Ibrahim,82,2026-03-28,Hypertension,Oncology,High
+39159,Ahmed_Hassan,32,2026-10-14,Appendicitis,Cardiology,Critical
+23888,Tarek_Samy,22,2026-04-03,Asthma,Cardiology,Low

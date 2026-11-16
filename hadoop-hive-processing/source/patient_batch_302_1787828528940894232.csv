@@ -1,0 +1,12 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+28033,Omar_Ali,47,2026-03-12,Fracture,Oncology,Critical
+41839,Nour_Salem,78,2026-01-02,Fracture,Oncology,Low
+38883,Omar_Ali,29,2026-05-10,Hypertension,Pediatrics,High
+21580,Omar_Ali,52,2026-07-21,Migraine,Oncology,High
+38201,Fatma_Ibrahim,62,2026-02-25,Migraine,Neurology,Medium
+24949,Khaled_Mostafa,79,2026-05-22,Fracture,Pediatrics,High
+17571,Sara_Mohamed,18,2026-09-01,Influenza,Internal_Medicine,Medium
+30860,Youssef_Khalil,61,2026-06-15,Influenza,Internal_Medicine,Medium
+37266,Youssef_Khalil,46,2026-04-20,Influenza,Cardiology,Critical
+18943,Dina_Gamal,72,2026-05-10,Migraine,Cardiology,Medium
+21966,Tarek_Samy,41,2026-01-28,Pneumonia,ICU,High

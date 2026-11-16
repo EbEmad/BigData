@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+34570,Nour_Salem,58,2026-03-02,Diabetes,Surgery,High
+35498,Youssef_Khalil,72,2026-07-07,Pneumonia,Emergency,Medium
+23689,Omar_Ali,40,2026-10-14,Appendicitis,Pediatrics,Low
+16615,Fatma_Ibrahim,43,2026-06-16,Diabetes,Neurology,High
+28429,Nour_Salem,70,2026-01-04,Migraine,Cardiology,High
+32330,Omar_Ali,50,2026-03-13,Influenza,Surgery,Critical

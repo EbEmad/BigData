@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30814,Sara_Mohamed,82,2026-10-22,Influenza,ICU,High
+12762,Youssef_Khalil,22,2026-09-28,Pneumonia,Pediatrics,Critical
+33939,Dina_Gamal,74,2026-09-04,Asthma,Emergency,Medium
+29967,Fatma_Ibrahim,57,2026-08-25,Influenza,Radiology,Low
+18029,Sara_Mohamed,54,2026-11-15,Asthma,Orthopedics,Medium
+20266,Youssef_Khalil,50,2026-03-18,Asthma,Oncology,Low

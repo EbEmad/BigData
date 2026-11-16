@@ -1,0 +1,4 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+36097,Ahmed_Hassan,20,2026-02-22,Cardiac_Arrest,Radiology,Low
+19829,Dina_Gamal,47,2026-04-24,Anemia,Neurology,High
+28354,Youssef_Khalil,70,2026-11-26,Influenza,ICU,Medium

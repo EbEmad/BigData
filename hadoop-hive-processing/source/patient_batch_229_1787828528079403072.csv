@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37830,Dina_Gamal,49,2026-12-21,Influenza,Orthopedics,Critical
+30850,Sara_Mohamed,54,2026-04-13,Cardiac_Arrest,Radiology,Critical
+35332,Omar_Ali,57,2026-09-04,Cardiac_Arrest,Orthopedics,Low
+27952,Khaled_Mostafa,86,2026-05-04,Pneumonia,Oncology,Low
+10275,Sara_Mohamed,56,2026-05-22,Fracture,Surgery,Critical
+34663,Khaled_Mostafa,72,2026-02-03,Cardiac_Arrest,Surgery,High
+35896,Fatma_Ibrahim,52,2026-02-28,Anemia,Surgery,High
+33110,Sara_Mohamed,27,2026-05-24,Appendicitis,Emergency,Low

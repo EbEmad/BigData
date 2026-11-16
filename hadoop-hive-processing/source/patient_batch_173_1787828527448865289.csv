@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+32276,Omar_Ali,73,2026-03-12,Fracture,Surgery,Medium
+14580,Ahmed_Hassan,68,2026-09-02,Migraine,Orthopedics,Low
+37582,Tarek_Samy,24,2026-07-15,Anemia,Internal_Medicine,Critical
+31371,Khaled_Mostafa,32,2026-09-10,Pneumonia,Cardiology,Medium
+38364,Sara_Mohamed,31,2026-08-01,Cardiac_Arrest,Neurology,High
+35974,Ahmed_Hassan,44,2026-03-22,Cardiac_Arrest,Radiology,Medium
+34927,Fatma_Ibrahim,31,2026-06-04,Cardiac_Arrest,Neurology,High
+16471,Fatma_Ibrahim,82,2026-10-02,Hypertension,Surgery,High

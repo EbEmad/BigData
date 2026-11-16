@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41185,Ahmed_Hassan,56,2026-08-26,Asthma,ICU,Critical
+23163,Dina_Gamal,31,2026-10-14,Asthma,Pediatrics,High
+28122,Ahmed_Hassan,25,2026-01-20,Asthma,Radiology,Critical
+38522,Sara_Mohamed,45,2026-04-24,Asthma,Emergency,Medium
+27318,Ahmed_Hassan,50,2026-02-23,Diabetes,Emergency,Low
+31485,Fatma_Ibrahim,19,2026-01-01,Anemia,Radiology,Low

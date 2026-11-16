@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+40692,Tarek_Samy,43,2026-07-11,Migraine,Emergency,Critical
+29097,Dina_Gamal,49,2026-02-03,Diabetes,Orthopedics,Critical
+23196,Ahmed_Hassan,69,2026-01-22,Pneumonia,Surgery,Medium
+29699,Youssef_Khalil,43,2026-11-18,Cardiac_Arrest,Cardiology,Critical
+31880,Khaled_Mostafa,50,2026-01-26,Cardiac_Arrest,Neurology,High
+24771,Omar_Ali,78,2026-03-08,Anemia,Emergency,High

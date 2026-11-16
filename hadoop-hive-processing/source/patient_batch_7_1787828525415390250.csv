@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+37562,Youssef_Khalil,23,2026-12-05,Pneumonia,Internal_Medicine,Critical
+31229,Fatma_Ibrahim,29,2026-02-19,Migraine,ICU,High
+19783,Ahmed_Hassan,57,2026-01-21,Asthma,Orthopedics,High
+15382,Sara_Mohamed,67,2026-04-14,Asthma,Radiology,Medium
+31129,Omar_Ali,83,2026-07-08,Influenza,Internal_Medicine,Medium
+20099,Khaled_Mostafa,20,2026-03-27,Migraine,ICU,Low
+21352,Dina_Gamal,37,2026-07-17,Pneumonia,Neurology,Medium
+26790,Khaled_Mostafa,80,2026-06-24,Hypertension,Pediatrics,High
+10019,Mona_Adel,51,2026-07-07,Fracture,Neurology,Critical
+21467,Omar_Ali,25,2026-04-15,Diabetes,Internal_Medicine,Critical

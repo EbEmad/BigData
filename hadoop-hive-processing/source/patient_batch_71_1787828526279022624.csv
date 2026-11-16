@@ -1,0 +1,14 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+23322,Dina_Gamal,26,2026-08-01,Influenza,Pediatrics,Critical
+28917,Tarek_Samy,80,2026-08-07,Fracture,Cardiology,High
+42578,Khaled_Mostafa,41,2026-09-17,Hypertension,Surgery,Critical
+18570,Youssef_Khalil,22,2026-08-07,Fracture,Internal_Medicine,High
+35573,Fatma_Ibrahim,40,2026-05-07,Influenza,Pediatrics,High
+22451,Fatma_Ibrahim,57,2026-11-08,Appendicitis,Pediatrics,Critical
+32711,Fatma_Ibrahim,35,2026-07-25,Asthma,Pediatrics,Medium
+26138,Youssef_Khalil,51,2026-08-11,Influenza,Emergency,Low
+33909,Fatma_Ibrahim,77,2026-05-17,Anemia,Surgery,High
+23116,Fatma_Ibrahim,60,2026-03-05,Fracture,Oncology,Critical
+23019,Fatma_Ibrahim,51,2026-05-19,Migraine,Surgery,Low
+42009,Nour_Salem,72,2026-06-08,Anemia,Internal_Medicine,Low
+41002,Khaled_Mostafa,22,2026-01-27,Fracture,Internal_Medicine,Critical

@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+13616,Dina_Gamal,80,2026-07-10,Appendicitis,Radiology,Critical
+42754,Dina_Gamal,20,2026-03-26,Asthma,Cardiology,Critical
+42115,Tarek_Samy,50,2026-07-11,Hypertension,Cardiology,Low
+13752,Sara_Mohamed,57,2026-03-14,Appendicitis,Radiology,Medium
+21662,Omar_Ali,23,2026-05-04,Diabetes,Surgery,Low

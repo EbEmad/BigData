@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+24380,Youssef_Khalil,20,2026-04-26,Influenza,Oncology,Medium
+14330,Ahmed_Hassan,81,2026-02-21,Pneumonia,Emergency,Medium
+39422,Dina_Gamal,78,2026-05-03,Appendicitis,Neurology,Low
+26720,Ahmed_Hassan,20,2026-04-25,Influenza,Cardiology,Critical
+31985,Nour_Salem,31,2026-12-07,Cardiac_Arrest,Cardiology,Critical
+22023,Nour_Salem,31,2026-06-05,Cardiac_Arrest,Surgery,Critical

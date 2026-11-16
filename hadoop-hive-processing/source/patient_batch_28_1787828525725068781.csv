@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+33104,Dina_Gamal,50,2026-09-21,Fracture,Cardiology,Low
+32038,Mona_Adel,36,2026-12-22,Influenza,Orthopedics,Medium
+39752,Sara_Mohamed,39,2026-08-04,Cardiac_Arrest,ICU,Medium
+18159,Khaled_Mostafa,19,2026-09-13,Appendicitis,Emergency,High
+27414,Khaled_Mostafa,83,2026-03-22,Diabetes,Pediatrics,Critical

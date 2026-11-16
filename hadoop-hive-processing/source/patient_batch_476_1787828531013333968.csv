@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+17459,Ahmed_Hassan,83,2026-03-19,Anemia,Pediatrics,High
+10113,Omar_Ali,62,2026-04-19,Migraine,Neurology,High

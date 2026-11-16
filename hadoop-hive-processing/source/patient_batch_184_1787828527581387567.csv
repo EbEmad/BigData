@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+36437,Omar_Ali,60,2026-06-25,Influenza,Pediatrics,Critical
+16802,Omar_Ali,27,2026-12-07,Pneumonia,Pediatrics,Low
+17444,Dina_Gamal,49,2026-08-01,Diabetes,ICU,Low
+37420,Fatma_Ibrahim,79,2026-11-19,Influenza,Surgery,Critical

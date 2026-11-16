@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+27224,Khaled_Mostafa,22,2026-08-28,Cardiac_Arrest,Cardiology,Low
+18618,Ahmed_Hassan,74,2026-01-26,Migraine,Radiology,Medium
+20234,Mona_Adel,71,2026-10-27,Hypertension,Surgery,Critical
+40237,Omar_Ali,52,2026-09-03,Migraine,Emergency,Critical
+37890,Fatma_Ibrahim,34,2026-06-13,Influenza,Pediatrics,High
+28433,Khaled_Mostafa,82,2026-02-23,Diabetes,Surgery,Low

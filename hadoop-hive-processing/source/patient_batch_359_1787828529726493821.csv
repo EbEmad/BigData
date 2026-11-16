@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+25735,Dina_Gamal,23,2026-05-15,Anemia,Orthopedics,Critical
+20699,Sara_Mohamed,19,2026-08-11,Cardiac_Arrest,Radiology,Critical
+25858,Khaled_Mostafa,40,2026-04-10,Cardiac_Arrest,Orthopedics,Medium
+28330,Fatma_Ibrahim,56,2026-09-01,Hypertension,Cardiology,Medium
+16734,Mona_Adel,18,2026-01-08,Fracture,Surgery,Low
+20737,Omar_Ali,55,2026-11-08,Appendicitis,Surgery,Low
+20204,Mona_Adel,33,2026-12-02,Appendicitis,Emergency,Low
+34093,Youssef_Khalil,65,2026-06-15,Appendicitis,Pediatrics,Medium

@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21266,Nour_Salem,63,2026-03-23,Influenza,Internal_Medicine,Low
+16861,Dina_Gamal,69,2026-08-21,Asthma,Neurology,Low
+10370,Tarek_Samy,84,2026-11-10,Fracture,Pediatrics,Low
+40066,Sara_Mohamed,44,2026-01-19,Influenza,Cardiology,Low
+25412,Khaled_Mostafa,39,2026-01-05,Fracture,Oncology,Critical
+36333,Youssef_Khalil,35,2026-06-10,Cardiac_Arrest,Cardiology,High
+37739,Omar_Ali,20,2026-03-19,Asthma,Orthopedics,Low
+40499,Sara_Mohamed,76,2026-04-26,Anemia,Neurology,Low

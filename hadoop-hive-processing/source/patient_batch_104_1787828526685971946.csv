@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+26055,Omar_Ali,66,2026-06-17,Anemia,Orthopedics,Critical
+16523,Omar_Ali,29,2026-04-14,Hypertension,Pediatrics,High
+15868,Fatma_Ibrahim,62,2026-02-06,Influenza,Emergency,High
+36811,Youssef_Khalil,60,2026-02-09,Pneumonia,Neurology,Critical
+14761,Khaled_Mostafa,64,2026-09-25,Appendicitis,Surgery,Critical
+28610,Ahmed_Hassan,60,2026-06-28,Diabetes,Pediatrics,Low
+33036,Omar_Ali,48,2026-01-23,Asthma,Surgery,High

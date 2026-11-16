@@ -1,0 +1,7 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+31854,Youssef_Khalil,35,2026-01-18,Fracture,Pediatrics,Low
+22847,Nour_Salem,80,2026-04-27,Fracture,Emergency,Low
+12157,Tarek_Samy,79,2026-05-15,Cardiac_Arrest,Oncology,High
+34360,Youssef_Khalil,48,2026-06-09,Cardiac_Arrest,Surgery,High
+11156,Khaled_Mostafa,29,2026-07-15,Anemia,Orthopedics,High
+40271,Khaled_Mostafa,27,2026-10-05,Migraine,Neurology,Low

@@ -1,0 +1,9 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+26346,Youssef_Khalil,24,2026-09-08,Migraine,Neurology,Medium
+42668,Mona_Adel,37,2026-10-21,Hypertension,Oncology,Critical
+20685,Tarek_Samy,83,2026-08-01,Fracture,Oncology,Critical
+29042,Dina_Gamal,73,2026-11-24,Pneumonia,Surgery,High
+23830,Fatma_Ibrahim,82,2026-08-24,Cardiac_Arrest,Surgery,Medium
+13693,Khaled_Mostafa,30,2026-05-09,Cardiac_Arrest,Cardiology,Medium
+29312,Ahmed_Hassan,26,2026-11-26,Pneumonia,Cardiology,High
+13353,Omar_Ali,74,2026-05-03,Asthma,Neurology,Medium

@@ -1,0 +1,15 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+19652,Omar_Ali,23,2026-09-24,Migraine,Neurology,High
+13884,Nour_Salem,35,2026-07-24,Fracture,Orthopedics,High
+27014,Tarek_Samy,25,2026-05-25,Hypertension,Cardiology,Critical
+28994,Mona_Adel,71,2026-11-08,Fracture,Radiology,High
+15265,Dina_Gamal,25,2026-12-21,Migraine,ICU,Low
+32043,Ahmed_Hassan,32,2026-05-17,Pneumonia,Oncology,Critical
+32636,Nour_Salem,79,2026-05-24,Pneumonia,Surgery,Critical
+36333,Tarek_Samy,28,2026-02-26,Anemia,Neurology,Critical
+16639,Omar_Ali,39,2026-05-24,Diabetes,Pediatrics,Medium
+17381,Dina_Gamal,27,2026-01-10,Cardiac_Arrest,Orthopedics,Critical
+23791,Fatma_Ibrahim,62,2026-07-12,Fracture,Emergency,Critical
+18201,Mona_Adel,54,2026-01-17,Migraine,Emergency,Medium
+40755,Youssef_Khalil,53,2026-06-11,Pneumonia,Internal_Medicine,High
+32759,Omar_Ali,33,2026-08-05,Asthma,Cardiology,High

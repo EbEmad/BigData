@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+13550,Ahmed_Hassan,49,2026-12-06,Fracture,Emergency,High
+10128,Nour_Salem,36,2026-10-28,Fracture,Pediatrics,High
+20538,Youssef_Khalil,27,2026-03-12,Influenza,Pediatrics,Critical
+17880,Mona_Adel,20,2026-02-18,Diabetes,Cardiology,Low
+10701,Fatma_Ibrahim,18,2026-10-05,Pneumonia,ICU,High

@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+18907,Nour_Salem,77,2026-01-14,Appendicitis,Emergency,Low
+33027,Fatma_Ibrahim,73,2026-01-22,Cardiac_Arrest,Emergency,High
+15586,Tarek_Samy,46,2026-01-16,Diabetes,ICU,Critical
+13623,Khaled_Mostafa,42,2026-11-18,Hypertension,Pediatrics,High
+14654,Mona_Adel,40,2026-05-15,Migraine,Radiology,Critical

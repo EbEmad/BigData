@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+21794,Omar_Ali,19,2026-05-02,Diabetes,Pediatrics,Medium
+20467,Sara_Mohamed,43,2026-09-10,Appendicitis,Emergency,Low
+42181,Omar_Ali,63,2026-12-25,Hypertension,Oncology,High
+42221,Khaled_Mostafa,47,2026-01-07,Migraine,Orthopedics,Medium
+29989,Youssef_Khalil,41,2026-01-23,Diabetes,Radiology,Critical
+14459,Ahmed_Hassan,85,2026-05-27,Fracture,Orthopedics,Critical
+27046,Tarek_Samy,66,2026-12-27,Migraine,Pediatrics,Medium
+38736,Tarek_Samy,32,2026-09-15,Hypertension,Neurology,High
+39403,Tarek_Samy,41,2026-12-04,Anemia,Pediatrics,Critical
+18183,Dina_Gamal,25,2026-11-08,Fracture,ICU,High

@@ -1,0 +1,13 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+33086,Sara_Mohamed,49,2026-01-13,Anemia,Neurology,Critical
+28626,Ahmed_Hassan,76,2026-05-01,Cardiac_Arrest,Emergency,High
+22950,Tarek_Samy,31,2026-04-23,Migraine,Internal_Medicine,Critical
+16479,Youssef_Khalil,79,2026-08-17,Diabetes,Internal_Medicine,Low
+25377,Sara_Mohamed,56,2026-03-18,Asthma,Surgery,Critical
+13173,Nour_Salem,23,2026-04-27,Anemia,Emergency,Low
+16896,Dina_Gamal,44,2026-09-10,Hypertension,Emergency,Critical
+42195,Khaled_Mostafa,63,2026-11-02,Asthma,Surgery,Critical
+34172,Fatma_Ibrahim,73,2026-03-09,Anemia,ICU,High
+11174,Mona_Adel,18,2026-09-08,Hypertension,Surgery,High
+18324,Youssef_Khalil,29,2026-09-09,Asthma,Neurology,Low
+23827,Nour_Salem,60,2026-12-18,Asthma,ICU,Low

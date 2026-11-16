@@ -12,15 +12,15 @@ COPY customer/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY customer/app .
-#COPY services/protos ./protos
-#COPY services/document/generate_protos.sh .
-#RUN chmod +x generate_protos.sh
-#RUN ./generate_protos.sh
+COPY ../protos ./protos
+COPY /customer/generate_protos.sh .
+RUN chmod +x generate_protos.sh
+RUN ./generate_protos.sh
 # Backup generated protos so entrypoint can restore them over volume mount
-#RUN mkdir -p /app/proto_backup && cp /app/db/*_pb2*.py /app/proto_backup/
+RUN mkdir -p /app/proto_backup && cp /app/db/*_pb2*.py /app/proto_backup/
 
-#COPY services/document/entrypoint.sh .
-#RUN chmod +x entrypoint.sh
+COPY /customer/entrypoint.sh .
+RUN chmod +x entrypoint.sh
 
 EXPOSE 8000
 

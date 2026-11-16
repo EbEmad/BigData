@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+23884,Fatma_Ibrahim,35,2026-03-09,Anemia,Pediatrics,Low
+31292,Mona_Adel,50,2026-04-23,Hypertension,Internal_Medicine,Critical
+22048,Dina_Gamal,42,2026-08-20,Asthma,ICU,Low
+26432,Mona_Adel,72,2026-09-24,Diabetes,ICU,Critical
+30044,Nour_Salem,36,2026-02-17,Pneumonia,Pediatrics,Low
+32201,Fatma_Ibrahim,48,2026-11-24,Fracture,Orthopedics,High
+16505,Mona_Adel,51,2026-03-12,Hypertension,Orthopedics,High
+27409,Mona_Adel,44,2026-12-12,Hypertension,Neurology,Medium
+25508,Youssef_Khalil,76,2026-12-27,Anemia,Emergency,High
+11505,Ahmed_Hassan,43,2026-02-27,Cardiac_Arrest,Pediatrics,Low

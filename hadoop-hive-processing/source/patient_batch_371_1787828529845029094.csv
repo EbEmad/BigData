@@ -1,0 +1,10 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+30781,Youssef_Khalil,77,2026-03-17,Appendicitis,Cardiology,Medium
+11362,Mona_Adel,82,2026-08-02,Pneumonia,Oncology,Low
+39052,Omar_Ali,62,2026-01-28,Anemia,Cardiology,High
+36151,Dina_Gamal,73,2026-09-16,Appendicitis,Pediatrics,Low
+29000,Youssef_Khalil,20,2026-05-05,Asthma,Radiology,Critical
+35647,Ahmed_Hassan,33,2026-12-03,Asthma,Internal_Medicine,High
+18677,Tarek_Samy,83,2026-10-04,Anemia,Emergency,Medium
+14646,Dina_Gamal,79,2026-10-11,Influenza,Radiology,High
+15011,Omar_Ali,74,2026-05-18,Cardiac_Arrest,Internal_Medicine,Critical

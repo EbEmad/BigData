@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14961,Dina_Gamal,76,2026-04-23,Fracture,Radiology,Low
+30792,Nour_Salem,27,2026-04-03,Asthma,Radiology,Low
+21522,Khaled_Mostafa,64,2026-08-13,Fracture,Radiology,Medium
+13865,Tarek_Samy,28,2026-11-12,Anemia,Pediatrics,High
+13529,Khaled_Mostafa,78,2026-04-26,Migraine,Oncology,High
+18744,Khaled_Mostafa,33,2026-06-02,Fracture,Orthopedics,Low
+18274,Khaled_Mostafa,39,2026-03-07,Diabetes,Pediatrics,Medium

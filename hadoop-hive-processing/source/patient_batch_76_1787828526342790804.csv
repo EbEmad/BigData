@@ -1,0 +1,12 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+20215,Fatma_Ibrahim,25,2026-01-16,Influenza,Cardiology,High
+28711,Dina_Gamal,18,2026-04-07,Appendicitis,Internal_Medicine,Critical
+25438,Tarek_Samy,51,2026-10-05,Influenza,Radiology,High
+24224,Tarek_Samy,85,2026-07-21,Appendicitis,Internal_Medicine,Medium
+25252,Sara_Mohamed,32,2026-04-23,Hypertension,ICU,Medium
+21875,Tarek_Samy,68,2026-03-22,Hypertension,Internal_Medicine,Critical
+27237,Omar_Ali,19,2026-02-28,Migraine,Pediatrics,Critical
+13347,Youssef_Khalil,38,2026-11-22,Migraine,Pediatrics,Critical
+36715,Khaled_Mostafa,71,2026-08-24,Migraine,Neurology,Low
+34168,Youssef_Khalil,24,2026-02-21,Anemia,Radiology,Critical
+11702,Khaled_Mostafa,52,2026-12-11,Migraine,Orthopedics,Medium

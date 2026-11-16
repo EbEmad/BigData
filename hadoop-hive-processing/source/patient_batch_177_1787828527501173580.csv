@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+23160,Youssef_Khalil,35,2026-05-20,Influenza,Radiology,High
+23001,Dina_Gamal,18,2026-08-20,Migraine,Internal_Medicine,Low
+20464,Khaled_Mostafa,35,2026-02-01,Hypertension,Neurology,Low
+15250,Mona_Adel,30,2026-03-06,Fracture,Pediatrics,High
+11152,Tarek_Samy,65,2026-05-10,Cardiac_Arrest,Radiology,Critical

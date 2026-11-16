@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+41028,Dina_Gamal,82,2026-03-05,Appendicitis,ICU,High
+38658,Omar_Ali,51,2026-09-22,Diabetes,Radiology,Critical
+19969,Dina_Gamal,42,2026-07-06,Appendicitis,Surgery,Medium
+21493,Youssef_Khalil,31,2026-12-25,Pneumonia,Pediatrics,Low

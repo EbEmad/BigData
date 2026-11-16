@@ -1,0 +1,8 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+14806,Khaled_Mostafa,44,2026-01-26,Asthma,Cardiology,Medium
+41239,Nour_Salem,82,2026-07-19,Diabetes,Pediatrics,High
+35562,Dina_Gamal,43,2026-08-17,Pneumonia,Neurology,Low
+17823,Sara_Mohamed,26,2026-06-12,Fracture,Pediatrics,Medium
+12998,Dina_Gamal,68,2026-12-25,Hypertension,Internal_Medicine,Medium
+28436,Ahmed_Hassan,65,2026-12-24,Fracture,Surgery,High
+19213,Khaled_Mostafa,39,2026-04-14,Appendicitis,ICU,High

@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+38542,Tarek_Samy,62,2026-12-20,Appendicitis,Internal_Medicine,Critical
+40119,Youssef_Khalil,61,2026-09-18,Fracture,Internal_Medicine,High
+13601,Nour_Salem,45,2026-11-21,Asthma,Pediatrics,High
+23534,Youssef_Khalil,49,2026-08-19,Fracture,Emergency,Medium
+15020,Sara_Mohamed,75,2026-10-07,Migraine,Cardiology,Low

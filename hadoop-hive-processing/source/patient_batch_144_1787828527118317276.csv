@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+35825,Dina_Gamal,59,2026-09-23,Hypertension,Surgery,Critical
+41353,Dina_Gamal,59,2026-03-12,Cardiac_Arrest,Emergency,Medium
+38003,Youssef_Khalil,70,2026-09-27,Influenza,Cardiology,Low
+12671,Nour_Salem,86,2026-09-23,Asthma,ICU,Critical
+40412,Sara_Mohamed,59,2026-11-10,Diabetes,Orthopedics,Low

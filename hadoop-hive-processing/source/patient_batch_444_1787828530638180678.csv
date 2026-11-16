@@ -1,0 +1,5 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+29488,Ahmed_Hassan,19,2026-09-14,Appendicitis,Radiology,Critical
+31488,Mona_Adel,22,2026-11-18,Migraine,Surgery,High
+37034,Omar_Ali,78,2026-12-12,Diabetes,ICU,High
+33717,Youssef_Khalil,40,2026-06-04,Appendicitis,Oncology,Medium

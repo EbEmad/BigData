@@ -1,0 +1,3 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+17384,Tarek_Samy,31,2026-11-27,Appendicitis,Surgery,Low
+14677,Dina_Gamal,85,2026-01-01,Asthma,Emergency,Medium

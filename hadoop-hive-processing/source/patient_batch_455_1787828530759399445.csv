@@ -1,0 +1,11 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+28768,Tarek_Samy,27,2026-08-26,Migraine,Neurology,Critical
+30775,Khaled_Mostafa,32,2026-04-24,Pneumonia,Cardiology,Critical
+28582,Fatma_Ibrahim,37,2026-07-14,Asthma,Cardiology,Critical
+11395,Fatma_Ibrahim,67,2026-12-01,Appendicitis,Neurology,High
+34605,Youssef_Khalil,22,2026-09-22,Anemia,Internal_Medicine,Medium
+26675,Tarek_Samy,44,2026-03-20,Influenza,Cardiology,Medium
+31361,Ahmed_Hassan,51,2026-05-25,Appendicitis,Pediatrics,Low
+18069,Ahmed_Hassan,39,2026-10-19,Migraine,Surgery,Critical
+22413,Ahmed_Hassan,83,2026-08-26,Hypertension,Neurology,Medium
+40281,Nour_Salem,42,2026-08-01,Influenza,Radiology,Medium

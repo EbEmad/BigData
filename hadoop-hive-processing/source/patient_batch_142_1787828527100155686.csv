@@ -1,0 +1,6 @@
+patient_id,name,age,admission_date,diagnosis,department,severity
+10119,Tarek_Samy,52,2026-03-26,Cardiac_Arrest,Orthopedics,Medium
+18802,Khaled_Mostafa,31,2026-02-26,Asthma,Surgery,Medium
+35958,Youssef_Khalil,55,2026-08-02,Appendicitis,Oncology,Critical
+16668,Khaled_Mostafa,70,2026-08-26,Hypertension,Neurology,Low
+10044,Mona_Adel,70,2026-01-20,Cardiac_Arrest,Radiology,Critical
